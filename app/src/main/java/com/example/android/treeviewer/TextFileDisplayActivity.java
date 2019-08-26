@@ -49,6 +49,7 @@ public class TextFileDisplayActivity extends Activity {
      * List of the resource ids for the transcendental Books
      */
     public static final int[] resourceIDS = {
+            R.raw.all_relatives,
             R.raw.emerson_conduct_of_life, R.raw.emerson_essays_second_series, R.raw.emerson_poems,
             R.raw.emerson_representative_men, R.raw.thoreau_excursions, R.raw.bulfinch,
             R.raw.nietzshe
@@ -58,6 +59,7 @@ public class TextFileDisplayActivity extends Activity {
      * List of the titles for the transcendental Books (used to label the selection buttons)
      */
     public static final String[] titles = {
+            "List of all relatives",
             "Emerson The Conduct of Life", "Emerson Essays, Second Series", "Emerson Poems",
             "Emerson Representative Men", "Thoreau Excursions", "Bulfinch’s Mythology",
             "Nietzshe's Philosophy"
