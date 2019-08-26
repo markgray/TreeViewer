@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Tree Viewer</string>
+    <string name="element_text">Element</string>
+    <string name="dismiss">DISMISS</string>
+    <string name="waiting_for_data_to_load">Waiting for data to load…</string>
+    <string name="title_activity_transcend">TranscendActivity</string>
+    <string name="transendentalist_works">Transendentalist Works</string>
 </resources>
