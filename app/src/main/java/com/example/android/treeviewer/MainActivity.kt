@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val linearLayout = findViewById(R.id.linear_layout) as ViewGroup
-        addButton(TranscendActivity::class.java, "Transcendental", linearLayout)
+        addButton(TextFileDisplayActivity::class.java, "Text File Display", linearLayout)
     }
 
     /**

@@ -17,15 +17,15 @@ import java.util.List;
  * correspond to each of the paragraphs of the text file to the caller.
  */
 @SuppressWarnings("WeakerAccess")
-public class TranscendDataTask extends AsyncTask<Integer, String, List<String>> {
+public class TextFileDataTask extends AsyncTask<Integer, String, List<String>> {
     /**
      * TAG used for logging
      */
-    static final String TAG = "TranscendDataTask";
+    static final String TAG = "TextFileDataTask";
     /**
      * {@code Context} to use to access resources from our application (in our case this is the
      * "context of the single, global Application object of the current process" obtained from the
-     * {@code getApplicationContext} method of the {@code TranscendActivity} activity and then passed
+     * {@code getApplicationContext} method of the {@code TextFileDisplayActivity} activity and then passed
      * to our constructor).
      */
     @SuppressLint("StaticFieldLeak")
@@ -36,7 +36,7 @@ public class TranscendDataTask extends AsyncTask<Integer, String, List<String>> 
      *
      * @param context {@code Context} to use to access resources of this application
      */
-    TranscendDataTask(Context context) {
+    TextFileDataTask(Context context) {
         mContext = context;
     }
 

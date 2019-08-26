@@ -10,8 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.example.android.treeviewer.StringListAdapter;
-
 import java.util.List;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
  * This {@code Activity} loads text files from the raw resources of the app in the background, and
  * displays them in a {@code RecyclerView}.
  */
-public class TranscendActivity extends Activity {
+public class TextFileDisplayActivity extends Activity {
     /**
      * {@code RecyclerView} used to display our books
      */
@@ -84,7 +82,7 @@ public class TranscendActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_transcend);
+        setContentView(R.layout.activity_text_file);
 
         mLayoutManager = new LinearLayoutManager(getApplicationContext());
         transcendBooks = findViewById(R.id.transcend_books);
@@ -142,7 +140,7 @@ public class TranscendActivity extends Activity {
      */
     private void loadResourceTextFile(int resourceID) {
         @SuppressLint("StaticFieldLeak")
-        TranscendDataTask mtranscendDataTask = new TranscendDataTask(getApplicationContext()) {
+        TextFileDataTask mtranscendDataTask = new TextFileDataTask(getApplicationContext()) {
             /**
              * Runs on the UI thread after {@link #doInBackground}. The parameter
              * {@code List<String> results} is the value returned by {@link #doInBackground}.

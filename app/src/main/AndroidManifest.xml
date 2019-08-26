@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TranscendActivity"
+            android:name=".TextFileDisplayActivity"
             android:label="@string/title_activity_transcend"
             android:theme="@style/AppTheme.NoActionBar"/>
     </application>
