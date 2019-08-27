@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val linearLayout = findViewById(R.id.linear_layout) as ViewGroup
         addButton(TextFileDisplayActivity::class.java, "Text File Display", linearLayout)
+        addButton(HtmlFileActivity::class.java, "Html File Display", linearLayout)
     }
 
     /**
