@@ -1,7 +1,7 @@
 # TreeViewer
 This is going to be an Android app for viewing GEDCOM files (eventually). At present the app only
 displays reports which are generated offline using programs from the "lifelines" genealogy program.
-The example GEDCOM file come from the "Family Tree Maker (13.0.280)" family tree created by my
+The example GEDCOM file comes from the "Family Tree Maker (13.0.280)" family tree created by my
 father and exported to a GEDCOM format using that program. The family tree database and reports that
 I have generated from it using the `llines` program from the lifelines package are in the `Data`
 directory and are as follows:
@@ -21,8 +21,8 @@ directory and are as follows:
   report for the person selected. Output is an ASCII file, and will probably need to be printed using
   10 or 12 pitch."
  - [lifelines_programs.html](https://github.com/markgray/TreeViewer/blob/master/Data/lifelines_programs.html)
-  the list and description of all of the sample lifelines report generating included in the "lifelines"
-  genealogy program.
+  the list and description of all of the sample lifelines report generating programs included in the
+  "lifelines" genealogy program.
 
 At present the GEDCOM file has not been modified in any way from the version exported from the
 `GRAY.FTW` data file created by my father.
