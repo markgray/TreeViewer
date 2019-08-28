@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <title>Report programs for use with Lifelines genealogy Software</title>
+    <style TYPE="text/css" TITLE="Bright Colours">
+A:link, A:active
+	{
+	text-decoration	:	none;
+	color		:	#ff0000;
+	background	:	transparent;
+	}
+A:visited 
+	{
+   	text-decoration	:	none; 
+   	color		:	#993300; 
+  	background	:	transparent; 
+	}		
+A:hover 	{ 
+   	text-decoration	:	none; 
+	color		:	#000000;
+	background	:	#ffcc00;
+	}
+
+    </style>
+</head>
+
+<body text="#000080" bgcolor="#F4ECBE">
+<table width="100%">
+    <tr>
+        <td width="33%">
+            <img src="boc.gif" alt="LifeLines stork logo">
+            <br>
+
+            <hr>
+        </td>
+        <td width="34%">
+            <center>
+                <img src="ll.png" alt="LifeLines, second generation genealogy software">
+                <br>
+                <font size="+3">Report Programs</font>
+            </center>
+        </td>
+        <td width="33%"></td>
+    </tr>
+</table>
+<P>
+    This is an overview of the report programs distributed with Lifelines.
+    If you want more information about a program, often there are comments
+    at the beginning of the program that talk about functionality and algorithms,
+    that have sample output and examples of post processing commands required to
+    properly view the results.
+    Some programs require customization before use, for example, they might
+    have text identifying the person who generated the report.
+<dl>
+    <dt><b>2ppage</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text, 80 cols.
+        <br>
+        It will produce a report of all INDI's in the database, with
+        two records printed per page. Record 1 and 2 will be on the
+        first page.
+    <dt><b>4gen1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text, 80 cols.
+        <br>
+        select and produce a ancestor report for the person selected.
+        Output is an ASCII file, and will probably need to be printed
+        using 10 or 12 pitch.
+    <dt><b>6gen1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text, 80 cols.
+        <br>
+        select and produce a 6 generation ancestor report for
+        the person selected.
+        Output is an ASCII file, and will probably need to be printed
+        using 10 or 12 pitch.
+    <dt><b>8gen1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text, 132 cols.
+        <br>
+        Produce an 8 generation descendant report for the person selected.
+        Output is an ASCII file, and will probably need to be printed
+        using 132 column format.
+    <dt><b>BW_descendants</b>
+    <dd>Version 1.00; by Birger Wathne; output format Text.
+        <br>
+        List successors with notes
+    <dt><b>addsour</b>
+    <dd>Version 1.0; by Stephen Dum; output format Modifies Database.
+        <br>
+        This script prompts for a message and adds the message along with todays date
+        as a Source record on each individual and Family in the database. It checks
+        to see if the source already exists, and allows you to skip or replace an
+        existing source record. Warning, this script modifies your database, making a
+        backup of your data before running this script is advised.
+    <dt><b>af-import</b>
+    <dd>Version 4.12; by baud@research.att.com; output format GedCom.
+        <br>
+        convert ancestral-file gedcom to lifelines-standard gedcom
+    <dt><b>afg</b>
+    <dd>Version 1.0; by Tom Wetmore; output format Text.
+        <br>
+        Shows simple family groups starting at a person and extending
+        out in ancestry.
+    <dt><b>afn_match</b>
+    <dd>Version 1.0 of 1995-08-25; by Scott McGee; output format Text.
+        <br>
+        Find individuals with matching Ancestral File numbers, report matches.
+    <dt><b>ahnenliste</b>
+    <dd>Version 6; by Jim Eggert; output format Text.
+        <br>
+        Generate an Ahnenliste, an ancestral report for an individual
+    <dt><b>ahnentafel</b>
+    <dd>Version 1; by Wetmore; output format Text.
+        <br>
+        Generate an ahnentafel chart for the selected person.
+    <dt><b>alive</b>
+    <dd>Version 6; by Jim Eggert; output format Text.
+        <br>
+        This report program is for finding people living in a given year.
+        This finds who in the database, or among ancestors or descendants of
+        an individual, was likely alive in a certain year. Good for looking at
+        population snapshots like censuses, tax rolls, etc.
+    <dt><b>all_anc_lines</b>
+    <dd>Version 2; by Tom Wetmore; output format Text.
+        <br>
+        report all ancestral lines in a Register-like format
+    <dt><b>allfam10c</b>
+    <dd>Version 1.1; by Cliff Manis, Jim Eggert; output format Text.
+        <br>
+        Display all families in the DB, 1 per page.
+    <dt><b>alllines</b>
+    <dd>Version 1.1; by Wetmore, Nozell; output format SGML, NROFF.
+        <br>
+        This program shows all ancestral lines of a specified person
+        using a pseudo-Register format.
+    <dt><b>altern</b>
+    <dd>Version 2.0; by Rafal T. Prinke; output format Text.
+        <br>
+        find the longest line of alternating male/female links
+    <dt><b>anc2_ged</b>
+    <dd>Version 1.0; by Dennis Nicklaus; output format GedCom.
+        <br>
+        make a gedcom file of the ancestors of a set of individuals
+    <dt><b>ancestors2</b>
+    <dd>Version 2.0; by Wetmore, Cliff Manis; output format Text.
+        <br>
+        It will produce a report of all ancestors of a person, with
+        sorted names as output, birth and death dates.
+    <dt><b>anniver</b>
+    <dd>Version 4.0; by Stephen Dum; output format HTML; char encoding ASCII.
+        <br>
+        Generate calendar of birth, death, marriage events arranged by the month
+        and day that they occurred. Generates a top level index calendar, with actual
+        events stored in a separate html file for each month.
+        Some properties must be set in your lifelines configuration file for this
+        report to run, see comments at beginning of the report for details.
+    <dt><b>bday_cover</b>
+    <dd>Version 1 of 1994-11-02; by Andrew Deacon; output format Text.
+        <br>
+        A novelty report that lists on which days of the year people were born
+        and how many people share the same birthday. All valid birthdays
+        are considered. A valid birthday is one where the extracted birthday,
+        performed using extractdate(), has a month in the range 1-12 and a day
+        within that month.
+    <dt><b>bias</b>
+    <dd>Version 1.4; by Chandler; output format Text.
+        <br>
+        Ever notice that certain families seem to have all boys or all girls?
+        Sometimes five or six in a row of all the same sex? Is this a mere
+        statistical fluctuation, or is something special happening?
+        This program gives statistics for male vs female births.
+    <dt><b>bkdes16-1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text.
+        <br>
+        It will produce a report of all descendents of a person,
+        and is presently designed for 16 pitch, HP laserjet III.
+        This report produces an ASCII file, in output format.
+    <dt><b>book-latex</b>
+    <dd>Version 3.1; by Nicklaus; output format LaTeX.
+        <br>
+        Generates really spiffy register reports for formatting with LaTex. Reports
+        read like a book. Includes source citation, footnotes, etc. Register
+        reports are either descendant or ancestor/ahnentafel style.
+    <dt><b>browser</b>
+    <dd>Version 1.0; by Prinke; output format onscreen.
+        <br>
+        browsing via all kinds of links, especially in non-standard
+        or experimental GEDCOM structures
+    <dt><b>burial_index</b>
+    <dd>Version 1.0; by Nicklaus; output format Text.
+        <br>
+        Write an (unsorted) list of every person in the database
+        whose burial place contains a requested string
+        (which is the "town" that this report asks for).
+        It matches for the town anywhere in the place field.
+        so town can also be a state or county.
+        Personally, many of my relatives are from Iowa, so I like to make
+        a file of everyone buried in Iowa by entering Iowa to the prompt.
+    <dt><b>cid</b>
+    <dd>Version 1.0; by Wetmore, Chandler; output format Text.
+        <br>
+        Generates Pete Cook's CID (Chronological Identifier) for a person
+        in a LifeLines database.
+    <dt><b>common</b>
+    <dd>Version 0 of 1996-06-11; by H. V&auml;is&auml;nen; output format Text.
+        <br>
+        Show common ancestors of a person.
+    <dt><b>connect2</b>
+    <dd>Version 2.1; by Simms; output format Text.
+        <br>
+        Describes the family line connecting an ancestor/descendant
+    <dt><b>cons</b>
+    <dd>Version 1.0; by Teschler; output format Text.
+        <br>
+        Calculates coefficient of inbreeding F(A,B) for the offspring
+        of two individuals A and B.
+    <dt><b>cont</b>
+    <dd>Version 1.0; by V&auml;is&auml;nen; output format Text.
+        <br>
+        This program iterates over all persons and families in a database
+        and reports all records that have erroneous CONT lines.
+    <dt><b>count_anc</b>
+    <dd>Version 2.0; by Eggert; output format Text.
+        <br>
+        This program counts ancestors of a person by generation.
+        Only unique individuals in each generation are counted.
+        A person counts in all the generations he/she is in,
+        but only counts once in the grand total.
+    <dt><b>count_desc</b>
+    <dd>Version 2.0; by Eggert; output format Text.
+        <br>
+        This program counts descendants of a person by generation.
+        Only unique individuals in each generation are counted.
+        A person counts in all the generations he/she is in,
+        but only counts once in the grand total.
+    <dt><b>count_dup</b>
+    <dd>Version 1.0; by anon; output format Text.
+        <br>
+        Count dups among ancestors?
+    <dt><b>count_paternal_desc</b>
+    <dd>Version 2.0; by Eggert; output format Text.
+        <br>
+        This program counts paternal descendants of a person by generation.
+        Only unique individuals in each generation are counted.
+        A person counts in all the generations he/she is in,
+        but only counts once in the grand total.
+        Male paternal descendants are also counted separately.
+    <dt><b>cousins</b>
+    <dd>Version 6.0; by Wetmore; output format Text.
+        <br>
+        Finds the relationship between two persons in a
+        LifeLines database. If there is no common ancestor, the program
+        will attempt to find a sequence of genetic relations that link the two
+        persons.
+    <dt><b>coverage</b>
+    <dd>Version 4; by Wetmore, Woodbridge, Eggert; output format Text.
+        <br>
+        Display percentage of ancestors of each generation discovered
+    <dt><b>cron</b>
+    <dd>Version 4.0; by Stephen Dum; output format HTML; char encoding ASCII.
+        <br>
+        Generate calendar of birth, death, marriage events arranged by the year, month
+        and day that they occurred. Generates a top level index by year, with actual
+        events stored in a separate html file for each decade.
+        Some properties must be set in your lifelines configuration file for this
+        report to run, see comments at beginning of the report for details.
+    <dt><b>d-rtf</b>
+    <dd>Version 1.1 of 2000-06-11; by Paul Buckley; output format RTF.
+        <br>
+        This report will produce a document in Rich Text Format modeled after some
+        typewritten and typeset Henry format genealogies I've seen.
+        All descendants of a selected person, their spouses and their spouses
+        parents, event dates, and NOTEs are included. I generally reserve TEXT
+        items for comments I would prefer not to export.
+    <dt><b>dates</b>
+    <dd>Version 4; by Eggert; output format Text.
+        <br>
+        Prints out the value of all the lines in your database with the DATE
+        tag, along with enough information so you can find the line easily.
+        The purpose of this report is so you can sort all the dates in the
+        database, so you can look for illegal dates, make birthday lists, etc.
+        The dates are printed in the order that they appear in the database,
+        Output can then be sorted if this is more useful than the native form.
+    <dt><b>db_summary</b>
+    <dd>Version 1; by Eggert; output format Text.
+        <br>
+        This program gives you summary statistics on your database. It
+        calculates the number of birth, baptism, marriage, death, and burial
+        events, and gives the distribution over centuries of birth/baptisms,
+        death/burials, and marriages. It tells you how many different names
+        (given names and surnames separately) there are in the database, and
+        how many persons have no surname in the database.
+    <dt><b>desc-henry</b>
+    <dd>Version 8; by Eggert; output format Text.
+        <br>
+        This program prints out a descendants report, assigning a d'Aboville,
+        Henry, modified Henry, or modern Henry code to the individuals. The
+        chosen ancestor, and all of his/her spouses, descendants, and
+        descendants' spouses are included in the report.
+    <dt><b>desc-tex2/desc-tex</b>
+    <dd>Version 1995-01-01; by Eric Majani (eric@elroy.jpl.nasa.gov); output format TeX.
+        <br>
+        Descendent tree in TeX.
+        This has been modified to add the suggested poster support by
+        Pete Glassenbury and Jim Eggert. This is not an official copy from
+        Eric nor have I tried it.
+    <dt><b>desc-tex2/desc-tex2</b>
+    <dd>Version 2 of 1995-01-16; by Majani and Roegel; output format TeX.
+        <br>
+        DESC-TEX2 report for Lifelines genealogical system
+        prints a descendent chart in TeX format, with credits
+    <dt><b>desc-tree</b>
+    <dd>Version 8; by Dick Knowles, knowles@inmet.camb.inmet.com; output format Text.
+        <br>
+        This report prints a descendant tree for an individual. A
+        line is printed for every spouse and child including name,
+        database key number, birth, marriage, and death information.
+        The user can set the number of generations or they can all be
+        done (up to a maximum of 20). The user can also, optionally,
+        include step children and family database numbers. There are
+        two slightly different output styles, tree and numbered. Here
+        are examples of each:
+    <dt><b>desc_ged</b>
+    <dd>Version 1; by Nicklaus; output format Text.
+        <br>
+        Generate gedcom of descendents.
+        For specified set of individuals for specified # of generations
+        down from the top individuals. (e.g. name all your great-grandparents
+        for all of your close cousins in one gedcom file)
+    <dt><b>desc_html</b>
+    <dd>Version 1.4; by Dick Knowles, Scott McGee, anon; output format HTML.
+        <br>
+        This program is designed to be used in a cgi based genweb site to produce
+        a descendant chart for a specified individual. It is based on the desc-tree
+        program by Dick Knowles as modified by Scott McGee. A line is printed for
+        every spouse and child including name, database key number, birth, marriage,
+        and death information.
+    <dt><b>descged</b>
+    <dd>Version 2000-07; by Tom Wetmore, Cliff Manis, and Chris Eagle; output format Text.
+        <br>
+        The output of this report is a GEDCOM file of the following:
+        all descendents of a named individual
+        all spouses of the named indivdual
+        spouses of all descendents of the named individual
+        (i.e. this program looks only down the tree, never up)
+    <dt><b>drep2</b>
+    <dd>Version 2.1; by Robert Simms; output format Text.
+        <br>
+        Produces an indented report on an individual's families and all
+        descendant families. Details on individuals include NOTE lines, once.
+        Line wrapping is done with indention maintained.
+    <dt><b>dump-ances</b>
+    <dd>Version 1992-11; by Stephen Woodbridge; output format Text, 80 cols.
+        <br>
+        Program walks thru one's ancestors and dumps information
+        about each family. It prunes the tree so an individual is
+        only output once. It is a simple program that is easy to
+        make changes to, if you want more or less info printed. I
+        have included three date routines get_dates(), get_sdates(),
+        and get_ldates for variations in the amount of event info that
+        gets output to the file. The program lists all children of the
+        families as it walks the tree. The ">>>>" marker on a child
+        signifies the line of descent.
+    <dt><b>dump_html</b>
+    <dd>Version 1.3; by Scott McGee; output format HTML.
+        <br>
+        dump_html.ll is designed to dump an entire database to static HTML files.
+    <dt><b>dump_html_sd</b>
+    <dd>Version 1.0; by Scott McGee, Steve Dum; output format HTML.
+        <br>
+        dump_html_sd.ll dumps an entire database to static HTML files.
+    <dt><b>eol</b>
+    <dd>Version 4 of 1995-01; by Tom Wetmore and John Chandler; output format Text, 80 cols.
+        <br>
+        Say you want to know who all of your end-of-line ancestors are, that
+        is, your direct ancestors whose parents you have not yet discovered;
+        these are the people most of us spend most of our time on researching.
+        Here is a program that will produce the list. Any ancestor will be
+        listed at most once, even in cases where lines cross. Each person
+        is shown with date and place of birth and death -- a "guess" is made
+        for the year of birth if it is not known.
+    <dt><b>est_life_span</b>
+    <dd>Version none; by Rafal Prinke; output format Text.
+        <br>
+        The program below finds the widest possible span of life, estimating
+        the uncertain and some unknown dates on the basis of user defined
+        values in the table for various combinations of date modifiers etc.
+        Then it compares the midpoints of this with midpoints of others'
+        life spans and if they fall within a user defined range, the two
+        are considered "possibly identical". This is actually just one procedure
+        of several that should be in a program like that - but perhaps the
+        most important one as people may change names, occupations, etc.
+        but they cannot change the time period. I added two arbitrary tags:
+        FAPP and LAPP for "first/last appearance" in sources.
+    <dt><b>extract_gedcom</b>
+    <dd>Version 1.2 of 1995-08-27; by Scott McGee (smcgee@microware.com); output format GEDCOM.
+        <br>
+        This program allows the user to select a group of individuals from a database
+        and generate a GEDCOM file for them. It allows selection of multiple people
+        by following family links, and then allows addition of all ancestors of the
+        selected set or of the first individual, and then all descendants of the
+        selected set or of the orignal individual. It also allows addition of all
+        persons with a specified number of relations to any individual in any of the
+        groups added above.
+    <dt><b>extract_html</b>
+    <dd>Version 1.4; by Scott McGee (smcgee@microware.com); output format HTML.
+        <br>
+        This program allows the user to select a group of individuals from a database
+        and generate a set of HTML files for them. It allows writing multiple people
+        per HTML file, and will create an index file and a GENWEB.txt file for genweb
+        indexing of the resulting data.
+    <dt><b>fam10c</b>
+    <dd>Version 1.0; by Manis; output format Text.
+        <br>
+        Generates a Family Report for one family.
+    <dt><b>fam16rn1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text.
+        <br>
+        This program produces a family report of the person (husband), wife,
+        their children, and some data about the children's marriages.
+        It is presently designed for 16 pitch, HP laserjet III,
+        printing a single page of information about that family.
+    <dt><b>fam_ged</b>
+    <dd>Version 1.1 of 1994-06-08; by Wetmore and Prinke; output format GEDCOM.
+        <br>
+        This program extracts a gedcom file of all male line descendants
+        of a specified person, with their spouses and parents (including
+        those of the specified person and of all spouses). Also included
+        are possibly illegitimate children of females - when they have
+        the same surname as the mother but different than the father (also
+        if there is no father recorded).
+    <dt><b>famgroup</b>
+    <dd>Version 1.1; by Kris Stanton kriss@medianet.com; output format TeX.
+        <br>
+        Family Group Sheet for LifeLines
+    <dt><b>fami-grps</b>
+    <dd>Version 1993-01-12; by Stephen Woodbridge (woodbri@swoodbridge.com); output format Text, 80
+        cols.
+        <br>
+        Program walks thru one's families and dumps information
+        about each family. It prunes the tree so an individual is
+        only output once. The program lists all children of the
+        families as it walks the tree. The "*" marker on a child
+        signifies the line of descent/ascent.
+    <dt><b>familycheck</b>
+    <dd>Version 2000-03-02; by Dennis Nicklaus nicklaus@fnal.gov; output format Text, 80 cols.
+        <br>
+        Consistency checks between indi records and family records
+        (making sure links between kids and spouses go both ways.)
+        make sure each family that a person says he is a spouse of
+        has him as a spouse, and, vice-versa,
+        make sure each person that a family says is a spouse thinks he
+        is a spouse of that family
+        It also checks when a person says he is a child in a family that
+        the family has that person as a child.
+        And vice-versa, that every child in a family thinks he
+        is a child of that family.
+    <dt><b>familyisfm1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text, 132 cols.
+        <br>
+        It will produce a report of all the INDI's in the database,
+        in the format as seen at end of report. May be sorted easily
+        to see the Father or Mother column sorted report.
+        The report name come from: isfm (Indi Spouse Father Mother)
+        It is designed for 16 pitch, HP laserjet III, 132 column
+        (ASCII output).
+    <dt><b>famrep</b>
+    <dd>Version 6.3; by James P. Jones (jjones@nas.nasa.gov); output format nroff.
+        <br>
+        This report program produces a Family Group Sheet for the selected
+        individual, with options for generating sheets for married children
+        of the individual, and their children, etc.
+    <dt><b>famtree1</b>
+    <dd>Version 2; by James P. Jones, jjones@nas.nasa.gov; output format PostScript.
+        <br>
+        This report builds a postscript ancestry chart, a "tree", containing
+        data on five generations. It prompts for the individual to begin with
+        and draws the tree including this person. The further from this person
+        the less data is printed. Maximum data include:
+        o date and place of birth
+        o date and place of marriage
+        o date and place of death
+        o last place of residence
+        o spouses of person #1 (up to five)
+        as well as:
+        o name, address, phone number and e-mail address of compiler
+        o date of chart
+    <dt><b>fdesc</b>
+    <dd>Version 1.0; by Wetmore; output format GEDCOM.
+        <br>
+        this funny little program is based on Tom Wetmore's "genancc1"
+        and generates a GEDCOM file with descendants of a chosen individual
+        who have the same surname (usually this means male line descendants
+        plus illegitimate children of daughters) plus their spouses.
+    <dt><b>fileindex</b>
+    <dd>Version 1999; by Dennis Nicklaus; output format HTML.
+        <br>
+        I have lines on indi's in my database which look like:
+        1 NOTE FILE: BIOGRAPHY $FAMHIST/matthews/alkire.bio
+        or maybe OBITUARY, MARRIAGE, WILL, NEWS ... instead of BIOGRAPHY.
+        and the lowercase letters (matthews/alkire.bio in this example)
+        will change to reflect the location of the file in question.
+    <dt><b>find</b>
+    <dd>Version 2.1; by Prinke, Perry Rapp; output format GUI.
+        <br>
+        This utility finds all persons whose records contain a specified
+        TAG and VALUE and displays the resulting list as a menu.
+    <dt><b>findmissing</b>
+    <dd>Version 1.0; ; output format Text.
+        <br>
+        find persons that are 'isolated' in your database - no parents and not
+        in any families..
+    <dt><b>fix_nameplac</b>
+    <dd>Version 1; by Eggert; output format GEDCOM.
+        <br>
+        This is a quicky to show how to fix name and place spacing.
+    <dt><b>formatted_gedcom</b>
+    <dd>Version 1; by Eggert; output format GEDCOM.
+        <br>
+        This program outputs a LifeLines database in modified GEDCOM format.
+        Two additions to GEDCOM are made: an inter-record delimiter and a
+        level indenter. These are set up as global parameters and initialized
+        at the beginning of the main() procedure.
+    <dt><b>gedall</b>
+    <dd>Version 2000-02-20; by Paul B. McBride (pbmcbride@rcn.com); output format GEDCOM.
+        <br>
+        This LifeLines report program produces a GEDCOM file containing
+        the entire LifeLines database, including header, trailer, and
+        submitter records. It also gives the option to keep or remove user defined
+        tags, and to remove any other tags.
+    <dt><b>gedlist</b>
+    <dd>Version 1.1; by Paul B. McBride (pbmcbride@rcn.com); output format GEDCOM.
+        <br>
+        gedlist.ll generates a GEDCOM file for the male line of the
+        input individuals.
+    <dt><b>gedlod</b>
+    <dd>Version 2000-02-15; by Paul B. McBride (pbmcbride@rcn.com); output format GEDCOM.
+        <br>
+        Generate a GEDCOM file of a person's descent from an ancestor.
+        The GEDCOM file will contain the following:
+        all descendents of the ancestor who are ancestors of descendant,
+        as well as the ancestor and descendant themselves.
+    <dt><b>gedn</b>
+    <dd>Version none; by anon; output format GEDCOM.
+        <br>
+        The output of this report is a GEDCOM file of the following:
+        N generations of ancestors,
+        all spouses and
+        all children of these ancestors and
+        all descendents of a person,
+        as well as the person him/herself
+    <dt><b>gedtags</b>
+    <dd>Version 2001-06-28; by Paul B.McBride (pbmcbride@rcn.com); output format Text.
+        <br>
+        produces a unique list of all tags used in the database
+        listed like the following:
+        INDI
+        INDI.BIRT
+        INDI.BIRT.DATE
+        INDI.BIRT.PLAC
+        ...
+    <dt><b>genancc</b>
+    <dd>Version 1997-11; by Wetmore, Manis, Kirby; output format Text.
+        <br>
+        The output of this report is a GEDCOM file of the following:
+        all ancestors,
+        all spouses and
+        all children of all ancestors and
+        all descendents of a person,
+        as well as the person him/herself
+        and his/her spouses.
+    <dt><b>genancc1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format GEDCOM.
+        <br>
+        This program is useful for extracting
+        data when a person requests data about someone from your database.
+        The output of this report is a GEDCOM file of the following:
+        all ancestors,
+        all spouses and
+        all children of all ancestors and
+        all descendents of a person,
+        as well as the person him/herself
+        and his/her spouses.
+    <dt><b>gender_order</b>
+    <dd>Version 4; by Jim Eggert; output format Text.
+        <br>
+        This program computes gender order statistics for children in all the
+        families in a database. Genders are considered to be ternary: male
+        (M), female (F), or unknown (U). Children in a family form a pattern
+        of genders by birth order, e.g. MFFM for a family consisting of a boy,
+        two girls, then a boy. The frequency of these patterns is calculated.
+        In addition to the complete gender pattern for a family, initial
+        gender patterns are computed. For the above example, the initial
+        patterns are . (no children), M, MF, MFF, and MFFM. The frequency of
+        these initial patterns can be used to answer questions such as how
+        many families with a boy then two girls go on to have another boy.
+    <dt><b>gendex</b>
+    <dd>Version 1.2; by Scott McGee (smcgee@microware.com); output format HTML.
+        <br>
+        This report program converts a LifeLines database into html gendex document.
+        You will need to change the contents of proc html_address() and to
+        set the value of HREF appropriately to your server.
+    <dt><b>genetics</b>
+    <dd>Version 2.0.1; by Eggert; output format Text.
+        <br>
+        This LifeLines report program computes the degree of blood relatedness
+        between any two people in a database. It does this by finding all the
+        common ancestors, known or implied, and their ancestral distance along
+        any known path to the two people.
+    <dt><b>genetics2</b>
+    <dd>Version 1 of 1995-10-05; by Alexander Ottl (ottl@informatik.uni-muenchen.de); output format
+        Text.
+        <br>
+        This LifeLines report program computes the degree of blood relatedness
+        between any two people in a database.
+    <dt><b>givens_gender</b>
+    <dd>Version 1; by Jim Eggert (eggertj@ll.mit.edu); output format Text.
+        <br>
+        Given name gender report program.
+        This program prints a list of all given names of people, tagged by one
+        of the following:
+        M Only males
+        F Only females
+        B Males and females
+        M? Males and persons of unknown gender
+        F? Females and persons of unknown gender
+        B? Males, females, and persons of unknown gender
+    <dt><b>givens_gender_finder</b>
+    <dd>Version 1; by Eggert; output format Text.
+        <br>
+        This program finds all persons with a particular given name and gender.
+        It is really meant to be a companion to the givens_gender program.
+    <dt><b>grand</b>
+    <dd>Version 1.1; by Stephen Dum; output format text.
+        <br>
+        For a selected individual this program outputs a list of children,
+        grand children, great grand children and great great grand children.
+    <dt><b>hasnotes1</b>
+    <dd>Version 1.1; by Wetmore, Manis; output format Text.
+        <br>
+        It will produce a report of all the numbers and names (INDI's)
+        in the database which have a "NOTE" line at level 1 in the record.
+        It is designed for 10 or 12 pitch, HP laserjet III, or any
+        other printer (ASCII output).
+    <dt><b>hp-anc</b>
+    <dd>Version 1 of 1995-12-01; by Dennis Nicklaus (nicklaus@wishep.physics.wisc.edu); output
+        format HPGL.
+        <br>
+        This LifeLines report program generates autoscaling HPGL ancestral and
+        descendant charts. The ancestral charts can include the siblings
+        of all direct ancestors (aunts, uncles, great-aunts, great-uncles, etc.)
+        The chart format is based on the program GedChart, by Tom Blumer.
+    <dt><b>html.dn</b>
+    <dd>Version 3.0; by Dennis Nicklaus nicklaus@fnal.gov; output format HTML.
+        <br>
+        Selects a person and writes html pages for that person
+        and all their descendents through a specified number of generations.
+        Actually, you get to specify a set of individuals. It probably
+        works nicest if you select people of the same generation, e.g.
+        all your ggg-grandparents.
+        (I also recommend that you start with the "top of the line" ancestor
+        or else you'll have unresolved links in the pedigree chart.)
+    <dt><b>html</b>
+    <dd>Version 1.0; by Dave Close, dave@compata.com; output format HTML.
+        <br>
+        Produces a set of interlinked HTML files, one for each
+        person in the data base, and a master name index file.
+    <dt><b>htmlahnen</b>
+    <dd>Version 2; by Tom Wetmore; output format HTML.
+        <br>
+        Generate an ahnentafel chart in HTML format
+    <dt><b>htmlfam</b>
+    <dd>Version 3; by Tom Wetmore (ttw@shore.net); output format HTML.
+        <br>
+        output family group summaries in HTML format
+    <dt><b>igi-filter</b>
+    <dd>Version 1 of 1993-02-15; by Jim Eggert (eggertj@atc.ll.mit.edu); output format GedCom.
+        <br>
+        Write GedCom of families/events containing given TAG/VALUE
+    <dt><b>igi-import</b>
+    <dd>Version 1.0; by baud@research.att.com; output format GedCom.
+        <br>
+        Convert igi gedcom to lifelines-standard gedcom
+    <dt><b>igi-merge</b>
+    <dd>Version 4.0; by Eggert; output format GEDCOM.
+        <br>
+        This program helps you merge IGI data. IGI data consists of "families"
+        which are actually events. A real family may be documented by several
+        events in the IGI database, and thus be represented by several "families".
+        This program will help you to locate and merge those "families" back into
+        real families again.
+    <dt><b>igi-search</b>
+    <dd>Version 1.1; by Vincent Broman; output format Text.
+        <br>
+        prints out a list of people to look up in the IGI,
+        those who are closely enough related, who fall in a time range,
+        and whose temple work is not done.
+    <dt><b>index1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text.
+        <br>
+        This program produces a report of all INDI's in the database, with
+        sorted names as output.
+        It is presently designed for 12 pitch, HP laserjet III,
+        for printing a index of person in the database (ASCII output).
+    <dt><b>index_html</b>
+    <dd>Version 1.3; by Scott McGee (smcgee@microware.com); output format HTML.
+        <br>
+        This report program converts a LifeLines database into html index document.
+        You will need to change the contents of proc html_address() and to
+        set the value of HREF appropriately to your server.
+        You need to set the value of PATH to point to the directory to put
+        the file into.
+        You also need to set the value of HOST to be the http server and
+        path where you will server these files from.
+    <dt><b>index_mm</b>
+    <dd>Version 4.0; by Eggert; output format Text.
+        <br>
+        This program lists everyone in a database, with women listed by both
+        maiden name and married name. It assumes that all women take the surname
+        of their husbands, which is not always correct.
+    <dt><b>indiv</b>
+    <dd>Version 3.2; by Simms; output format Text.
+        <br>
+        Report on individual with all his families
+    <dt><b>infant_mortality</b>
+    <dd>Version 1; by Eggert; output format Text.
+        <br>
+        This program finds families that have lost multiple children.
+        You give it the threshold for the number of young deaths, and the
+        threshold for the age at death, and it finds all the appropriate
+        families.
+    <dt><b>line</b>
+    <dd>Version 1; by J.F. Chandler; output format Text.
+        <br>
+        displays the descendancy line(s) from one person to another.
+        This program assumes no individual has more than one set of parents.
+    <dt><b>listsour</b>
+    <dd>Version 2; by Hannu V&auml;is&auml;nen; output format Text.
+        <br>
+        List source records.
+    <dt><b>ll2html</b>
+    <dd>Version 2005-11-19; by JRE Jim Eggert; output format HTML.
+        <br>
+        This report program converts a LifeLines database into html documents.
+        Family group records are created for each selected individual in
+        the database. These records are written in files containing clumps
+        of individuals of a user-selected size. Index files are generated
+        for an index document. Or, optionally, all output is sent to
+        one file.
+    <dt><b>ll2visio</b>
+    <dd>Version 1 of 1999-04-02; by Rafal T. Prinke (rafalp@amu.edu.pl); output format VISIO 5
+        diagram.
+        <br>
+        This program generates a text file with male line descendants
+        which can be imported by VISIO 5 and converted to a diagram.
+    <dt><b>lldb</b>
+    <dd>Version 1.02; by Marc Nozell marc@nozell.com; output format pdb import files.
+        <br>
+        This program produces a report of all INDI's in the database, with
+        sorted names as output for inport into Tom Dyas' Open Source DB
+        PalmOS app.
+    <dt><b>longlines</b>
+    <dd>Version 2.0; by Chandler; output format Text.
+        <br>
+        Find the maximal-length male and female lineages in the database.
+        Optionally, find the maximal-length lineage through a specified ancestor.
+    <dt><b>maritalinfo</b>
+    <dd>Version 1.0 (2002-11-13); by Perry Rapp; output format screen.
+        <br>
+        Simple example of looping through marital (& divorce) info
+    <dt><b>marriages</b>
+    <dd>Version 1.0; by Perry Rapp; output format Text, 80 cols.
+        <br>
+        select and produce an a output report of all marriages in
+        the database, with date of marriage if known. Sort by either
+        spouse, or by date, or by place.
+    <dt><b>marriages1</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text, 80 cols.
+        <br>
+        select and produce an a output report of all marriages in
+        the database, with date of marriage if known.
+    <dt><b>menu</b>
+    <dd>Version 1.0; by ?; output format GUI.
+        <br>
+        Menu driven shell for LifeLines report programs
+    <dt><b>name2html</b>
+    <dd>Version 1.5; by Scott McGee; output format HTML.
+        <br>
+        Converts the selected indi record to an HTML file.
+    <dt><b>namefreq</b>
+    <dd>Version 3.0; by Chandler; output format Text.
+        <br>
+        This report counts occurrences of all first (given) names in the
+        database. Individuals with only surnames are not counted. If the
+        surname is listed first, the next word is taken as the given name.
+    <dt><b>names_freq</b>
+    <dd>Version 3.0; by Eggert; output format Text.
+        <br>
+        Tabulate frequency of names in database. Like namefreq (by John
+        Chandler), but it computes frequencies for the first five given names,
+        the surname, and the first two post-surnames.
+    <dt><b>namesformat1</b>
+    <dd>Version 1.0; by Manis; output format Text.
+        <br>
+        This program produces a report of how the names format may be printed
+        using the LifeLines Report Generator.
+    <dt><b>net-ped</b>
+    <dd>Version 2.1; by Rafal T. Prinke; output format Netscape HTML.
+        <br>
+        This program generates a set of files covering all known ancestors
+        with hypertextual links from the top and bottom persons for
+        easy on-line browsing using Netscape.
+    <dt><b>nonpatronymics</b>
+    <dd>Version 1.0; by Eggert; output format Text.
+        <br>
+        Find all cases of nonpatronymic inheritances in the database.
+        If the child's surname is not identical to the father's surname,
+        print both out. If the two surnames have different soundex
+        codes, undent the printout. Print statistics at the end.
+    <dt><b>novel/novel</b>
+    <dd>Version none; by Wetmore, Manis, Stringer; output format nroff.
+        <br>
+        It will produce a report of all descendents and ancestors of a person
+        in book form. It understands a wide variety of gedcom records and
+        tries hard to produce a readable, personalised document.
+    <dt><b>paf-export</b>
+    <dd>Version 1994-11-12; by Kurt Baudendistel (baud@research.att.com); output format GEDCOM.
+        <br>
+        Convert lifelines-standard gedcom to paf gedcom.
+        This report generates paf-compatible gedcom from a lines-compatible
+        database, including the conversion of SOUR entries into the bang-
+        tagged NOTEs used by paf for documentation (see 5). This produces
+        paf 2.2 output -- you can convert to 2.1 by loading and unloading
+        it using paf 2.2.
+    <dt><b>paf-import</b>
+    <dd>Version 1994-11-12; by Kurt Baudendistel (baud@research.att.com); output format GEDCOM.
+        <br>
+        Convert paf gedcom to lifelines-standard gedcom,
+        transforming name formats and notes.
+    <dt><b>pafcompat</b>
+    <dd>Version 2.0; by Eggert; output format Text.
+        <br>
+        This LifeLines report program checks a LifeLines database for
+        compatibility with PAF. I used the Mac PAF manual for field length
+        specification, and Mac PAF v2.11 for a little testing.
+    <dt><b>partition</b>
+    <dd>Version 11; by Eggert; output format GEDCOM.
+        <br>
+        This program partitions individuals in a database into disjoint
+        partitions. A partition is composed of people related by one or more
+        multiples of the following relations: parent, sibling, child, spouse.
+        There is no known relationship between people in different partitions.
+    <dt><b>pdesc</b>
+    <dd>Version 4.3; by Wetmore, Manis, Jones, Eggert, Simms; output format Text.
+        <br>
+        Produces indented descendant list with line wrapping at 78 columns
+        (user-specifiable) while maintaining the indentation level. Enhancement
+        from version 2 is the addition of user-specified maximum number of
+        generations. Version 4 makes the page_width (not 1 less) the limit on
+        character a shift inplacement. Also eliminated an extra space at the
+        beginning of each line that was not controlled by a left_margin parameter.
+    <dt><b>ped</b>
+    <dd>Version 1996-08-09; by Bill.Alford@anu.edu.au; output format HTML.
+        <br>
+        html pedigree/ancestral chart part of an individuals report.
+        This coding can be generalised to print many generations back but
+        for html purposes we only need go back 2 generations because the
+        width of the page becomes far too big otherwise. In this case I've
+        hard coded out what the generalised coding would look like. I've
+        used ideas from the output of the gedcom2html program.
+    <dt><b>pedigree</b>
+    <dd>Version none; by Wetmore, Manis, Hume Smith; output format Text.
+        <br>
+        Select and produce an ancestor report for the person selected.
+    <dt><b>pedigree_html</b>
+    <dd>Version 1.3; by Scott McGee (smcgee@microware.com); output format HTML.
+        <br>
+        Select and produce an ancestor report for the person selected.
+    <dt><b>pedigreel</b>
+    <dd>Version 1.0; by Wetmore, Manis; output format Text, 132 cols.
+        <br>
+        select and produce a ancestor report for the person selected.
+        Ancestors report format, which print the event in long format.
+        Output is an ASCII file, and will probably need to be printed
+        using 132 column format.
+    <dt><b>pedigreelhs</b>
+    <dd>Version none; by Wetmore, Manis, Hume Smith; output format Text.
+        <br>
+        Select and produce an ancestor report for the person selected.
+    <dt><b>pedtex/pedtex</b>
+    <dd>Version 1.0; by Eric Majani; output format TeX.
+        <br>
+        generates TeX files for pedigree charts
+    <dt><b>places</b>
+    <dd>Version 5.0; by Olsen, Eggert; output format Text.
+        <br>
+        Prints out the value of all the lines in your database with the PLAC tag,
+        along with enough information so you can find the line easily. The purpose
+        of this report is so you can find all the places that seem wrong
+        (misspelled, ambiguous, incomplete [left out the county name], etc), and
+        double-check them or correct them.
+    <dt><b>pointers</b>
+    <dd>Version 1.0; by Chandler; output format Text.
+        <br>
+        Test a database for reciprocity of pointers between persons and families.
+    <dt><b>ps-anc</b>
+    <dd>Version 8.86, 4 Jul 2004; by Robert Simms; output format PostScript; char encoding
+        ISO-8859-1.
+        <br>
+        a LifeLines genealogy report program that produces ancestry charts in
+        PostScript
+    <dt><b>ps-circle</b>
+    <dd>Version 2.6.2 of 2003-12-10; by Jim Eggert (eggertj@ll.mit.edu), Henry Sikkema
+        (hasikkema@yahoo.ca); output format PostScript.
+        <br>
+        Print a five to ten-generation ancestry circle chart in PostScript.
+    <dt><b>ps-fan/ps-fan</b>
+    <dd>Version 1993-08-16; by Andrew Deacon (deacon@inf.ethz.ch); output format PostScript.
+        <br>
+        Write a PostScript fan chart.
+    <dt><b>ps-pedigree</b>
+    <dd>Version 1.1.0; by Stephen Woodbridge, woodbri@swoodbridge.com; output format PostScript.
+        <br>
+        This report generates Multiple linked Pedigree Charts
+        Each chart is 7 or 8 generations and as a line moves off
+        a chart the new chart number is referenced. The output
+        of this report is a POSTSCRIPT file. The text size is very
+        small but readable (it seams less readable as I age!) on
+        8.5x11 paper with 8 generations and larger but somewhat
+        compressed at 7 generations per chart. And an index of all
+        persons on the charts is also created.
+    <dt><b>refn</b>
+    <dd>Version 1.0; by Larry Hamilton; output format Text.
+        <br>
+        Prints out the value of all the lines in your database with the REFN tag,
+        along with enough information so you can find the line easily. The purpose
+        of this report is so you can find all the REFNs, and double-check them for
+        duplicates.
+    <dt><b>reg_html</b>
+    <dd>Version none; by Wetmore, Prinke; output format HTML.
+        <br>
+        The output produces a HTML-marked file (without header) with
+        one family group per line so that it is displayed on WWW when
+        found with grep and properly formatted.
+        Continental European genealogical symbols are used:
+        * = born + = died x = married
+    <dt><b>register-rtf</b>
+    <dd>Version 1.6; by Doug McCallum; output format RTF.
+        <br>
+        RTF based Register Report Generator.
+        This program has many options but basically takes a person
+        and generates an RTF document that can be read by a number
+        of word processors. The document can optionally be cross-indexed
+        and footnoted. The format is close to the NEHGS Register Form.
+    <dt><b>register-tex</b>
+    <dd>Version 2.1 of 2004-06-18; by Wetmore, David Olsen (dko@cs.wisc.edu), Simms; output format
+        LaTeX.
+        <br>
+        This report prints, in book format, information about all descendants of a
+        person and all of their spouses. It tries to understand as many different
+        GEDCOM tags as possible. All source iformation (SOUR lines) is in the
+        footnotes.
+        The output is in LaTeX format.
+    <dt><b>register1-dot</b>
+    <dd>Version 1.0 (14-May-2004); by Marc Nozell (marc@nozell.com); output format dot format.
+        <br>
+        directed graphs of descendants.
+    <dt><b>register1</b>
+    <dd>Version 1.0; by Wetmore; output format nroff.
+        <br>
+        It will produce a report of all descendents of a person,
+        and is presently designed for 12 pitch, HP laserjet III.
+        All NOTE and CONT lines from data will be printed in the this report.
+        This report will produce a paginated output. It is similiar
+        to the report 'regvital1'.
+    <dt><b>regvital</b>
+    <dd>Version 3.0; by Wetmore, Manis, Chandler; output format nroff.
+        <br>
+        This program produces a report of all descendents of a given person,
+        and is presently designed for 12 pitch, HP laserjet III, for printing
+        a book about that person. All NOTE and CONT lines are included in the
+        report, along with the vital statistics, occupations, immigrations,
+        attributes, and wills.
+        At the end of the report is a sorted listing of names of everyone
+        mentioned, with reference numbers giving the first occurrences of all
+        the names.
+    <dt><b>relate</b>
+    <dd>Version 1.0; by Wetmore; output format Text.
+        <br>
+        Finds a shortest path between two persons in a LifeLines database.
+        Inspiration from Jim Eggert's relation program.
+    <dt><b>related_spouses</b>
+    <dd>Version 2.0; by Eggert; output format Text.
+        <br>
+        This program identifies spouses with known common ancestors. For each
+        marriage of related spouses, the spouses' names are printed, along
+        with the first common ancestor in each branch of the ancestry tree,
+        and the number of intervening generations for the husband and wife,
+        respectively.
+    <dt><b>relation</b>
+    <dd>Version 5.0; by Eggert; output format Text.
+        <br>
+        This program calculates the relationship between individuals in a
+        database. It does so in three modes. Mode 1 just does one pair of
+        individuals and then exits. Mode 2 does any number of pairs with a
+        common "from" person. Mode 3 does all pairs with a common "from"
+        person. In general, mode 1 is fastest for simple relationships, but
+        if you want one complicated relationship, you may as well do them all.
+    <dt><b>relink</b>
+    <dd>Version 1995-06; by J.F. Chandler; output format GEDCOM.
+        <br>
+        LifeLines program to reconstruct pointers from persons to families when
+        these pointers are missing, but can be deduced from the corresponding
+        pointers from families to persons. Do this only for persons with no
+        pointers to families at all. Similarly, reconstruct pointers from
+        families to persons where necessary.
+    <dt><b>rfc</b>
+    <dd>Version 1995-09-08; by Paul B. McBride (pbm%cybvax0@uunet.uu.net); output format Text.
+        <br>
+        Royalty For Commoners format report
+    <dt><b>rllgen</b>
+    <dd>Version 1.0; by Eggert; output format RLL format.
+        <br>
+        A LifeLines report program to aid in the generation of
+        Roots Location List (RLL) submissions.
+        Given a person, this generates a RLL-like submission for that person and
+        his/her ancestors. The output will likely need considerable hand editing,
+        but that is how it is. If you need to know what the RLL is, I have enclosed
+        a description at the end of this file.
+    <dt><b>rootset</b>
+    <dd>Version 0.5; by Robert Simms; output format Text.
+        <br>
+        Given a list of surnames, finds the set of all people with those
+        surnames, then reports on the heads of each line within that set.
+    <dt><b>rslgen</b>
+    <dd>Version 1.1; by Eggert; output format RSL format.
+        <br>
+        rslgen - a LifeLines report program to aid in the generation of
+        Roots Surname List (RSL) submissions.
+    <dt><b>sealing_line</b>
+    <dd>Version none; by Tom Wetmore; output format function, and driver writing Text.
+        <br>
+        function sealing_line().
+        You pass it a person, and it returns the person's
+        sealing line (if there is one) or nothing (if there isn't). The main
+        program is only used here to test it. You would call "sealing_line" in the
+        place you need it in your own program. Yes, it is a little complicated,
+        but that's why we have modules. Write it, stick it in some library
+        somewhere, and just call it when you need the info.
+    <dt><b>search_source</b>
+    <dd>Version 1.0; by Stephen Dum; output format text.
+        <br>
+        Search source records for a particular string.
+        Program prompts for the type of sub record to search
+        and then for string to search for. If no sub record type is
+        entered, all records are searched. Case is ignored in searches.
+    <dt><b>select</b>
+    <dd>Version 3; by Wetmore, Groleau, McGee; output format Custom.
+        <br>
+        Customizable report stub to do the following:
+        o Select a person with all ancestors and all descendents.
+        o Add to selection all other persons within a user-specified number of
+        links from any person in the first selection.
+        o Turn the selected set of persons into a list
+        o Call a report subprogram to process the list.
+    <dt><b>sgsgen</b>
+    <dd>Version 1; by Jim Eggert (eggertj@ll.mit.edu); output format Text.
+        <br>
+        A LifeLines report program to aid in the generation of
+        soc.genealogy.surnames (sgs) submissions.
+    <dt><b>showlines1</b>
+    <dd>Version 1.0; by Wetmore; output format Text.
+        <br>
+        This program will produce a report of all ancestors of a person,
+        and is presently designed for 10 or 12 pitch, HP laserjet III.
+    <dt><b>simpleged</b>
+    <dd>Version 1.0; by Wetmore; output format GEDCOM.
+        <br>
+        This program generates a simple GEDCOM file from a database. It can
+        be modified to convert your own LifeLines database formats to other
+        GEDCOM formats.
+    <dt><b>soundex-isfm</b>
+    <dd>Version 1.0; by Wetmore, Manis, Eggert; output format Text, 132 cols.
+        <br>
+        This program will produce a report of all the INDI's in the database,
+        in the format as seen at end of report. May be sorted easily
+        to see the Father or Mother column sorted report.
+    <dt><b>soundex1</b>
+    <dd>Version 1.0; by Jones; output format Text.
+        <br>
+        Produces a chart of all surnames in database with corresponding
+        SOUNDEX codes.
+        It is designed for 10 or 12 pitch, HP laserjet III, or any
+        other printer.
+    <dt><b>sources</b>
+    <dd>Version 1.0; ; output format Text.
+        <br>
+        Print the sources associated with an individual.
+    <dt><b>sources_bib</b>
+    <dd>Version 1999-02; by Dennis Nicklaus (nicklaus@fnal.gov); output format LaTeX.
+        <br>
+        Lifelines report program.
+        Write out a LaTex bibliography entry line for each source referenced
+        by an indi or family record in the whole database.
+        This is pretty slow.
+        The bibliography printed out is useful for the html.dn programs
+        (if you first run it through my bib2html.c program)
+        or for a Latex document.
+    <dt><b>span</b>
+    <dd>Version 1.1; by Stephen Dum; output format text.
+        <br>
+        Scan the database and report on the range of ages between birth to marriage,
+        birth of parent to birth of child, and age at death. Generates a histogram
+        of the results and reports minimum, maximum and average values. Designed
+        to be run with llexec, with a command like 'llexec database -x span'.
+    <dt><b>src-rtf</b>
+    <dd>Version none; by Paul Buckely cu-chulain@home.net; output format RTF.
+        <br>
+        List sources in RTF, a modification of src.ll .
+    <dt><b>src</b>
+    <dd>Version 2.0; by McBride; output format text.
+        <br>
+        Here is a report program to list SOURces. The REFN and TITL
+        values are shown. Other tags can be added by duplicating
+        the lines that containing "myrefn" or "REFN" and replacing them
+        with the tag you want.
+    <dt><b>ssdi-import</b>
+    <dd>Version 1994-11-12; by Kurt Baudendistel (baud@research.att.com); output format GEDCOM.
+        <br>
+        Convert ssdi gedcom to lifelines-standard gedcom
+    <dt><b>ssdi-search-list</b>
+    <dd>Version 1.0; by Larry Soule (lsoule@ikos.com); output format Text.
+        <br>
+        This LifeLines report program searches for individuals in the database
+        that are missing some birth or death information that may be in the
+        social security death index (SSDI). Right now this searches for:
+        1. Deaths after 1960 that do not have locations
+        2. Births after 1880 with no death event
+    <dt><b>ssdi_aid</b>
+    <dd>Version 3; by Jim Eggert (eggertj@ll.mit.edu); output format Text.
+        <br>
+        This LifeLines report program generates a text file that lists
+        people who are likely to be in the Social Security Death Index.
+        The SSDI starts in 1962 and is periodically updated to include
+        more recent years. This program guesses birth and death years
+        to make its determinations. If it finds a person likely to be
+        in the SSDI, it searches for the string SSDI in their notes to
+        indicate that an SSDI entry has already been found. If not, it
+        outputs a line about that person.
+    <dt><b>st/st_all</b>
+    <dd>Version 1.15 (2008-01-05); by Perry Rapp; output format mixed; char encoding ASCII.
+        <br>
+        calls all self-test modules,
+        Validates report language functions,
+        and optionally dumps various data to a file
+        (to exercise db functions).
+    <dt><b>stats</b>
+    <dd>Version 10.0; by Jim Eggert; output format Text.
+        <br>
+        This LifeLines report program computes mean statistics of various
+        quantities binned over other quantities. The quantities it knows
+        about are ages at and dates of birth, christening, first and last
+        marriage, first and last child's birth, death, burial, and today; the
+        number of children, siblings, and marriages; and sex, surname, first
+        name, soundex, and any simple GEDCOM tag. These can be combined
+        nearly arbitrarily and evaluated over the whole database, or
+        restricted to ancestors or descendants of a chosen individual or to
+        members of a predetermined set. Further restrictions on the
+        individuals included in the statistics can be based on any quantity
+        that the program knows about. The program will optionally print out
+        the names of all the individuals included in the statistics.
+    <dt><b>surname1</b>
+    <dd>Version 1.0; by Manis, Wetmore; output format Text, 132 cols.
+        <br>
+        LifeLines Report for quickly getting output of all individuals with a
+        a particular surname.
+    <dt><b>tinytafel1</b>
+    <dd>Version 3.1; by Wetmore, Eggert, Chandler; output format TinyTafel.
+        <br>
+        This report will produce a tinytafel report on a person.
+    <dt><b>tree_density</b>
+    <dd>Version 1; by Jim Eggert (eggertj@atc.ll.mit.edu); output format Text.
+        <br>
+        This program calculates the weight of each node in an ancestral tree.
+        The weight of a node is given by the number of people in the database
+        that are most closely related to that node. The degree of relation is
+        measured in hops, where a hop is a step to a parent, spouse, sibling,
+        or child. Thus this program allows you to get an idea of where most
+        of the research has been done, where large numbers of cousins hook in
+        to the database, and where more work may be needed.
+    <dt><b>ttable</b>
+    <dd>Version none; by anon; output format Text.
+        <br>
+        Compute Pete Cook's C-Table comparison vector, as modified by Tom.
+    <dt><b>verify</b>
+    <dd>Version 12.0; by Eggert; output format Text.
+        <br>
+        This LifeLines report program generates a text file which lists
+        exceptions to assertions or checks about the database. There are two
+        forms of the output report, terse or verbose, selectable at runtime.
+        See text at beginning of report for more details.
+    <dt><b>wife</b>
+    <dd>Version 1995-02-10; by Kurt Baudendistel baud@RESEARCH.ATT.COM; output format Text.
+        <br>
+        A report to find wives.
+    <dt><b>xml-dtd</b>
+    <dd>Version 1.0; by Rafal T. Prinke; output format XML DTD.
+        <br>
+        This report produces an XML DTD (Document Type Definition)
+        from a LifeLines database. It is intended for comparing
+        tag usage and checking for structural inconsistencies
+        in a GEDCOM file - especially when sharing the same file
+        with others in a research project.
+    <dt><b>xmlize</b>
+    <dd>Version 2.2; by Rafal T. Prinke; output format XML.
+        <br>
+        This report converts all LifeLines records
+        to XML tagged file, with &lt;LLGEDCOM> as
+        the root element.
+        It is now more consistent with Mike Kay's GedML.
+        References are all empty tags with IDREF attribute.
+        The NAME element contains one S element - for
+        surname (ie. it is a reserved tag and cannot be
+        used elsewhere).
+    <dt><b>zombies</b>
+    <dd>Version 1995-06; by H. Visnen; output format Text.
+        <br>
+        zombies - a list of people who should be dead but who are not.
+        This program lists all persons who have been born over 100 years
+        and who have a birth event but not a dead event.
+</DL>
+<center>
+    <small>
+        This overview was generated
+        23 Aug 2019
+
+    </small>
+</center>
+<!- generated automatically by gen_index, written by Stephen Dum
+-->
+</body>
