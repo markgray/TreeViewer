@@ -22,11 +22,11 @@ class TextFileDisplayActivity : Activity() {
     /**
      * `RecyclerView` used to display our books
      */
-    internal lateinit var transcendRecyleView: RecyclerView
+    internal lateinit var textFileRecylerView: RecyclerView
     /**
-     * `StringListAdapter` we use for our `RecyclerView transcendRecyleView`
+     * `StringListAdapter` we use for our `RecyclerView textFileRecylerView`
      */
-    internal lateinit var transcendAdapter: StringListAdapter
+    internal lateinit var textFileAdapter: StringListAdapter
     /**
      * `LayoutManager` for our `RecyclerView` (a `LinearLayout` instance)
      */
@@ -34,28 +34,28 @@ class TextFileDisplayActivity : Activity() {
     /**
      * `TextView` used to display "Waiting for data to load…" message while waiting
      */
-    internal lateinit var transcendWaiting: TextView
+    internal lateinit var textFileWaiting: TextView
     /**
      * `LinearLayout` that we add our book selection `Button`s to.
      */
-    internal lateinit var transcendBooks: LinearLayout
+    internal lateinit var textFileBooks: LinearLayout
     /**
-     * `ScrollView` that holds the `LinearLayout transcendBooks`
+     * `ScrollView` that holds the `LinearLayout textFileBooks`
      */
-    internal lateinit var transcendBooksScrollView: ScrollView
+    internal lateinit var textFileBooksScrollView: ScrollView
 
     /**
      * Called when the activity is starting. First we call our super's implementation of `onCreate`,
      * then we set our content view to our layout file R.layout.activity_transcend. We initialize our
      * field `RecyclerView.LayoutManager mLayoutManager` with a new `LinearLayoutManager`
-     * instance, initialize our field `LinearLayout transcendBooks` by finding the view with
-     * id R.id.transcend_books, initialize our field `ScrollView transcendBooksScrollView` by
+     * instance, initialize our field `LinearLayout textFileBooks` by finding the view with
+     * id R.id.transcend_books, initialize our field `ScrollView textFileBooksScrollView` by
      * finding the view with id R.id.transcend_books_scrollView, initialize our field
-     * `RecyclerView transcendRecyleView` by finding the view with id R.id.transcend_recycle_view,
-     * and initialize our field `TextView transcendWaiting` by finding the view with id
+     * `RecyclerView textFileRecylerView` by finding the view with id R.id.transcend_recycle_view,
+     * and initialize our field `TextView textFileWaiting` by finding the view with id
      * R.id.transcend_waiting. Then we loop over `int i` for all the resource id's in the array
      * `int[] resourceIDS` calling our method `addButton` to add a button to our field
-     * `transcendBooks` with the label `titles(i)` which will load and display the raw
+     * `textFileBooks` with the label `titles(i)` which will load and display the raw
      * text file whose resource id is `resourceIDS(i)` when the button is clicked.
      *
      * @param savedInstanceState we do not override `onSaveInstanceState` so do not use
@@ -65,19 +65,19 @@ class TextFileDisplayActivity : Activity() {
         setContentView(R.layout.activity_text_file)
 
         mLayoutManager = LinearLayoutManager(applicationContext)
-        transcendBooks = findViewById(R.id.transcend_books)
-        transcendBooksScrollView = findViewById(R.id.transcend_books_scrollView)
-        transcendRecyleView = findViewById(R.id.transcend_recycle_view)
-        transcendWaiting = findViewById(R.id.transcend_waiting)
+        textFileBooks = findViewById(R.id.text_file_books)
+        textFileBooksScrollView = findViewById(R.id.text_file_books_scrollView)
+        textFileRecylerView = findViewById(R.id.text_file_recycle_view)
+        textFileWaiting = findViewById(R.id.text_file_waiting)
         for (i in resourceIDS.indices) {
-            addButton(resourceIDS[i], titles[i], transcendBooks)
+            addButton(resourceIDS[i], titles[i], textFileBooks)
         }
     }
 
     /**
      * Adds a `Button` to its parameter `ViewGroup parent` whose label is given by its
      * parameter `String description` and whose `OnClickListener` sets the visibility of
-     * the `ScrollView transcendBooksScrollView` that holds our Books selection UI to GONE and
+     * the `ScrollView textFileBooksScrollView` that holds our Books selection UI to GONE and
      * calls our method `loadResourceTextFile` to have it load and display the resource file
      * with id `int resourceID` in the background.
      *
@@ -90,9 +90,9 @@ class TextFileDisplayActivity : Activity() {
         val button = Button(this)
         button.text = description
         button.setOnClickListener {
-            transcendBooks.visibility = View.GONE
-            transcendBooksScrollView.visibility = View.GONE
-            transcendWaiting.visibility = View.VISIBLE
+            textFileBooks.visibility = View.GONE
+            textFileBooksScrollView.visibility = View.GONE
+            textFileWaiting.visibility = View.VISIBLE
             loadResourceTextFile(resourceID)
         }
         parent.addView(button)
@@ -101,42 +101,42 @@ class TextFileDisplayActivity : Activity() {
     /**
      * Causes the utf8 text file with resource ID `int resourceID` to be read in by a background
      * task, and then displays the `List<String> results` the task returns in our field
-     * `RecyclerView transcendRecyleView`.
+     * `RecyclerView textFileRecylerView`.
      *
      * @param resourceID resource ID of the raw file we are to read in the background and then display
-     * in `RecyclerView transcendRecyleView` once the background task is done.
+     * in `RecyclerView textFileRecylerView` once the background task is done.
      */
     private fun loadResourceTextFile(resourceID: Int) {
         @SuppressLint("StaticFieldLeak")
-        val mtranscendDataTask = object : TextFileDataTask(applicationContext) {
+        val mTextFileDataTask = object : TextFileDataTask(applicationContext) {
             /**
              * Runs on the UI thread after [.doInBackground]. The parameter
              * `List<String> results` is the value returned by [.doInBackground].
-             * We initialize our field `StringListAdapter transcendAdapter` with a new instance
+             * We initialize our field `StringListAdapter textFileAdapter` with a new instance
              * which will use our parameter `List<String> results` as its data set, and our field
              * `RecyclerView.LayoutManager mLayoutManager` as its `LayoutManager`, set the
-             * adapter of `RecyclerView transcendRecyleView` to `transcendAdapter` and set
-             * the `LayoutManager` that `transcendRecyleView` will use to be our field
-             * `mLayoutManager`. Finally we set the visibility of our field `TextView transcendWaiting`
-             * to GONE, and set the visibility of `transcendRecyleView` to VISIBLE.
+             * adapter of `RecyclerView textFileRecylerView` to `textFileAdapter` and set
+             * the `LayoutManager` that `textFileRecylerView` will use to be our field
+             * `mLayoutManager`. Finally we set the visibility of our field `TextView textFileWaiting`
+             * to GONE, and set the visibility of `textFileRecylerView` to VISIBLE.
              *
              * @param results The result of the operation computed by [.doInBackground].
              */
             override fun onPostExecute(results: List<String>) {
-                transcendAdapter = StringListAdapter(results, mLayoutManager)
-                transcendRecyleView.adapter = transcendAdapter
-                transcendRecyleView.layoutManager = mLayoutManager
-                transcendWaiting.visibility = View.GONE
-                transcendRecyleView.visibility = View.VISIBLE
+                textFileAdapter = StringListAdapter(results, mLayoutManager)
+                textFileRecylerView.adapter = textFileAdapter
+                textFileRecylerView.layoutManager = mLayoutManager
+                textFileWaiting.visibility = View.GONE
+                textFileRecylerView.visibility = View.VISIBLE
             }
         }
-        mtranscendDataTask.execute(resourceID)
+        mTextFileDataTask.execute(resourceID)
     }
 
     companion object {
 
         /**
-         * List of the resource ids for the transcendental Books
+         * List of the resource ids for the text files we can display.
          */
         val resourceIDS = intArrayOf(
             R.raw.all_relatives,
@@ -150,7 +150,7 @@ class TextFileDisplayActivity : Activity() {
         )
 
         /**
-         * List of the titles for the transcendental Books (used to label the selection buttons)
+         * List of the titles for the text files we can display (used to label the selection buttons)
          */
         val titles = arrayOf(
             "List of all relatives",

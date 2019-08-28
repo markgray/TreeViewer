@@ -14,7 +14,7 @@
         tools:ignore="UselessParent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/transcend_recycle_view"
+            android:id="@+id/text_file_recycle_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/transendentalist_works"
@@ -22,7 +22,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/transcend_waiting"
+        android:id="@+id/text_file_waiting"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="60sp"
@@ -30,12 +30,12 @@
         android:visibility="gone" />
 
     <ScrollView
-        android:id="@+id/transcend_books_scrollView"
+        android:id="@+id/text_file_books_scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
-            android:id="@+id/transcend_books"
+            android:id="@+id/text_file_books"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
