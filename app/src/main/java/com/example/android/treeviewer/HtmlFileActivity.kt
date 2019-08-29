@@ -14,7 +14,7 @@ import android.widget.TextView
 @Suppress("MemberVisibilityCanBePrivate")
 class HtmlFileActivity : AppCompatActivity() {
     /**
-     * `TextView` used to display our book chapters
+     * `TextView` used to display our html files
      */
     internal lateinit var htmlTestView: TextView
     /**
@@ -22,7 +22,7 @@ class HtmlFileActivity : AppCompatActivity() {
      */
     internal lateinit var htmlWaiting: TextView
     /**
-     * `LinearLayout` that we add our chapter selection `Button`s to.
+     * `LinearLayout` that we add our html files selection `Button`s to.
      */
     internal lateinit var htmlChapter: LinearLayout
     /**

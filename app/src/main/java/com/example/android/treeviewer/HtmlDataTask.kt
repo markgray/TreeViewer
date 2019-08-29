@@ -33,7 +33,7 @@ internal constructor(
     /**
      * Loads a Html file from our resources on a background thread and returns a `Spanned` string
      * created from the contents of the file we load. The parameter is the resource ID of the file
-     * passed to [.execute] by the caller of this task. First we initialize our variable
+     * passed to `execute` by the caller of this task. First we initialize our variable
      * `StringBuilder builder` to null, declare our variable `String line`, and initialize
      * our variable `int sizeOfInputStream` to 0. We initialize `InputStream inputStream`
      * by fetching a `Resources` instance for the application's package as returned by the
@@ -43,14 +43,12 @@ internal constructor(
      * uses a default-sized input buffer to read from an `InputStreamReader` constructed to read
      * bytes from `inputStream` and decode them into characters using  the platform's default charset.
      *
-     *
-     * Having set everything up, wrapped in a try block intended to catch and log IOException, we set
-     * our variable `sizeOfInputStream` to an estimate of the number of bytes that can be read
+     * Having set everything up, wrapped in a try block intended to catch and log [IOException], we
+     * set our variable `sizeOfInputStream` to an estimate of the number of bytes that can be read
      * from `inputStream` and allocate an initial capacity of 80 more than that value for
      * `builder`. We then loop setting `line` to the `String` returned by the
      * `readLine` method of `reader` until it returns null appending each `line`
      * to `builder`. When done reading the entire file into `builder` we close `reader`.
-     *
      *
      * Upon exiting from the try block we return the `Spanned` string created by the `fromHtml`
      * method of `Html` from the string value of `builder`.
