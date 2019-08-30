@@ -20,7 +20,7 @@ import androidx.recyclerview.widget.RecyclerView
 @Suppress("MemberVisibilityCanBePrivate")
 class TextFileDisplayActivity : Activity() {
     /**
-     * `RecyclerView` used to display our books
+     * `RecyclerView` used to display our text files
      */
     internal lateinit var textFileRecylerView: RecyclerView
     /**
@@ -36,7 +36,7 @@ class TextFileDisplayActivity : Activity() {
      */
     internal lateinit var textFileWaiting: TextView
     /**
-     * `LinearLayout` that we add our book selection `Button`s to.
+     * `LinearLayout` that we add our text file selection `Button`s to.
      */
     internal lateinit var textFileBooks: LinearLayout
     /**
@@ -46,17 +46,17 @@ class TextFileDisplayActivity : Activity() {
 
     /**
      * Called when the activity is starting. First we call our super's implementation of `onCreate`,
-     * then we set our content view to our layout file R.layout.activity_transcend. We initialize our
+     * then we set our content view to our layout file R.layout.activity_text_file. We initialize our
      * field `RecyclerView.LayoutManager mLayoutManager` with a new `LinearLayoutManager`
      * instance, initialize our field `LinearLayout textFileBooks` by finding the view with
-     * id R.id.transcend_books, initialize our field `ScrollView textFileBooksScrollView` by
-     * finding the view with id R.id.transcend_books_scrollView, initialize our field
-     * `RecyclerView textFileRecylerView` by finding the view with id R.id.transcend_recycle_view,
+     * id R.id.text_file_books, initialize our field `ScrollView textFileBooksScrollView` by
+     * finding the view with id R.id.text_file_books_scrollView, initialize our field
+     * `RecyclerView textFileRecylerView` by finding the view with id R.id.text_file_recycle_view,
      * and initialize our field `TextView textFileWaiting` by finding the view with id
-     * R.id.transcend_waiting. Then we loop over `int i` for all the resource id's in the array
+     * R.id.text_file_waiting. Then we loop over `int i` for all the resource id's in the array
      * `int[] resourceIDS` calling our method `addButton` to add a button to our field
-     * `textFileBooks` with the label `titles(i)` which will load and display the raw
-     * text file whose resource id is `resourceIDS(i)` when the button is clicked.
+     * `textFileBooks` with the label `titles[ i ]` which will load and display the raw
+     * text file whose resource id is `resourceIDS[ i ]` when the button is clicked.
      *
      * @param savedInstanceState we do not override `onSaveInstanceState` so do not use
      */
@@ -75,11 +75,13 @@ class TextFileDisplayActivity : Activity() {
     }
 
     /**
-     * Adds a `Button` to its parameter `ViewGroup parent` whose label is given by its
-     * parameter `String description` and whose `OnClickListener` sets the visibility of
-     * the `ScrollView textFileBooksScrollView` that holds our Books selection UI to GONE and
-     * calls our method `loadResourceTextFile` to have it load and display the resource file
-     * with id `int resourceID` in the background.
+     * Adds a [Button] to its parameter `ViewGroup` [parent] whose label is given by its
+     * parameter `String` [description] and whose `OnClickListener` sets the visibility of
+     * the `LinearLayout` [textFileBooks] which holds our text file selection buttons to GONE,
+     * and the `ScrollView` [textFileBooksScrollView] that holds that selection `LinearLayout`
+     * to GONE and then sets the visibility of [textFileWaiting] (our waiting text view) to
+     * VISIBLE, and finally calls our method [loadResourceTextFile] to have it load and display
+     * the resource file with id `int` [resourceID] in the background.
      *
      * @param resourceID  resource ID that our button's `OnClickListener` should call the method
      * `loadResourceTextFile` to load in the background.
@@ -99,7 +101,7 @@ class TextFileDisplayActivity : Activity() {
     }
 
     /**
-     * Causes the utf8 text file with resource ID `int resourceID` to be read in by a background
+     * Causes the utf8 text file with resource ID `int` [resourceID] to be read in by a background
      * task, and then displays the `List<String> results` the task returns in our field
      * `RecyclerView textFileRecylerView`.
      *
@@ -110,15 +112,16 @@ class TextFileDisplayActivity : Activity() {
         @SuppressLint("StaticFieldLeak")
         val mTextFileDataTask = object : TextFileDataTask(applicationContext) {
             /**
-             * Runs on the UI thread after [.doInBackground]. The parameter
-             * `List<String> results` is the value returned by [.doInBackground].
-             * We initialize our field `StringListAdapter textFileAdapter` with a new instance
-             * which will use our parameter `List<String> results` as its data set, and our field
-             * `RecyclerView.LayoutManager mLayoutManager` as its `LayoutManager`, set the
-             * adapter of `RecyclerView textFileRecylerView` to `textFileAdapter` and set
-             * the `LayoutManager` that `textFileRecylerView` will use to be our field
-             * `mLayoutManager`. Finally we set the visibility of our field `TextView textFileWaiting`
-             * to GONE, and set the visibility of `textFileRecylerView` to VISIBLE.
+             * Runs on the UI thread after [doInBackground]. The parameter `List<String>` [results]
+             * is the value returned by [doInBackground].
+             *
+             * We initialize our field `StringListAdapter` [textFileAdapter] with a new instance
+             * which will use our parameter `List<String>` [results] as its data set, and our field
+             * `RecyclerView.LayoutManager` [mLayoutManager] as its `LayoutManager`, set the
+             * adapter of `RecyclerView` [textFileRecylerView] to [textFileAdapter] and set
+             * the `LayoutManager` that [textFileRecylerView] will use to be our field
+             * [mLayoutManager]. Finally we set the visibility of our field `TextView` [textFileWaiting]
+             * to GONE, and set the visibility of [textFileRecylerView] to VISIBLE.
              *
              * @param results The result of the operation computed by [.doInBackground].
              */
@@ -133,6 +136,9 @@ class TextFileDisplayActivity : Activity() {
         mTextFileDataTask.execute(resourceID)
     }
 
+    /**
+     * Our static constants.
+     */
     companion object {
 
         /**
