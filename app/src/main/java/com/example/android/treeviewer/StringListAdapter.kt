@@ -44,30 +44,24 @@ class StringListAdapter
      * Called when RecyclerView needs a new [ViewHolder] of the given type to represent
      * an item.
      *
-     *
-     * This new ViewHolder should be constructed with a new View that can represent the items
-     * of the given type. You can either create a new View manually or inflate it from an XML
+     * This new [ViewHolder] should be constructed with a new [View] that can represent the items
+     * of the given type. You can either create a new [View] manually or inflate it from an XML
      * layout file.
      *
-     *
-     * The new ViewHolder will be used to display items of the adapter using
-     * [.onBindViewHolder]. Since it will be re-used to display different
-     * items in the data set, it is a good idea to cache references to sub views of the View to
-     * avoid unnecessary [View.findViewById] calls.
-     *
+     * The new [ViewHolder] will be used to display items of the adapter using [onBindViewHolder].
+     * Since it will be re-used to display different items in the data set, it is a good idea to
+     * cache references to sub views of the View to avoid unnecessary [View.findViewById] calls.
      *
      * We initialize our variable `View v` with the view we construct by using the `LayoutInflater`
      * that the `from` method of `LayoutInflater` obtains from the `Context` of our parameter
      * `ViewGroup viewGroup` to inflate our item layout file R.layout.line_list_item using `viewGroup`
-     * for the layout params without attaching to it. Then we return a new instance of `ViewHolder` constructed
-     * to use `v` as its `View`.
+     * for the layout params without attaching to it. Then we return a new instance of `ViewHolder`
+     * constructed to use `v` as its `View`.
      *
      * @param viewGroup The ViewGroup into which the new View will be added after it is bound to
      * an adapter position.
      * @param viewType  The view type of the new View.
      * @return A new ViewHolder that holds a View of the given view type.
-     * @see .getItemViewType
-     * @see .onBindViewHolder
      */
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         // Create a new view.
@@ -82,19 +76,16 @@ class StringListAdapter
      * should update the contents of the [ViewHolder.itemView] to reflect the item at
      * the given position.
      *
+     * Note that unlike [ListView], RecyclerView will not call this method again if the position of
+     * the item changes in the data set unless the item itself is invalidated or the new position
+     * cannot be determined. For this reason, you should only use the [position] parameter while
+     * acquiring the related data item inside this method and should not keep a copy of it. If you
+     * need the position of an item later on (e.g. in a click listener), use [ViewHolder.getPosition]
+     * which will have the updated position.
      *
-     * Note that unlike [ListView], RecyclerView will not call this
-     * method again if the position of the item changes in the data set unless the item itself
-     * is invalidated or the new position cannot be determined. For this reason, you should only
-     * use the **position** parameter while acquiring the related data item inside this
-     * method and should not keep a copy of it. If you need the position of an item later on
-     * (e.g. in a click listener), use [ViewHolder.getPosition] which will have the
-     * updated position.
-     *
-     *
-     * We call the `getTextView` of our parameter `ViewHolder viewHolder` to fetch the
-     * `TextView` it holds, and set its text to the `String` in our dataset `String[] mDataSet`
-     * that is in position `position`.
+     * We call the `getTextView` of our parameter `ViewHolder viewHolder` (or the `text` property in
+     * kotlin) to fetch the `TextView` it holds, and set its text to the `String` in our dataset
+     * `String[] mDataSet` that is in position `position`.
      *
      * @param viewHolder The ViewHolder which should be updated to represent the contents of the
      * item at the given position in the data set.
@@ -110,8 +101,8 @@ class StringListAdapter
     }
 
     /**
-     * Returns the total number of items in the data set hold by the adapter. We just return the length
-     * of our dataset `String[] mDataSet`.
+     * Returns the total number of items in the data set hold by the adapter. We just return the
+     * size of our dataset `String[] mDataSet`.
      *
      * @return The total number of items in this adapter.
      */
@@ -129,7 +120,7 @@ class StringListAdapter
      * `OnLongClickListener onLongClickListener` (which picks a random selection, instructs
      * the `LinearLayoutManager mLayoutManager` to scroll to that random selection, toasts
      * what it just did, and returns true to consume the event). Finally we initialize our field
-     * `TextView textView` by finding the view with id R.id.vTextView in `v`.
+     * `TextView` [textView] by finding the view with id R.id.vTextView in `v`.
      *
      * @param v `View` that we should hold
      */
@@ -151,6 +142,9 @@ class StringListAdapter
         }
     }
 
+    /**
+     * Our static constants
+     */
     companion object {
         /**
          * TAG used for logging

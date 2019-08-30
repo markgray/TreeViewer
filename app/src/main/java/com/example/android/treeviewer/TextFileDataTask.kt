@@ -31,41 +31,29 @@ internal constructor(
 ) : AsyncTask<Int, String, List<String>>() {
 
     /**
-     * We override this method to perform a computation on a background thread. The specified parameters
-     * are the parameters passed to [.execute] by the caller of this task. We initialize our
-     * variable `StringBuilder builder` with a new instance, declare `String line`, and
+     * We override this method to perform a computation on a background thread. The specified
+     * parameters are the parameters passed to `execute` by the caller of this task. We initialize
+     * our variable `StringBuilder builder` with a new instance, declare `String line`, and
      * initialize our variable `List<String> results` with a new instance of `ArrayList`.
      * We use our field `Context mContext` to fetch a `Resources` instance for the application's
      * package which we then use to open a data stream for reading the raw resource with resource id
      * `resourceId[0]` for our variable `InputStream inputStream`. Then we initialize our
      * variable `BufferedReader reader` with a new instance constructed to use a new instance of
      * `InputStreamReader` created from `inputStream` using the default charset. Then wrapped
-     * in a try block intended to catch and log IOException we loop while the `readLine` method
-     * of `reader` returns a non-null value to set `line` to, then:
+     * in a try block intended to catch and log [IOException] initialize `line` to the first line of
+     * text in `reader`, and then we loop while `line` is not *null* branching on whether `line` is
+     * empty:
+     *  - If `line` is empty and `builder` is not empty we append a newline character to `builder`,
+     *  add the the string value of `builder` to our list `results`, and set the length of `builder`
+     *  to 0, and if `builder` was empty we just add a string with only a newline character to our
+     *  list `results`.
+     *  - If `line` is not empty we append `line` to `builder` followed by a space character and if
+     *  the first character of `line` is a space character (an indented line in the file) we append
+     *  a newline character to `builder` as well (so that text wrapping will not be applied to this
+     *  line).
      *
-     *  *
-     * If the length of `line` is 0 (an empty line):
-     *
-     *  *
-     * if the length of `builder` is not 0: we append a newline character to
-     * `builder` (the end of a paragraph has occurred) and we add the string
-     * value of `builder` to `results` and set the length of `builder`
-     * to 0.
-     *
-     *  *
-     * if the length of `builder` is 0: we just add the strings "\n" to `results`
-     *
-     *
-     *
-     *  *
-     * If the length of `line` is NOT 0 (a non-empty line): we append `line` to
-     * `builder` followed by a space character, and if `line` starts with a space
-     * character (an indented line in the file) we append a newline character to `builder`
-     * (so that text wrapping will not be applied to this line).
-     *
-     *
-     * When done with the loop (`readLine` returned null indicating EOF) we close `reader`
-     * and return `results` so that the `onPostExecute` override will be called with it
+     * When done with the loop (`readLine` returned *null* indicating EOF) we close `reader`
+     * and return `results` so that the [onPostExecute] override will be called with it
      * as its parameter.
      *
      * @param resourceId Resource ID of the utf8 text file we are to read in
@@ -107,6 +95,9 @@ internal constructor(
         return results
     }
 
+    /**
+     * Our static constant.
+     */
     companion object {
         /**
          * TAG used for logging
