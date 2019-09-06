@@ -46,10 +46,11 @@ import java.io.IOException
  * Our required empty constructor.
  */
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-class PdfRendererBasicFragment : Fragment(), View.OnClickListener {
+class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
+    : Fragment(), View.OnClickListener {
 
     /**
-     * File descriptor of the PDF, points to FILENAME in the application cache.
+     * File descriptor of the PDF, points to [mFileName] in the application cache.
      */
     private var mFileDescriptor: ParcelFileDescriptor? = null
 
@@ -210,9 +211,9 @@ class PdfRendererBasicFragment : Fragment(), View.OnClickListener {
     /**
      * Sets up a [android.graphics.pdf.PdfRenderer] and related resources. First we initialize
      * `File file` using the absolute path to the application specific cache directory on the
-     * filesystem for the parent path, and FILENAME ("sample.pdf") as the child pathname. If this file
-     * does not exist (we have not been run before) we initialize `InputStream asset` by using
-     * an AssetManager instance for the application's package to open the asset file named FILENAME,
+     * filesystem for the parent path, and [mFileName] ("sample.pdf") as the child pathname. If this
+     * file does not exist (we have not been run before) we initialize `InputStream asset` by using
+     * an AssetManager instance for the application's package to open the asset file named [mFileName],
      * initialize `FileOutputStream output` with a new instance to write to the file represented
      * by `File file`. We allocate 1024 bytes for `byte[] buffer`, and declare `int size`.
      * We then loop, setting `size` to the number of bytes that the `read` method of `asset`
@@ -234,11 +235,11 @@ class PdfRendererBasicFragment : Fragment(), View.OnClickListener {
     @Throws(IOException::class)
     private fun openRenderer(context: Context) {
         // In this sample, we read a PDF from the assets directory.
-        val file = File(context.cacheDir, FILENAME)
+        val file = File(context.cacheDir, mFileName)
         if (!file.exists()) {
             // Since PdfRenderer cannot handle the compressed asset file directly, we copy it into
             // the cache directory.
-            val asset = context.assets.open(FILENAME)
+            val asset = context.assets.open(mFileName)
             val output = FileOutputStream(file)
             val buffer = ByteArray(1024)
             var size: Int = asset.read(buffer)

@@ -47,7 +47,10 @@ class PdfRendererBasic : AppCompatActivity() {
         setContentView(R.layout.activity_pdf_file)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .add(R.id.container, PdfRendererBasicFragment(), FRAGMENT_PDF_RENDERER_BASIC)
+                .add(
+                    R.id.container,
+                    PdfRendererBasicFragment(mFileName = "sample.pdf"),
+                    FRAGMENT_PDF_RENDERER_BASIC)
                 .commit()
         }
     }
