@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val linearLayout = findViewById<ViewGroup>(R.id.linear_layout)
         addButton(TextFileDisplayActivity::class.java, "Text File Display", linearLayout)
         addButton(HtmlFileActivity::class.java, "Html File Display", linearLayout)
-        addButton(PdfRendererBasic::class.java, "Pdf File Display", linearLayout)
+        addButton(PdfFileDisplayActivity::class.java, "Pdf File Display", linearLayout)
     }
 
     /**

@@ -45,11 +45,12 @@ class PdfRendererBasic : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pdf_file)
+        val fileName = intent.getStringExtra("com.example.android.treeviewer.FILE")
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .add(
                     R.id.container,
-                    PdfRendererBasicFragment(mFileName = "sample.pdf"),
+                    PdfRendererBasicFragment(mFileName = fileName!!),
                     FRAGMENT_PDF_RENDERER_BASIC)
                 .commit()
         }
