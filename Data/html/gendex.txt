@@ -1,0 +1,612 @@
+._12.html#I554|ADEN|Opel Aline /ADEN/|||||
+._7.html#I340|ALLEN|Margret Jack /ALLEN/|||||
+._9.html#I446|AQUILLAR|Cecilia Elena /AQUILLAR/|||||
+._4.html#I167|Abraham| /Abraham/|||||
+._4.html#I168|Abraham|Per /Abraham/|13 MAY 1808|Godegard, Sweden|||
+._8.html#I361|Albers|Anke Margarethe /Albers/|||||
+._2.html#I55|Almes|Mirium Jeanne /Almes/|1 FEB 1918|East Las Vegas, New Mexico|13 APR 2002|Bradenton, Flordia|
+._2.html#I76|Andersdotter|Maja Stina /Andersdotter/|19 JUN 1804|Regna|1 MAY 1858|Kristberg, Sweden|
+._11.html#I513|BAKER|Donald Lee /BAKER/|4 FEB 1939||||
+._11.html#I512|BAKER|Gary Dean /BAKER/|24 JAN 1936||||
+._11.html#I511|BAKER|William Kirk /BAKER/|||||
+._13.html#I608|BOUSQUET|Yvonne Marie /BOUSQUET/|10 SEP 1958|MA.|||
+._9.html#I447|BOYD|Alexander /BOYD/|||||
+._9.html#I429|BRIGGS|Britton Carl /BRIGGS/|||||
+._9.html#I428|BRIGGS|Meloni Jane /BRIGGS/|||||
+._9.html#I427|BRIGGS|Nolana Beth /BRIGGS/|||||
+._10.html#I493|BROWN|JOANN /BROWN/|||||
+._10.html#I492|BROWN|Thomas /BROWN/|||||
+._10.html#I496|BURTON|Elizabeth Sarah /BURTON/|||||
+._1.html#I37|Barrett|Elizabeth Ellen /Barrett/|25 JUN 1871|Locusdale, Schuykil Co, Pa.|23 SEP 1919|Denver, Colorado|
+._3.html#I129|Bates|James /Bates/|||||
+._3.html#I110|Benson|Howard /Benson/|||||
+._6.html#I257|Boyd| /Boyd/|||||
+._1.html#I42|Bracy|Alan W /Bracy/|17 MAY 1921|Milliken,Weld County, Colorado|19 DEC 1983|DENVER, COLORADO|
+._1.html#I43|Bracy|Alan William /Bracy/|24 FEB 1943|DENVER, COLORADO|||
+._8.html#I387|Bracy|Eleanor Faye /Bracy/|||||
+._7.html#I322|Bracy|Jeremiah Justin /Bracy/|8 AUG 1988|DENVER, COLORADO|||
+._8.html#I392|Bracy|Michael Patrick /Bracy/|||||
+._1.html#I44|Bracy|Micheal Alan /Bracy/|1 JUN 1945|DENVER, COLORADO|||
+._1.html#I46|Bracy|Pamela Faye /Bracy/|12 NOV 1958|DENVER, COLORADO|||
+._1.html#I45|Bracy|Timothy Carrol /Bracy/|30 OCT 1956|DENVER, COLORADO|||
+._4.html#I160|Brewer|Geoorge /Brewer/|UNKNOWN||||
+._3.html#I132|Brewer|William /Brewer/|||||
+._4.html#I156|Brewer|Willie May /Brewer/|||||
+._6.html#I278|Brown|Lydia Jane /Brown/|21 AUG 1855|Carthage Illinois|11 MAR 1947|Denver, CO|
+._2.html#I100|Burroughs|Frank /Burroughs/|||29 AUG 1933|Peaceful Valley|
+._9.html#I430|CARR|Sharon Lee /CARR/|||||
+._8.html#I395|CLEAVER|Mark Steven /CLEAVER/|||||
+._9.html#I450|COLLICK|Lavinia Emily /COLLICK/|||23 APR 1933|GILPIN COUNTY, COLORADO|
+._9.html#I438|COOPER|Bridget Elizabeth /COOPER/|||||
+._9.html#I437|COOPER|Erin Kathleen /COOPER/|||||
+._9.html#I413|COOPER|Jaunito /COOPER/|||FEB 1962||
+._9.html#I435|COOPER|Kerry Lind /COOPER/|||||
+._9.html#I436|COOPER|Patrick Lind /COOPER/|||||
+._7.html#I316|Cameron| /Cameron/|1 JUL 2002||||
+._2.html#I73|Carlsdotter|Anna Maja /Carlsdotter/|8 NOV 1812|Godegard, Sweden|11 FEB 1839|Kristberg, Sweden|
+._2.html#I60|Cistoldi|Rita Melinda /Cistoldi/|9 NOV 1950||||
+._8.html#I400|Cleaver|Carrie Elizabeth /Cleaver/|||||
+._8.html#I399|Cleaver|Mark Steven /Cleaver/|||||
+._10.html#I494|DALTON|Edwin /DALTON/|||||
+._9.html#I404|DAVIS|Dawn Heather /DAVIS/|||||
+._9.html#I402|DAVIS|Dietrich Chistopher /DAVIS/|||||
+._9.html#I403|DAVIS|Genevieve Christine /DAVIS/|||||
+._9.html#I401|DAVIS|Thomas /DAVIS/|||||
+._2.html#I67|DRUFVA|AUGUST CARLSON /DRUFVA/|29 NOV 1836|Kristberg, Sweden|Dead|Australia?|
+._2.html#I74|DRUFVA|Carl Gustaf /DRUFVA/|4 MAY 1835|kristberg, Sweden|6 OCT 1842|unknown|
+._6.html#I277|Dalton|Ariella Marie /Dalton/|7 FEB 1983||||
+._6.html#I276|Dalton|Srijaya Ruth /Dalton/|23 SEP 1980|Chico, Butte, CA|26 MAY 2003|San Frisco, CA|
+._6.html#I275|Dalton|William Johnson /Dalton/|31 MAY 1944|, Middlesex MA|||
+._7.html#I314|Dillahay|Grant /Dillahay/|||||
+._3.html#I120|Dorthy| /Dorthy/|||||
+._3.html#I131|Drufva|Bill /Drufva/|UNKNOWN||||
+._2.html#I72|Drufva|Carl Gustaf Gustafsson /Drufva/|28 JUN 1811|Godegard, Sweden|30 NOV 1891|Kristberg, Sweden|
+._2.html#I75|Drufva|Johan Alfred /Drufva/|1 FEB 1839|kristberg, Sweden|||
+._2.html#I79|Drufva|Mathilda /Drufva/|27 FEB 1845|Kristberg, Sweden|||
+._2.html#I77|Drufva|Ulla /Drufva/|13 AUG 1840|Kristberg, Sweden|||
+._2.html#I78|Drufva|Wilhelm /Drufva/|24 MAR 1842|Kristberg, Sweden|||
+._2.html#I69|Druva|Agusta Sophia /Druva/|1 MAY 1859|MotALA,Sweden|12 OCT 1862|MotALA,Sweden|
+._3.html#I117|Druva|Albert /Druva/|UNKNOWN||10 AUG 1993||
+._2.html#I71|Druva|Alma /Druva/|22 FEB 1867|Motala,Sweden|24 FEB 1962|Little Rock,Ark|
+._1.html#I18|Druva|August Albert /Druva/|7 SEP 1862|Stockholm, Sweden|29 MAY 1938|Pueblo, Colorado|
+._2.html#I63|Druva|Charles Lee /Druva/|3 JUL 1899|Aurora, Illinois|23 NOV 1981|Pueblo, Colorado|
+._3.html#I118|Druva|David /Druva/|UNKNOWN||||
+._2.html#I66|Druva|Dorothy Lois /Druva/|19 MAY 1903|Pueblo, Colorado|||
+._4.html#I178|Druva|Eric /Druva/|15 NOV 1992|Denver, Colorado|||
+._1.html#I13|Druva|Esther Amanda /Druva/|3 FEB 1894|Aurora, Illinois|10 JUL 1964|Pueblo, Colorado|
+._2.html#I65|Druva|James Albert /Druva/|20 OCT 1898||12 SEP 1968|Palm Srings, California|
+._4.html#I179|Druva|Jennifer /Druva/|26 APR 1995|Denver, Colorado|||
+._2.html#I70|Druva|Karl Alfred /Druva/|25 MAY 1862|MotALA,Sweden|17 OCT 1921|Genesea,Ill.|
+._4.html#I158|Druva|Mae /Druva/|UNKNOWN||||
+._4.html#I169|Druva|Marianne /Druva/|19 APR 1950|Denver, Colorado|||
+._4.html#I171|Druva|Mark Thomas /Druva/|28 APR 1958||||
+._2.html#I62|Druva|Mary Lenore /Druva/|17 JUL 1890|Mt Pleasant, Iowa|Dead|Denver, Colorado|
+._4.html#I159|Druva|Myrtle /Druva/|UNKNOWN||||
+._4.html#I172|Druva|Nancy Sue /Druva/|22 AUG 1959||||
+._4.html#I170|Druva|Robert II /Druva/|22 MAR 1953|denver, Colorado|19 AUG 1970|denver, Colorado|
+._2.html#I61|Druva|Robert L /Druva/|UNKNOWN||||
+._3.html#I116|Druva|Robert Lee /Druva/|8 DEC 1921|Pueblo, Colorado|||
+._2.html#I64|Druva|Ruth Alice /Druva/|28 JAN 1896|Uurora, Illinois|6 JUN 1982|La Guna Beach,California|
+._4.html#I177|Druva|Stephanie /Druva/|9 NOV 1989|denver, Colorado|||
+._3.html#I135|Dugan|Bill /Dugan/|UNKNOWN||||
+._3.html#I136|Dugan|Mary /Dugan/|UNKNOWN||||
+._3.html#I134|Dugan|Thomas /Dugan/|UNKNOWN|?|Dead|?|
+._3.html#I137|Dugan|Tom /Dugan/|UNKNOWN||||
+._7.html#I309|Durling|Theodore Wayne /Durling/|||||
+._9.html#I448|EUSTICE|Francis Irene /EUSTICE/|||||
+._9.html#I449|EUSTISE|George /EUSTISE/|||||
+._9.html#I405|Eelliot|Cora May /Eelliot/|||||
+._4.html#I187|Engel|Mary /Engel/|19 JUN 1965|Illinois|||
+._7.html#I344|FISCHER|Ralph Whitelaw /FISCHER/|||||
+._7.html#I343|FISCHER|William Joseph /FISCHER/|||||
+._12.html#I572|FOSTER|Hazel /FOSTER/|16 AUG 1900|MONTROSE, COLORADO|1 MAY 1997|GREELEY, WELD COLORADO|
+._8.html#I384|FRY|Brian Richard /FRY/|||||
+._8.html#I385|FRY|Marion Gail /FRY/|||||
+._8.html#I383|FRy|Gene Richard /FRy/|||||
+._13.html#I611|FULLER|Fred /FULLER/|||||
+._8.html#I365|Faaken(SP)|Mary /Faaken(SP)/|||||
+._3.html#I105|Fantazia|Ashley Rose /Fantazia/|15 DEC 1986||||
+._3.html#I103|Fantazia|Brian Richard /Fantazia/|||||
+._3.html#I104|Fantazia|Brice Anthony /Fantazia/|7 AUG 1985||||
+._6.html#I271|Fergusion|Patricia Ann /Fergusion/|8 FEB 1955||||
+._7.html#I345|FiSCHER|Ira William /FiSCHER/|||||
+._7.html#I318|Flanery|Tom /Flanery/|||||
+._6.html#I254|Frost|James /Frost/|||||
+._8.html#I382|Fry|Authur /Fry/|||||
+._9.html#I432|GALLAUHER|Janice Carole /GALLAUHER/|||||
+._11.html#I545|GOEHRY|Mary Jane /GOEHRY/|||||
+._10.html#I487|GORACKE|Artie Merle /GORACKE/|||||
+._10.html#I488|GORACKE|Glen /GORACKE/|||||
+._9.html#I422|GRANT|Angela Sue /GRANT/|||||
+._9.html#I425|GRANT|Bethanny Parker /GRANT/|||||
+._9.html#I423|GRANT|Cary Patrick /GRANT/|||||
+._9.html#I424|GRANT|Jennifer Lin /GRANT/|||||
+._9.html#I421|GRANT|Owen Patrick /GRANT/|||||
+._8.html#I378|GUNNING|Francis Irene /GUNNING/|1911|Arkansa City, Kansa|JUL 1987||
+._8.html#I376|GUNNING|Frank W /GUNNING/|17 MAR 1871|Hutchinson , Reno, Kansa|11 AUG 1922|Sterling, Rice, Kansa|
+._8.html#I379|GUNNING|Lois Marie /GUNNING/|5 MAY 1922|Sterling, Rice, Kansa|||
+._8.html#I377|GUNNING|Oscar /GUNNING/|1909|LAWERNCE , KANSAS|OCT 1935|salem, Marion, OR|
+._4.html#I184|Galloway|Martha /Galloway/||Nebraska|||
+._8.html#I381|Glenna|Ira Curtis /Glenna/|||||
+._6.html#I262|Glenna|Merle , Capps /Glenna/|||||
+._1.html#I40|Gray|Belle M. /Gray/|1890||1890||
+._1.html#I23|Gray|Earl Elmer /Gray/|30 JAN 1929|Milliken Colorado|||
+._1.html#I20|Gray|Elmer William /Gray/|12 JAN 1901|Johnstown,Colorado|12 NOV 1973|Denver, Colorado|
+._1.html#I36|Gray|James Earl /Gray/|1869|England|1915|Johnstown, Co.|
+._1.html#I5|Gray|Julie Ruth /Gray/|11 JUL 1959|Newton, Sussex County, New Jersey|||
+._4.html#I194|Gray|Kristine /Gray/|21 MAY 1975|Moscow,, Idaho|||
+._4.html#I190|Gray|Lon E. /Gray/|22 JUN 1950|Ft Collins, Colorado|||
+._1.html#I22|Gray|Marjorie Faye /Gray/|8 NOV 1922|Milliken Colorado|15 OCT 2001|DENVER, COLORADO|
+._1.html#I4|Gray|Mark Thomas /Gray/|11 DEC 1951|Pueblo, Colorado|||
+._1.html#I38|Gray|Maude /Gray/|||||
+._4.html#I193|Gray|Maureen /Gray/|2 MAY 1971|Puerto Rico,|||
+._1.html#I39|Gray|Mildred /Gray/|1 DEC 1904||26 SEP 1976||
+._4.html#I191|Gray|Mildred E /Gray/|19 NOV 1953|Ft. Collins, Colrado|||
+._1.html#I1|Gray|William Robert /Gray/|1 JUL 1921|Windsor, Weld County, Colorado|||
+._1.html#I3|Gray|William Stewart /Gray/|18 JAN 1946|Pueblo, Colorado|||
+._12.html#I594|HADLRY|Julia Ann /HADLRY/|||||
+._8.html#I396|HAMMEL|Leonard Michael /HAMMEL/|||||
+._8.html#I397|HAMMEL|Michael Anthony "Tony" /HAMMEL/|||||
+._8.html#I398|HAMMEL|Robert Christopher /HAMMEL/|||||
+._8.html#I357|HARBERTS|H. Frauke aus Strackholts /HARBERTS/|1746|Bagband, Germany|20 FEB 1816|Firrel Ostfriesland, Germany|
+._11.html#I515|HARRIGINGTON|E. E. /HARRIGINGTON/|||||
+._11.html#I510|HARRIGINGTON|Elna Ruth /HARRIGINGTON/|23 MAR 1928|KIT CARSON,CHEYENNE COLORADO|13 MAR 1947|LARKSPUR, DOUGLAS, CO|
+._11.html#I518|HARRIGINGTON|H.W. /HARRIGINGTON/|||||
+._11.html#I509|HARRIGINGTON|Helen Laurene /HARRIGINGTON/|6 FEB 1916|GLADE, PHILLIPS COUNTY, KANSAS|||
+._11.html#I516|HARRIGINGTON|Mable /HARRIGINGTON/|||||
+._11.html#I508|HARRIGINGTON|Maron Walter /HARRIGINGTON/|24 NOV 1883|Guthrie, IA|13 MAR 1947|DENVER, COLORADO|
+._11.html#I517|HARRIGINGTON|Pearl /HARRIGINGTON/|||||
+._11.html#I534|HARRINGTON|Albert Dean /HARRINGTON/|1958||||
+._11.html#I504|HARRINGTON|Arovonia Maud /HARRINGTON/|30 SEP 1913||19 FEB 1984|Phoenix, Maricopa Co., Arizona|
+._11.html#I527|HARRINGTON|Betty Jean /HARRINGTON/|1944||||
+._11.html#I536|HARRINGTON|Billy Joe /HARRINGTON/|1961||||
+._11.html#I533|HARRINGTON|David Ray /HARRINGTON/|1956||||
+._11.html#I507|HARRINGTON|Delbert De Wayne /HARRINGTON/|24 MAY 1922|BURLINGTON, KIT CARSON, COLORADO|14 JUN 1993|POCATELLA, BANNOCK, IDAHO|
+._11.html#I514|HARRINGTON|E.E. /HARRINGTON/|||||
+._11.html#I535|HARRINGTON|Earl Edward /HARRINGTON/|1959||||
+._11.html#I502|HARRINGTON|Edna Eunice /HARRINGTON/|13 AUG 1909|NUNN, WELD, COLORADO|||
+._11.html#I530|HARRINGTON|Elizabeth A. /HARRINGTON/|1945||||
+._11.html#I501|HARRINGTON|Emerett Eugene /HARRINGTON/|25 DEC 1876||19 FEB 1933|Kanorado, Sherman,KANAS|
+._11.html#I505|HARRINGTON|Emerett Lee /HARRINGTON/|25 JUL 1916|BURLINGTON, KIT CARSON, COLORADO|11 MAY 1974|CASTLE ROCK, DOUGLAS, COLORADO|
+._11.html#I526|HARRINGTON|Flora Mae /HARRINGTON/|1942||||
+._11.html#I524|HARRINGTON|Grimmes Harrison (Guy) /HARRINGTON/|1938||||
+._11.html#I522|HARRINGTON|H. W. /HARRINGTON/|||||
+._11.html#I503|HARRINGTON|Harold Wilbur /HARRINGTON/|12 SEP 1911|BURLINGTON, KIT CARSON, COLORADO|9 MAR 1983|Kanorado, Sherman,KANAS|
+._11.html#I525|HARRINGTON|James Lee /HARRINGTON/|1940||||
+._11.html#I528|HARRINGTON|Judy Darlene /HARRINGTON/|1948||||
+._11.html#I506|HARRINGTON|Lawrence Edward /HARRINGTON/|7 DEC 1918|LAJUNTA, OTERO, COLORADO|1 SEP 1969||
+._11.html#I520|HARRINGTON|Mable /HARRINGTON/|||||
+._11.html#I519|HARRINGTON|Marrion Walter /HARRINGTON/|||||
+._11.html#I521|HARRINGTON|Pearl /HARRINGTON/|||||
+._11.html#I537|HARRINGTON|Randy Lyn /HARRINGTON/|1963||1963||
+._11.html#I529|HARRINGTON|Richard Eugene(slim) /HARRINGTON/|1947||1981||
+._11.html#I531|HARRINGTON|Sandra Coleen /HARRINGTON/|1951||||
+._8.html#I380|HAYES|Lilly Victoria /HAYES/|||||
+._10.html#I474|HERING|David /HERING/|||||
+._10.html#I473|HERING|Duncan /HERING/|||||
+._10.html#I472|HERING|Robert /HERING/|||||
+._11.html#I532|HERING|Robert /HERING/|1954||||
+._10.html#I464|HEWETT|Marie /HEWETT/|||||
+._10.html#I479|HIGMAN|Raymonr William /HIGMAN/|||||
+._7.html#I305|Haas|Alfred Reuben /Haas/|||||
+._8.html#I371|Haas|Ellen Ruth /Haas/|||||
+._8.html#I374|Haas|Franklin C. /Haas/|||||
+._8.html#I373|Haas|Lucille Mabel /Haas/|||||
+._8.html#I372|Haas|Maurice Alfred /Haas/|||||
+._8.html#I394|Harms|Gerd /Harms/|||||
+._7.html#I302|Harris|Johnnie Frances /Harris/|||||
+._4.html#I198|Healy|Craig /Healy/|||||
+._4.html#I199|Healy|Zachary /Healy/|12 APR 1993||||
+._6.html#I258|Hecox|Bobbye Jean /Hecox/|25 FEB 1925|Merced, CA|||
+._7.html#I308|Herron|Edna H. Earl /Herron/|||||
+._4.html#I173|Horner| /Horner/|||||
+._4.html#I174|Horner|Kristen /Horner/|17 DEC 1975|Omaha, Nebraska|||
+._4.html#I175|Horner|Nick /Horner/|26 APR 1978|Minneapolis, MN|||
+._4.html#I176|Horner|Robert /Horner/|22 SEP 1987|Denver, Colorado|||
+._1.html#I33|Hoskins|Elizabrth /Hoskins/|ABT 1775|English Ancestry|Dead||
+._5.html#I244|Hoskins|Rosetta /Hoskins/|15 MAY 1812|Woolford County, Kentucky|1875|Batavia ,, Jefferson, Iowa|
+._3.html#I109|Huffman|Edgar /Huffman/|UNKNOWN||4 DEC 1969||
+._3.html#I111|Huffman|Michael William /Huffman/|1948||23 NOV 1967||
+._11.html#I539|JENSEN|Albert Roosevelt /JENSEN/|18 AUG 1903||12 NOV 1984|DENVER`|
+._11.html#I540|JENSEN|Norma Darlene /JENSEN/|24 JUN 1928||||
+._11.html#I548|JENSEN|Randy Lynn /JENSEN/|1957||||
+._11.html#I541|JENSEN|Richard Wayne /JENSEN/|30 MAY 1930||||
+._11.html#I546|JENSEN|Ricky Lee /JENSEN/|1953||||
+._11.html#I547|JENSEN|Terry Wayne /JENSEN/|1956||||
+._2.html#I80|Jaensdotter|Anna Lotta /Jaensdotter/|7 JUL 1813|Tjallmo|6 SEP 1887|kristberg, Sweden|
+._5.html#I202|Jr|Ed Parker /Jr/|25 OCT 1921|Johnstown, Weld, Co|23 NOV 2002|Paridise , Butte,CA|
+._6.html#I270|Jr.|Robert Webb Parker /Jr./|24 MAR 1955|Baytown , Harris, Texas|||
+._8.html#I352|Jr.|Willim Miller /Jr./|||||
+._12.html#I558|Jr.Trimble|Thomas /Jr.Trimble/|6 SEP 1867|CANADA|||
+._8.html#I364|KAISER|Ahlke Janssen /KAISER/|2 JAN 1779|Bagband, Germany|6 SEP 1861||
+._8.html#I370|KAISER|Albert /KAISER/|||||
+._8.html#I358|KAISER|Anke /KAISER/|6 NOV 1789|Bagband, Germany|23 OCT 1790||
+._8.html#I366|KAISER|Anna (Annie) /KAISER/|||||
+._7.html#I349|KAISER|Emma /KAISER/|1870|Alton, Madison, Illinois|1880||
+._7.html#I330|KAISER|Frauke /KAISER/|||||
+._8.html#I368|KAISER|Hannah /KAISER/|||||
+._8.html#I363|KAISER|Harbert Janssen /KAISER/|4 MAR 1777|Firrel Ostfriesland, Germany|25 JAN 1816|Firrel Ostfriesland, Germany|
+._7.html#I339|KAISER|Harm /KAISER/|8 OCT 1839|Firrel Ostfriesland, Germany|1877||
+._7.html#I324|KAISER|Harm Janssen /KAISER/|19 DEC 1792|Banband , Ostfriesland, Germany|23 SEP 1869|Moro, Madison, Illinois|
+._7.html#I331|KAISER|Hei (Heye) /KAISER/|||||
+._8.html#I367|KAISER|Henry /KAISER/|1879|Comanche, Township Kansas|||
+._7.html#I328|KAISER|Ida /KAISER/|||||
+._8.html#I356|KAISER|Jann Hinrichs Janssen /KAISER/|BEF 1776||20 FEB 1816|Firrel Ostfriesland, Germany|
+._8.html#I360|KAISER|Jann Hinrichs Jennsen /KAISER/|24 APR 1784|Firrel Ostfriesland, Germany|30 JUL 1841||
+._8.html#I359|KAISER|Jurgen (George) /KAISER/|27 APR 1787|Bagband, Germany|31 MAR 1843||
+._8.html#I369|KAISER|Lydia /KAISER/|||||
+._7.html#I326|KAYSER|Hillena Jassen /KAYSER/|4 FEB 1806|Firrel Ostfriesland, Germany|10 OCT 1892|Phillipsburg, Phillips, Kansas|
+._7.html#I329|KAYSER|Johann /KAYSER/|||||
+._7.html#I350|KEISER|Ada (Ruth) /KEISER/|1872|Alton, Madison, Illinois|||
+._7.html#I334|KEISER|Aljet /KEISER/|1833||1834||
+._7.html#I335|KEISER|Aljet H. (Ira) /KEISER/|1 MAR 1835|Firrel, Hanover,Germany|14 MAY 1894|Alton, Madison, Illinois|
+._7.html#I337|KEISER|Almet (Alma) /KEISER/|1840||1848||
+._7.html#I333|KEISER|Anna H. /KEISER/|1831||1848||
+._7.html#I341|KEISER|Ellen (Ella) /KEISER/|1860|Alton, Madison, Illinois|18 NOV 1898|Alton, Madison, Illinois|
+._7.html#I338|KEISER|Frauke H.(Frances) /KEISER/|1842||1925||
+._8.html#I362|KEISER|Harm Janssen /KEISER/|8 OCT 1839|Firrel Ostfriesland, Germany|||
+._7.html#I348|KEISER|Harriet ( Hattie) /KEISER/|1868|Alton, Madison, Illinois|||
+._7.html#I332|KEISER|Herbert (Harbert) /KEISER/|||||
+._8.html#I355|KEISER|Irving Wallae /KEISER/|31 DEC 1875|Alton, Madison, Illinois|||
+._7.html#I336|KEISER|Jurgen (George) H. /KEISER/|1837||1911||
+._7.html#I346|KEISER|Lelia (LuLu) /KEISER/|1864|Alton, Madison, Illinois|||
+._7.html#I342|KEISER|Mary Elizabeth /KEISER/|25 MAR 1862|Alton, Madison, Illinois|14 JAN 1938|St. Louis MO|
+._12.html#I580|KING|Rachel /KING/|21 NOV 1925|HIGHLAND, DONIPHAN, KANSAS|||
+._1.html#I35|Kaiser|Minnie Ellen Irma Aluitmia /Kaiser/|30 MAY 1849|Moro, Madison, Illinois|13 NOV 1931|Milliken,Weld County, Colorado|
+._7.html#I325|Kayser|Hillena Janssen /Kayser/|4 FEB 1806|Firrel Ostfriesland, Germany|10 OCT 1892|Phillipsburg, Phillips, Ellinwood, Barton Kansas|
+._1.html#I17|Keating|Julia /Keating/|1855|Carlton, Illinois|12 JAN 1942|pueblo,Colorado|
+._8.html#I353|Keiser|Allen /Keiser/|1872|Alton, Madison, Illinois|7 JAN 1938|Alton, Madison, Illinois|
+._3.html#I113|Kirkpatrick|Electra /Kirkpatrick/|||||
+._7.html#I315|Klick|Jaimie /Klick/|16 FEB 1980||||
+._8.html#I391|Kruta|Craig /Kruta/|||||
+._8.html#I388|Kruta|Kevin /Kruta/|||||
+._8.html#I390|Kruta|Samantha /Kruta/|||||
+._8.html#I389|Kruta|Sean /Kruta/|||||
+._10.html#I471|LONGO|Jerry /LONGO/|||||
+._9.html#I442|LOTT|Evan /LOTT/|||||
+._10.html#I486|LOUISETTE|Marriel /LOUISETTE/|||||
+._2.html#I81|Larsdotter|Anna Maja /Larsdotter/|22 NOV 1802|kristberg, Sweden|28 FEB 1886|kristberg, Sweden|
+._2.html#I88|Larsson|Adam /Larsson/|15 DEC 1840|Kristberg, Sweden|24 SEP 1859|?|
+._4.html#I164|Larsson|Alfrid Leonard /Larsson/|7 JUL 1867||||
+._4.html#I166|Larsson|Alma Axelina /Larsson/|23 FEB 1873||||
+._4.html#I163|Larsson|Carl Alfrid /Larsson/|3 MAR 1863|Kristberg, Sweden|11 MAR 1864||
+._2.html#I84|Larsson|Carl August /Larsson/|28 APR 1835|Kristberg, Sweden|||
+._4.html#I165|Larsson|Hilma Alfrida /Larsson/|6 OCT 1870||||
+._2.html#I90|Larsson|Otto /Larsson/|8 MAY 1846||||
+._2.html#I89|Larsson|Peter /Larsson/|2 APR 1843||||
+._2.html#I85|Larsson|Petter Johan /Larsson/|12 FEB 1836|Kristberg, Sweden|16 MAR 1836|Kristberg, Sweden|
+._2.html#I86|Larsson|Sven /Larsson/|7 APR 1837||||
+._2.html#I82|Larsson|Swen /Larsson/|17 OCT 1797|trehorna Sweden|24 JAN 1884|kristberg, Sweden|
+._3.html#I150|Lindner|Carole Francis /Lindner/|29 JAN 1959||||
+._4.html#I151|Lindner-Vance|William Leo /Lindner-Vance/|5 JUN 1996||||
+._7.html#I327|MARTEMS|Anna Janssen /MARTEMS/|MAY 1791|Grossoldendorf,Germany|19 FEB 1829|Hessel, Germany|
+._8.html#I393|MARTENS|Wubke /MARTENS/|||21 AUG 1780||
+._12.html#I555|MARTINSON|Beverly Jean /MARTINSON/|20 APR 1927||||
+._9.html#I439|MARX|Bernard /MARX/|||||
+._10.html#I490|MEIER|Linda Kay /MEIER/|||||
+._10.html#I489|MEIER|Melvin Harvey /MEIER/|||||
+._10.html#I491|MEIER|William Russell /MEIER/|||||
+._8.html#I351|MILLER|William D. /MILLER/|||||
+._11.html#I523|MOLLIS|Maxine /MOLLIS/|31 MAR 1913||||
+._7.html#I347|Marfoot|Thomas /Marfoot/|||||
+._3.html#I107|Mazur|Courtney Viola /Mazur/|16 SEP 1993||||
+._3.html#I106|Mazur|Gary Lauce /Mazur/|14 DEC 1961|Santa Monica, California|||
+._7.html#I320|Mc Dowell|Patrick Ray /Mc Dowell/|10 JUL 1962|Flint, MI|||
+._7.html#I319|Miskill|Stethen /Miskill/|||||
+._6.html#I292|Mollermeyer|AnnaMarie Elisabeth /Mollermeyer/|||||
+._3.html#I147|Molly| /Molly/|1968|colorado Springs, Colorado|||
+._6.html#I266|Monroe|Jo Anne /Monroe/|17 DEC 1923|Goose Creek, Harris, Texas|||
+._3.html#I122|Moss|Dorothy Anne /Moss/|13 MAR 1930|Pueblo, Colorado|||
+._3.html#I127|Moss|Roger William /Moss/|17 DEC 1938||||
+._3.html#I121|Moss|William Franklin /Moss/|21 FEB 1898|near Silom Springs, Arkanas|5 SEP 1954|Pueblo, Colorado|
+._5.html#I213|Mossel|Adalaide /Mossel/|20 NOV 1947||||
+._5.html#I212|Mossel|Fredrick Berent /Mossel/|19 JUL 1946||||
+._5.html#I214|Mossel|James Edward /Mossel/|6 AUG 1950||||
+._5.html#I211|Mossel|John Berent /Mossel/|11 JUL 1921|Rockaway Beach, QUEENS NY|||
+._3.html#I145|Nasisse|Andre /Nasisse/|1 DEC 1947|pueblo, Colorado|||
+._4.html#I188|Nasisse|Carlo /Nasisse/|5 JAN 1994||||
+._3.html#I144|Nasisse|Christina Ruth /Nasisse/|17 NOV 1946|Boston, Mass|||
+._3.html#I114|Nasisse|Salvatore /Nasisse/|1913|Mass|1959||
+._4.html#I195|Nettles|Jamee , & Dan Simpson /Nettles/|||||
+._4.html#I196|Nettles|Jenesta /Nettles/|6 OCT 1975||||
+._4.html#I197|Nettles|Kip /Nettles/|15 DEC 1977||||
+._3.html#I148|O'Connell|William /O'Connell/|1940|?|||
+._13.html#I612|ODIE|Bert /ODIE/|||||
+._12.html#I588|OKANOUE|Masako Asako /OKANOUE/|||||
+._9.html#I440|OMIT|Raymond /OMIT/|||||
+._9.html#I441|OMIT|Sheila Rae /OMIT/|||||
+._1.html#I11|Oldfield|Jean Beatrice /Oldfield/|ABT 3 SEP 1932|Providence, Road Island|||
+._7.html#I323|Overholtz|Laura /Overholtz/|||||
+._2.html#I91|Ovist|Gustaf Eliasson /Ovist/|1782|Lerback, Orebro county|AFT 1811|unknown|
+._10.html#I468|PAOLI|Erina /PAOLI/|ABT 1920|ITALY|||
+._9.html#I443|PARKER|Diana Lynn /PARKER/|||||
+._10.html#I481|PEAK|Duane Elmer /PEAK/|||||
+._10.html#I480|PEAK|Edward Earl /PEAK/|||||
+._10.html#I482|PEAK|Frank /PEAK/|||||
+._4.html#I192|Packard|Gail /Packard/|6 JAN 1950|Potlatch , Idaho|||
+._4.html#I189|Paige|Jesse /Paige/|||||
+._9.html#I445|Parker|Andrew Golden /Parker/|||||
+._6.html#I281|Parker|Ardie Golden /Parker/|26 JAN 1884|Fountain Green, Hancock, Illinios|8 MAR 1955|Milliken,Weld County, Colorado|
+._9.html#I418|Parker|Barbara Sue /Parker/|18 APR 1944|DENVER, COLORADO|||
+._6.html#I268|Parker|Bette Florence /Parker/|21 FEB 1948|Baytown , Harris, Texas|||
+._5.html#I204|Parker|Betty Jean /Parker/|4 AUG 1925|SANTA MONICA, California|||
+._9.html#I433|Parker|Carolee Ann /Parker/|||||
+._6.html#I285|Parker|Carrie /Parker/|1924||1947||
+._6.html#I288|Parker|Charles L. /Parker/|1894|Phillipsburg, Phillips, Kansas||Kanorado, Sherman,KANAS|
+._6.html#I283|Parker|Clarence /Parker/|9 DEC 1890|Phillipsburg, Phillips, Kansas|14 AUG 1978|Santa Monica California|
+._9.html#I431|Parker|Corey Michael /Parker/|||||
+._9.html#I409|Parker|Delbert Lee /Parker/|||||
+._9.html#I406|Parker|Edith May /Parker/|18 DEC 1909|GLADE, PHILLIPS COUNTY, KANSAS|18 MAR 1943|DENVER, COLORADO|
+._6.html#I280|Parker|Elsie Pearl /Parker/|23 MAR 1877|Quincy, Adams, Ill|19 JAN 1953|Johnstown, Weld, Colorado|
+._9.html#I408|Parker|Eva Faye /Parker/|||||
+._6.html#I287|Parker|Florence ( Florie) Amelia /Parker/|11 SEP 1878|CARTHAGE,HANCOCK, ILL|26 NOV 1926|GOODLAND,SHERMAN, KS|
+._9.html#I416|Parker|Floyd Ardie /Parker/|4 JAN 1935|Central City, Gilpin Colrado|14 JUN 2004||
+._9.html#I407|Parker|Floyde Golden /Parker/|22 JUL 1912|BURLINGTON, KIT CARSON, COLORADO|30 DEC 1984|KENNEWICK, BENTON, WASHINGTON|
+._6.html#I265|Parker|Gregory Lee /Parker/|||||
+._5.html#I201|Parker|Harry Edward /Parker/|3 MAR 1898|Phillipsbugh, Pjipps Co. Kansas|16 JAN 1960|Santa MONICA, California|
+._6.html#I261|Parker|Janet Carol /Parker/|2 JUL 1957|Paridise , Butte,CA|||
+._9.html#I417|Parker|Jerry Lee /Parker/|23 MAY 1939|GOLDEN, JEFFERSON, COLRADO|||
+._6.html#I264|Parker|Linda Joan /Parker/|||||
+._9.html#I419|Parker|Linda Kay /Parker/|23 MAY 1949|RICHLAND, WA|||
+._6.html#I279|Parker|Luban /Parker/|7 MAR 1852|Colchester, Illinois|24 JAN 1924|Santa MONICA, California|
+._6.html#I269|Parker|Mary Monroe /Parker/|4 AUG 1952|Baytown , Harris, Texas|||
+._6.html#I282|Parker|Maude Alta /Parker/|8 OCT 1878|Phillipsburg, Phillips, Kansas|11 MAR 1966|Santa Monica California|
+._9.html#I444|Parker|Melissa Dawn /Parker/|||||
+._10.html#I497|Parker|Namomi Violet /Parker/|||||
+._6.html#I267|Parker|Patti Jo /Parker/|8 NOV 1945|hHouston, Texas|||
+._5.html#I205|Parker|Richard "Dick" Owen /Parker/|24 MAY 1928|Santa MONICA, California|26 JAN 2005|Glendale, Maricopa, AZ|
+._6.html#I259|Parker|Richard Alan /Parker/|24 MAY 1938|Santa MONICA, California|||
+._10.html#I498|Parker|Rita Lucille /Parker/|||||
+._5.html#I203|Parker|Robert "Bob" /Parker/|20 FEB 1923|Johnstown, Weld, Co|||
+._9.html#I420|Parker|Robert James /Parker/|18 JUL 1951|RICHLAND, WA|||
+._9.html#I434|Parker|Stephen Paul /Parker/|||||
+._6.html#I263|Parker|Steven Lee /Parker/|||||
+._6.html#I260|Parker|Susan Jane /Parker/|2 SEP 1947|Paridise , Butte,CA|||
+._6.html#I274|Parker.|James Robert /Parker./|12 NOV 1987|Dallas Texas|||
+._6.html#I273|Parker.|Matthew Monroe /Parker./|23 OCT 1986|Dallas Texas|||
+._6.html#I272|Parker.|Sarah Ann /Parker./|12 MAR 1982|dallas Texas|||
+._4.html#I180|Patch| /Patch/|||||
+._4.html#I183|Patch|Dylan /Patch/|31 MAR 1995|Louisville, Colorado|||
+._4.html#I181|Patch|Ryan /Patch/|5 JUL 1988|Boulder, Colorado|||
+._4.html#I182|Patch|Treavor /Patch/|2 JUL 1993|Louisville,Colorado|||
+._4.html#I162|Persdotter|Fredrika /Persdotter/|3 MAR 1833|Kristberg, Sweden|||
+._2.html#I92|Persdotter|Sara /Persdotter/|3 SEP 1788|Godegard, Sweden|UNKNOWN|?|
+._5.html#I207|Price|Mary /Price/|||||
+._13.html#I605|RIDDLE|Jane Ann /RIDDLE/|29 JUN 1947|ST JOSEPH , BUCHANAN, MO.|||
+._4.html#I152|Reasoner|Donald Scot /Reasoner/|12 SEP 1956||||
+._4.html#I155|Reasoner|Garrett Alan /Reasoner/|17 FEB 1991||||
+._4.html#I154|Reasoner|Gregory Scot /Reasoner/|8 JUL 1986||||
+._4.html#I153|Reasoner|Jill Ilene /Reasoner/|27 APR 1983||||
+._7.html#I310|Reed|Bonita Elaine /Reed/|||||
+._1.html#I6|Roberts|Edwin Douglas /Roberts/|29 JUN 1959|Tauton, Mass|||
+._1.html#I8|Roberts|Ian Michael /Roberts/|4 JUL 1981|Nashua, NH|||
+._1.html#I10|Roberts|James Arnold /Roberts/|ABT 19 DEC 1936|Fort Plain, New York|||
+._1.html#I7|Roberts|Joshua James /Roberts/|8 NOV 1979|Brookdale, California|||
+._1.html#I9|Roberts|Nicholas William /Roberts/|20 MAY 1985|Lowell, Mass?|||
+._4.html#I200|Rocci|Carrisa Lyn /Rocci/|9 OCT 1979|Greenfield, Ma.|||
+._6.html#I290|Rohrmann|Henriette Conradine Sagel \ Caroline /Rohrmann/|||1877||
+._1.html#I47|Roth|John Edward /Roth/|28 JAN 1919|Idaho Springs, Colorado|30 AUG 1984|Carmel, California|
+._1.html#I49|Roth|Shawn Elizabeth /Roth/|30 APR 1965|Monterey, California|||
+._1.html#I48|Roth|Stewart Michael /Roth/|14 JUN 1963|Monterey, California|||
+._7.html#I321|Rupp|Doris /Rupp/|2 JAN||||
+._3.html#I128|Russ|Jean /Russ/|21 DEC 1925||||
+._3.html#I146|Ruth| /Ruth/|1966|Colorado Springs, Colorado|||
+._10.html#I483|SANDSTROM|Charlotte /SANDSTROM/|||||
+._10.html#I456|SCOFIELD|Ardie Golden /SCOFIELD/|14 FEB 1904|GLADE, PHILLIPS COUNTY, KANSAS|2 JUL 1973|BERTHOUD,LARIMER, COLORADO|
+._10.html#I467|SCOFIELD|Baby Son /SCOFIELD/|||||
+._10.html#I485|SCOFIELD|Baby Son /SCOFIELD/|||||
+._10.html#I484|SCOFIELD|Carmen /SCOFIELD/|||||
+._10.html#I452|SCOFIELD|Clarence Edward /SCOFIELD/|1 DEC 1876|WILTON,MUSCATINE IOWA|30 OCT 1940|Johnstown, Weld, Colorado|
+._11.html#I538|SCOFIELD|EDITH FAY /SCOFIELD/|||||
+._10.html#I462|SCOFIELD|Earl Edward ( Bud ) /SCOFIELD/|27 JAN 1917|Johnstown, Weld, Colorado|31 OCT 1991|PARKER, DOUGLAS, COLORADO|
+._10.html#I461|SCOFIELD|Edith Fay /SCOFIELD/|13 FEB 1914|Johnstown, Weld, Colorado|||
+._10.html#I453|SCOFIELD|Fern Elizabeth /SCOFIELD/|20 FEB 1900|GLADE, PHILLIPS COUNTY, KANSAS|10 JAN 1990|PARKER, DOUGLAS, COLORADO|
+._10.html#I454|SCOFIELD|Frank Eugene /SCOFIELD/|28 APR 1901|GLADE, PHILLIPS COUNTY, KANSAS|8 AUG 1973|Daly Ciy, San Mateo, California|
+._10.html#I458|SCOFIELD|Hazel Louella /SCOFIELD/|12 NOV 1908|Kanorado, Sherman,KANAS|||
+._10.html#I457|SCOFIELD|Ivan Esco /SCOFIELD/|13 DEC 1905|GLADE, PHILLIPS COUNTY, KANSAS|NOV 1995|Franconville , France|
+._10.html#I470|SCOFIELD|Jeanette /SCOFIELD/|||||
+._10.html#I466|SCOFIELD|Josie Sue /SCOFIELD/|||||
+._10.html#I465|SCOFIELD|Mary Lou /SCOFIELD/|||||
+._10.html#I455|SCOFIELD|Myrle Lucille /SCOFIELD/|29 SEP 1902|GLADE, PHILLIPS COUNTY, KANSAS|9 JAN 1981|Bremerton, Kitsap, WA|
+._10.html#I463|SCOFIELD|Neva Lydia /SCOFIELD/|5 APR 1919|GROVER, WELD, COLORADO|||
+._10.html#I460|SCOFIELD|Ruby Josphine /SCOFIELD/|31 OCT 1911|Kanorado, Sherman,KANAS|||
+._10.html#I459|SCOFIELD|Velma Pearl /SCOFIELD/|16 NOV 1910|Kanorado, Sherman,KANAS|5 JAN 1911|Kanorado, Sherman,KANAS|
+._10.html#I495|SCOFIELD|Wilbur Davis /SCOFIELD/|||||
+._10.html#I469|SCOFIELD|William /SCOFIELD/|||||
+._11.html#I544|SHIPPS|Alvan James /SHIPPS/|||||
+._11.html#I543|SHIPPS|Lynetta Jo /SHIPPS/|||||
+._11.html#I542|SHIPPS|Lynn Eldon /SHIPPS/|||||
+._12.html#I587|SMITH|Amy Alexander /SMITH/|||||
+._12.html#I585|SMITH|Benjamin John /SMITH/|||||
+._12.html#I586|SMITH|Bonnie Rickman /SMITH/|||||
+._12.html#I584|SMITH|David /SMITH/|8 DEC 1952|BOULDER, COLORADO|||
+._12.html#I551|SPERRY|Betty Lee /SPERRY/|||||
+._12.html#I552|SPERRY|Jack Eugene /SPERRY/|||||
+._11.html#I550|SPERRY|Phyliss Mae /SPERRY/|||||
+._12.html#I553|SPERRY|Richard Dale /SPERRY/|||||
+._11.html#I549|SPERRY|Wesley Dale (Toddy) /SPERRY/|||||
+._9.html#I426|STEELE|Peggy Jane /STEELE/|||||
+._12.html#I561|STONEKING|J. W. /STONEKING/|||||
+._7.html#I311|Severson|Gary L /Severson/|||||
+._7.html#I313|Severson|Olivia /Severson/|20 MAY 1975||||
+._7.html#I312|Severson|Scott /Severson/|30 APR 1980||||
+._7.html#I317|Severson|Tyler /Severson/|1 FEB 2006||||
+._5.html#I228|Shell|Rosa A. /Shell/|1863|Terre Haute, Vigo, IN|AUG 1930||
+._4.html#I161|Skold|Johanna Sofia /Skold/|20 OCT 1838|Kristberg, Sweden|8 MAR 1863||
+._8.html#I354|Smith|Edna Tilton /Smith/|||||
+._5.html#I225|Spencer|Emma /Spencer/|9 AUG 1860||DEC 1954||
+._1.html#I50|Stewart|Agnes /Stewart/|UNKNOWN||UNKNOWN||
+._3.html#I130|Stewart|Amanda /Stewart/|||||
+._1.html#I15|Stewart|Betty Ruth /Stewart/|21 AUG 1927|La Junta, Colorado|||
+._3.html#I142|Stewart|Bill /Stewart/|UNKNOWN||||
+._3.html#I139|Stewart|Dorthy /Stewart/|UNKNOWN||||
+._2.html#I51|Stewart|Ellen Elizabeth /Stewart/|14 APR 1889|pueblo, Colorado|16 NOV 1972|Pueblo, Colorado|
+._3.html#I143|Stewart|Grace /Stewart/|UNKNOWN||||
+._1.html#I2|Stewart|Jean Elise /Stewart/|26 JUL 1920|Pueblo, Pueblo County, Colorado|||
+._3.html#I141|Stewart|Julianne /Stewart/|UNKNOWN||||
+._2.html#I98|Stewart|Margaret /Stewart/|1924||18 SEP 1979||
+._3.html#I138|Stewart|Mary Ellen /Stewart/|UNKNOWN||||
+._2.html#I54|Stewart|Mary Esther /Stewart/|1888|Pueblo, Colorado|23 SEP 1920|Pueblo, Colorado|
+._2.html#I57|Stewart|Nancy /Stewart/|ABT 1946||||
+._2.html#I58|Stewart|Patricia K /Stewart/|26 MAR 1947||||
+._2.html#I59|Stewart|Peggy /Stewart/|26 AUG 1948||||
+._3.html#I140|Stewart|Robert /Stewart/|UNKNOWN||||
+._2.html#I53|Stewart|Robert J /Stewart/|1898|Pueblo, Colorado|30 JUN 1984|Pueblo, Colorado|
+._1.html#I16|Stewart|Thomas /Stewart/|1859|Glasgow, Scotland|9 OCT 1930|Pueblo,Colorado|
+._1.html#I14|Stewart|Thomas Albert ,Jr /Stewart/|9 JAN 1917|Pueblo, Colorado|22 MAY 2003|BRADENTON,MANATEE COUNTY,FLORIDA|
+._2.html#I56|Stewart|Thomas Alivin /Stewart/|5 JUN 1940||28 AUG 1943||
+._1.html#I12|Stewart|Thomas Andrew /Stewart/|14 MAY 1893|Pueblo, Colorado|19 JUN 1974|Newton, Sussex County, New Jersey|
+._2.html#I52|Stewart|Wiliam /Stewart/|1895||30 AUG 1971|Pueblo, Colorado|
+._1.html#I31|Still|Nancy /Still/|26 SEP 1796|County Down,Ireland [Northern]|3 OCT 1872||
+._3.html#I115|Strohmer|Anne E /Strohmer/|30 SEP 1901|Madeberg, Germany|6 MAR 1978||
+._2.html#I87|Svensdotter|Brita Maja /Svensdotter/|31 DEC 1838||||
+._2.html#I83|Svensdotter|Lisa /Svensdotter/|5 FEB 1828||||
+._2.html#I68|Svensdotter|Sophia /Svensdotter/|11 OCT 1830|Kristberg, Sweden|1870|Macon, Mississippi?|
+._6.html#I284|TITTLE|Anne Lucinda /TITTLE/|||||
+._12.html#I569|TRIMBLE|Anna Maude /TRIMBLE/|28 NOV 1883|Phillipsburg, Phillips, Kansas|||
+._12.html#I595|TRIMBLE|Bryon Donald /TRIMBLE/|17 NOV 1988|Sacramento, California|||
+._12.html#I583|TRIMBLE|Debra Gay /TRIMBLE/|25 OCT 1955|LONGMONT, COLRADO|||
+._12.html#I575|TRIMBLE|Donald Foster /TRIMBLE/|23 FEB 1925|Johnstown, Weld, Colorado|||
+._12.html#I573|TRIMBLE|Earlene /TRIMBLE/|18 NOV 1921|MEADE, WELD COLORADO|||
+._12.html#I560|TRIMBLE|Eliza /TRIMBLE/|15 NOV 1877|IOWA|||
+._12.html#I562|TRIMBLE|Elizabeth /TRIMBLE/|25 JAN 1863||12 APR 1874||
+._12.html#I568|TRIMBLE|Elizabeth "Lizzie" /TRIMBLE/|28 FEB 1881|Phillipsburg, Phillips, Kansas|||
+._12.html#I581|TRIMBLE|Gregory King /TRIMBLE/|10 JAN 1950|LONGMONT, COLRADO|10 JAN 1950|LONGMONT, COLRADO|
+._12.html#I574|TRIMBLE|Ivan J. /TRIMBLE/|25 AUG 1925|Johnstown, Weld, Colorado|30 DEC 1987|LONGMONT, COLRADO|
+._6.html#I286|TRIMBLE|James /TRIMBLE/|22 JAN 1874|MiCHIGAN|18 APR 1900|MARVIN,PHILLLIPS, KANSAS|
+._12.html#I591|TRIMBLE|James Allen /TRIMBLE/|9 JUL 1953|KREMMLING, GRAND, COLORADO|||
+._10.html#I500|TRIMBLE|James Earl /TRIMBLE/|13 OCT 1898|GLADE, PHILLIPS COUNTY, KANSAS|5 JUN 1958|LONGMONT, COLRADO|
+._12.html#I567|TRIMBLE|Jane "Jennie" /TRIMBLE/|8 SEP 1875|MiCHIGAN|||
+._12.html#I593|TRIMBLE|Janis Kay /TRIMBLE/|24 JAN 1960|Sacramento, California|||
+._12.html#I592|TRIMBLE|Jeanne Elaine /TRIMBLE/|26 AUG 1957|Sacramento, California|||
+._12.html#I559|TRIMBLE|John /TRIMBLE/|7 SEP 1879|Phillipsburg, Phillips, Kansas|||
+._12.html#I589|TRIMBLE|Kristopher /TRIMBLE/|||||
+._12.html#I564|TRIMBLE|Margret "Mattie" /TRIMBLE/|16 OCT 1868|CANADA|1 APR 1874||
+._12.html#I565|TRIMBLE|Martha /TRIMBLE/|20 NOV 1870||SEP 1894||
+._12.html#I566|TRIMBLE|Mary /TRIMBLE/|8 MAY 1872||20 JUL 1884||
+._12.html#I582|TRIMBLE|Michael J. /TRIMBLE/|21 SEP 1951|LONGMONT, COLRADO|||
+._12.html#I563|TRIMBLE|Sarah /TRIMBLE/|11 SEP 1864||10 APR 1874||
+._12.html#I570|TRIMBLE|Sophia /TRIMBLE/|2 NOV 1885|Phillipsburg, Phillips, Kansas|||
+._12.html#I556|TRIMBLE|Thomas /TRIMBLE/|10 MAR 1830|IRELAND|24 APR 1900|Phillipsburg, Phillips, Kansas|
+._10.html#I499|TRIMBLE|Virgil Leroy /TRIMBLE/|30 DEC 1894||8 JUL 1897|GLADE, PHILLIPS COUNTY, KANSAS|
+._12.html#I571|TRIMBLE|William /TRIMBLE/|9 SEP 1887|Phillipsburg, Phillips, Kansas|||
+._5.html#I239|Timm|George /Timm/|19 APR 1869||21 FEB 1921||
+._5.html#I240|Timm|Troy O. /Timm/|||||
+._3.html#I119|Titman|Annalee /Titman/|5 SEP 1922|Aurora, Nebraska|||
+._6.html#I252|Troy|Brazilla /Troy/|||||
+._5.html#I249|Troy|Ellen /Troy/|||||
+._1.html#I29|Troy|George Washington /Troy/|22 APR 1810|Batavia ,Clermont, Ohio|7 APR 1888|Rice County, KS  ( near  Ellenwood KS)|
+._5.html#I247|Troy|John H /Troy/|||||
+._6.html#I251|Troy|Julia /Troy/|||||
+._5.html#I246|Troy|Louisa /Troy/|||||
+._5.html#I250|Troy|Martha /Troy/|||||
+._5.html#I245|Troy|Mary /Troy/|||||
+._5.html#I243|Troy|Nancy /Troy/|1843|Jeffersn County Iowa|9 JUL 1886|Pawnee County,Kansas|
+._5.html#I248|Troy|Prilla /Troy/|||||
+._3.html#I102|Turner|Betty /Turner/|UNKNOWN||24 AUG 1960||
+._8.html#I386|UNKNOWN| /UNKNOWN/|||||
+._13.html#I610|UNKNOWN|MARY ELIZABETH /UNKNOWN/|||||
+._13.html#I603|VAN DUKER|Abby Caroline /VAN DUKER/|19 DEC 1991|||`|
+._13.html#I604|VAN DUKER|Heidi Catherine /VAN DUKER/|3 OCT 1994||||
+._13.html#I602|VAN DUKER|Mark Charles /VAN DUKER/|15 DEC 1963||||
+._3.html#I123|Vance|Delbert B. /Vance/|17 OCT 1925|Louisville, Kentucky|14 OCT 1993|Oakland, California|
+._3.html#I126|Vance|Elizabeth McCann /Vance/|12 SEP 1960|Oakland, California|||
+._3.html#I124|Vance|Kevin William /Vance/|21 JAN 1959|Oakland, California|||
+._3.html#I125|Vance|Seth Roger /Vance/|15 MAR 1963|Oakland, California|||
+._12.html#I599|WAGNER|Darrin David /WAGNER/|13 AUG 1970|OKHOLAMA CITY, OK.|||
+._12.html#I576|WAGNER|David /WAGNER/|28 JUN 1917|LONGMONT, COLRADO|||
+._12.html#I577|WAGNER|David Earl (Dewey) /WAGNER/|8 NOV 1943|LONGMONT, COLRADO|||
+._13.html#I609|WAGNER|David Lee /WAGNER/|4 SEP 1983|DENVER, COLORADO|||
+._12.html#I598|WAGNER|Davina Ann /WAGNER/|27 MAY 1965|GREELEY, WELD COLORADO|||
+._12.html#I578|WAGNER|Gerald Eugene /WAGNER/|31 DEC 1945|LONGMONT, COLRADO|||
+._12.html#I579|WAGNER|Herbert Lee /WAGNER/|2 JUN 1948|LONGMONT, COLRADO|||
+._13.html#I606|WAGNER|Matthew Ryan /WAGNER/|19 JUL 1977|GREELEY, WELD COLORADO|||
+._13.html#I607|WAGNER|Michael John /WAGNER/|26 JUL 1979|GREELEY, WELD COLORADO|||
+._12.html#I600|WAGNER|Sarah Dawn /WAGNER/|29 DEC 1974|OKHOLAMA CITY, OK.|||
+._13.html#I601|WAGNER|Sharla Ann /WAGNER/|30 APR 1979|OKHOLAMA CITY, OK.|||
+._12.html#I557|WARD|Sarah Cathrine /WARD/|12 OCT 1846|ALLEGHENNY COUNTY,PENNSYLVANIA|31 OCT 1915||
+._9.html#I414|WILLIS|CATHY ANN /WILLIS/|20 DEC 1955|GREELEY, WELD COLORADO|||
+._9.html#I411|WILLIS|Edward /WILLIS/|MAY 1927||MAY 1927||
+._9.html#I412|WILLIS|Ivan Truman /WILLIS/|7 JAN 1929|Milliken,Weld County, Colorado|19 FEB 1996||
+._9.html#I410|WILLIS|Truman Edward /WILLIS/|18 AUG 1904|SOUTH OF JOHNSTOWN, COLRADO|1940|LONGMONT, COLRADO|
+._8.html#I375|WILLMS|Emma Amelia /WILLMS/|20 OCT 1882|Ellinwood.Barton,Kansas|2 APR 1944|Turner, Marion, Oregon|
+._10.html#I451|WINTERS|Frank Leo /WINTERS/|||ABT JUN 1918||
+._9.html#I415|WINTERS|Yative Thomascine Eustice /WINTERS/|17 JAN 1918|GEORGETOWN CLEAR CREEK, COLORADO|16 DEC 1995|KENNEWICK, BENTON, WASHINGTON|
+._12.html#I596|WONG|Donald /WONG/|5 AUG 1953|Sacramento, California|||
+._10.html#I477|WOOD|Boyd /WOOD/|||||
+._10.html#I476|WOOD|Merlyn /WOOD/|||||
+._10.html#I478|WOOD|Norma /WOOD/|||||
+._10.html#I475|WOOD|Roy /WOOD/|||||
+._12.html#I590|WOODS|Shirley Mae /WOODS/|9 AUG 1928|WIGGINS, MORGAN, COLORADO|||
+._3.html#I108|Walmesly|Edward A /Walmesly/|||||
+._1.html#I32|Webb| /Webb/|ABT 1775|Ireland|Dead|Jefferson Co,IA|
+._6.html#I256|Webb|Ann E. /Webb/|1836|Hunington County, Penn|||
+._1.html#I26|Webb|Charles Owen /Webb/|27 SEP 1897|Paxico, Waubaunnee, kansas|21 NOV 1956|Pueblo, Colorado|
+._5.html#I229|Webb|Claude /Webb/|||||
+._5.html#I209|Webb|Donald /Webb/|6 DEC 1925||||
+._5.html#I232|Webb|Edgar /Webb/|||||
+._5.html#I218|Webb|Eva May /Webb/|4 APR 1869|Bativia, Jefferson ,Iowa|||
+._1.html#I21|Webb|Fleeta Faye /Webb/|13 MAR 1902|Lawrence, Kansas|23 FEB 1989|Denver, Colorado|
+._1.html#I27|Webb|Florence Esther /Webb/|14 MAY 1900|Paxico, Wanbaumee, Kansas|29 OCT 1991|Canoga Park, Los Angeles, California|
+._5.html#I223|Webb|Hazel Merle /Webb/|||||
+._5.html#I219|Webb|Herbert Otto /Webb/|23 JAN 1871|Bativia, Jefferson ,Iowa|21 FEB 1913|Larned, Pawnee, Kansas|
+._1.html#I30|Webb|Jacob /Webb/|1800|NJ|ABT 1885||
+._6.html#I255|Webb|James S. /Webb/|1834|Hunington County, Penn|||
+._5.html#I216|Webb|Lowery Waldo /Webb/|28 FEB 1863|Jefferson Co, Iowa|1941|Larned, Pawnee, Kansas|
+._6.html#I253|Webb|Mary Jane /Webb/|1832|Hunington County, Penn||Iowa|
+._5.html#I226|Webb|Maude /Webb/|||||
+._5.html#I221|Webb|Minnie Ethzelda /Webb/|19 JAN 1881|19 Jan 1881|24 AUG 1950|Greeley, Weld, CO|
+._5.html#I217|Webb|Nancy Rosetta /Webb/|5 AUG 1865|Bativia, Jefferson ,Iow|23 JUL 1939|Milliken,Weld, CO|
+._1.html#I24|Webb|Owen Edgar /Webb/|12 DEC 1866|Batavia, Jefferson, Iowa|7 MAR 1955|Milliken Colorado|
+._5.html#I220|Webb|Raleigh (Rollin)Troy /Webb/|4 AUG 1878|LARNED, PAWNEE, KANSAS|3 DEC 1932|COACHELLA VALLEY, RIVERSIDE CA,|
+._5.html#I210|Webb|Royal Arthor /Webb/|10 FEB 1928||||
+._5.html#I206|Webb|Royal William /Webb/|15 JUN 1903|Paxico, Wanbaumee, Kansas|3 FEB 1981|Santa MONICA, California|
+._5.html#I224|Webb|THELMA LORRAINE /Webb/|||||
+._5.html#I227|Webb|Therodore /Webb/|||||
+._5.html#I230|Webb|Wallie /Webb/|||||
+._5.html#I231|Webb|Willa /Webb/|||||
+._1.html#I28|Webb|William P /Webb/|28 OCT 1839|Huntington Co, PA|23 MAY 1904|Larned ,Pawnee,KS|
+._5.html#I208|Webb|William Wesley /Webb/|3 JUL 1923||||
+._5.html#I215|Webb|William Winfield /Webb/|17 NOV 1861|Bativia, Jefferson ,Iow|5 AUG 1955|Beaumont,Riverside, California (near Palm Springs)|
+._7.html#I306|Wedg|Kathleen A. /Wedg/|||||
+._3.html#I101|Western|Henry /Western/|28 OCT 1888|Bradinoch, England|13 SEP 1968|Denver, Colorado|
+._1.html#I19|Westfall|Anna Belle /Westfall/|21 AUG 1865|Glascon, Henry county, Iowa|10 NOV 1946|Pueblo, Colorado|
+._4.html#I157|Westfall|James Calvin /Westfall/|UNKNOWN||||
+._3.html#I112|Westfall|John /Westfall/|||||
+._5.html#I237|Wheaton|Clive /Wheaton/|||||
+._5.html#I238|Wheaton|Hazel (Boyd) /Wheaton/|||10 OCT 1936||
+._5.html#I236|Wheaton|Kenn Warner /Wheaton/|||||
+._5.html#I234|Wheaton|Lossie (Bales) /Wheaton/|||||
+._5.html#I235|Wheaton|Mertie (Sellers) /Wheaton/|16 OCT 1887||10 OCT 1977|Johnstown, Weld, Co|
+._5.html#I233|Wheaton|O. G. /Wheaton/|||||
+._2.html#I95|Whitlock|Dorothy Jean /Whitlock/|20 JUN 1919|Pueblo, Colorado|||
+._2.html#I93|Whitlock|Howard Edward /Whitlock/|1892|?|11 JUN 1969|Pueblo, Colorado|
+._2.html#I96|Whitlock|Howard Edward ,Jr /Whitlock/|2 AUG 1923|Pueblo, Colorado|||
+._4.html#I186|Whitlock|Laura /Whitlock/|||||
+._4.html#I185|Whitlock|Randy /Whitlock/|||||
+._2.html#I94|Whitlock|Virginia Louise /Whitlock/|2 NOV 1914|Pueblo, Colorado|17 JUN 1986|denver, Colorado|
+._3.html#I133|Wiegard|Minnie /Wiegard/|||||
+._6.html#I298|Willms|Carolin C. /Willms/|||||
+._7.html#I303|Willms|Caroline Agusta (Carrie) /Willms/|10 JUN 1885|Ellinwood.Barton,Kansas|||
+._1.html#I34|Willms|Charles Adams Augusta /Willms/|24 APR 1849|Herman,Gasonade, Missouri|3 SEP 1929|Milliken,Weld, CO|
+._6.html#I300|Willms|Daniel Edward /Willms/|9 SEP 1875|Fosterburg, Madison County, Illinois|11 JUL 1939|Long Beach, Ca|
+._6.html#I294|Willms|Emily Amelia Caroline /Willms/|||||
+._1.html#I25|Willms|Esther Caroline /Willms/|21 MAR 1873|Fosterburg,Madison, Illinois|15 FEB 1954|Johnstown,Colorado|
+._6.html#I297|Willms|Hannah /Willms/|||||
+._6.html#I289|Willms|Heinrich Christolph /Willms/|25 NOV 1816|Lemgo, Brake/Lippe, Detmold, Germany|23 MAR 1906|Hutchinson ,KS|
+._7.html#I304|Willms|Henry Charles /Willms/|11 JUL 1887|Ellinwood, Barton, Ks|13 SEP 1957|Littlel Rock Arkansas|
+._6.html#I293|Willms|Henry Simon /Willms/|||||
+._6.html#I291|Willms|Johann Friedrich /Willms/|||||
+._6.html#I296|Willms|Louis Henry /Willms/|||||
+._6.html#I295|Willms|Malinda Magdalina /Willms/|||||
+._7.html#I307|Willms|Margaret Lenore /Willms/|||||
+._6.html#I299|Willms|Martha ( Mattie) /Willms/|||||
+._7.html#I301|Willms|William Walter /Willms/|22 MAY 1878|Ellinwood, Barton, Ks|17 MAR 1946|Medicine Lodge, KS|
+._5.html#I222|Wilson|Leah Ann /Wilson/|||||
+._3.html#I149|Woods|Phillip /Woods/|UNKNOWN||UNKNOWN||
+._1.html#I41|Wormington|Margie /Wormington/|18 NOV 1931|TORRANCE, CALIFORNIA|||
+._5.html#I241|Young|Howard /Young/|8 NOV 1872|Palmyra,, Marion MO|18 OCT 1957|Greeley, Weld, CO|
+._5.html#I242|Young|Lottye Ethzelda /Young/|||||
+._12.html#I597|ZIMBELMAN|Sherran An /ZIMBELMAN/|||||
+._2.html#I99|[Unknown]|Marie /[Unknown]/|1897||27 OCT 1985|Pueblo, Colorado|
+._2.html#I97|[Unkown]|Mary M /[Unkown]/|1893||5 FEB 1977|Pueblo, Colorado|
