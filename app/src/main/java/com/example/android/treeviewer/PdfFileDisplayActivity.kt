@@ -51,7 +51,7 @@ class PdfFileDisplayActivity : AppCompatActivity() {
          */
         val fileNames = arrayOf(
             "sample.pdf",
-            "sample.pdf",
+            "everybody.pdf",
             "sample.pdf",
             "sample.pdf",
             "sample.pdf",
@@ -65,13 +65,13 @@ class PdfFileDisplayActivity : AppCompatActivity() {
          */
         val titles = arrayOf(
             "sample.pdf from sample pdf renderer",
-            "Emerson The Conduct of Life",
-            "Emerson Essays, Second Series",
-            "Emerson Poems",
-            "Emerson Representative Men",
-            "Thoreau Excursions",
-            "Bulfinch’s Mythology",
-            "Nietzshe's Philosophy"
+            "everybody.pdf",
+            "sample.pdf",
+            "sample.pdf",
+            "sample.pdf",
+            "sample.pdf",
+            "sample.pdf",
+            "sample.pdf"
         )
     }
 }
