@@ -173,15 +173,15 @@ public class ApkFileProvider extends ContentProvider implements PipeDataWriter<I
 
     /**
      * Implement this to handle requests for the MIME type of the data at the given URI. We always
-     * return the String "image/jpeg" for this demo.
+     * return the String ""text/html" for this demo.
      *
      * @param uri the URI to query.
      * @return a MIME type string, or {@code null} if there is no type.
      */
     @Override
     public String getType(@NonNull Uri uri) {
-        // For this sample, assume all files are JPEGs.
-        return "image/jpeg";
+        // For this sample, assume all files are html.
+        return "text/html";
     }
 
     /**
@@ -201,7 +201,7 @@ public class ApkFileProvider extends ContentProvider implements PipeDataWriter<I
      * <p>
      * We then create and return a {@code ParcelFileDescriptor} constructed using the {@code ParcelFileDescriptor}
      * returned by {@code openPipeHelper} which it builds using {@code uri} as the URI whose data is to be written,
-     * a mime type of "image/jpeg", a null option Bundle, a {@code FileInputStream} created from {@code asset}
+     * a mime type of "text/html", a null option Bundle, a {@code FileInputStream} created from {@code asset}
      * as the arguments to the function that will actually stream the data, and "this" as the
      * {@code PipeDataWriter<InputStream>} that will actually stream the data from the {@code FileInputStream}
      * argument.
@@ -228,9 +228,10 @@ public class ApkFileProvider extends ContentProvider implements PipeDataWriter<I
             }
             int cookie = Integer.parseInt(path.substring(1, off));
             String assetPath = path.substring(off + 1);
+            Log.i("ApkFileProvider", "Providing:" + assetPath);
             //noinspection ConstantConditions
             AssetFileDescriptor asset = getContext().getAssets().openNonAssetFd(cookie, assetPath);
-            return new ParcelFileDescriptor(openPipeHelper(uri, "image/jpeg", null, asset.createInputStream(), this));
+            return new ParcelFileDescriptor(openPipeHelper(uri, "text/html", null, asset.createInputStream(), this));
         } catch (IOException e) {
             throw new FileNotFoundException("Unable to open " + uri);
         }

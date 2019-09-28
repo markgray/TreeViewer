@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <activity android:name=".ApkFileSendActivity"></activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ApkFileSendActivity" />
         <activity android:name=".PdfFileDisplayActivity" />
         <activity android:name=".HtmlFileActivity" />
         <activity
@@ -31,9 +32,10 @@
 
         <provider
             android:name=".ApkFileProvider"
-            android:authorities="com.example.android.treeviewer.ApkFileProvider"
-            android:exported="false"
-            android:grantUriPermissions="true" />
+            android:authorities="com.example.android.treeviewer.apkfileprovider"
+            android:exported="true"
+            android:grantUriPermissions="true"
+            tools:ignore="ExportedContentProvider" />
     </application>
 
 </manifest>

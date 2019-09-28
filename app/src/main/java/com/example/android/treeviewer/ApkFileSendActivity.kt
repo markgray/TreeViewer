@@ -1,12 +1,15 @@
 package com.example.android.treeviewer
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.ClipData
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.view.View
+import android.util.TypedValue
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class ApkFileSendActivity : AppCompatActivity() {
 
@@ -28,9 +31,37 @@ class ApkFileSendActivity : AppCompatActivity() {
         button.text = description
         button.setOnClickListener {
             Toast.makeText(it.context, "$description was clicked", Toast.LENGTH_LONG).show()
+            val intent = makeIntent(resourceID)
+            if (intent.resolveActivity(packageManager) != null) {
+                startActivity(intent)
+            }
         }
         parent.addView(button)
     }
+
+    private fun makeIntent(resourceID: Int): Intent {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        intent.setClassName(
+            "com.android.chrome",
+            "com.google.android.apps.chrome.Main"
+        )
+        val b: Uri.Builder = Uri.Builder()
+        b.scheme("content")
+        b.authority("com.example.android.treeviewer.apkfileprovider")
+        val tv = TypedValue()
+        resources.getValue(resourceID, tv, true)
+        b.appendEncodedPath(tv.assetCookie.toString())
+        b.appendEncodedPath(tv.string.toString())
+        val uri: Uri = b.build()
+        intent.type = "text/html"
+        intent.putExtra(Intent.EXTRA_STREAM, uri)
+        intent.data = uri
+        intent.clipData = ClipData.newUri(contentResolver, "html", uri)
+
+        return intent
+    }
+
 
     companion object {
         val resourceIDS = intArrayOf(
