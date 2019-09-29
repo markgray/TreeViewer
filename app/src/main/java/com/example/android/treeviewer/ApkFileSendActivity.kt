@@ -57,8 +57,6 @@ class ApkFileSendActivity : AppCompatActivity() {
         )
         intent.setDataAndType(uri, "text/html")
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-        intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION)
-        intent.clipData = ClipData.newUri(contentResolver, "html", uri)
 
         return intent
     }

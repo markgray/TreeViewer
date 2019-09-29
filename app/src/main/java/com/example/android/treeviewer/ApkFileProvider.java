@@ -16,6 +16,7 @@
 
 package com.example.android.treeviewer;
 
+import java.io.FileDescriptor;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -186,9 +187,9 @@ public class ApkFileProvider extends ContentProvider implements PipeDataWriter<I
 
     /**
      * Override this to handle requests to open a file blob. Wrapped in a try block intended to catch
-     * IOException, we set {@code String path} to the decoded path of {@code Uri uri}
-     * (Since {@code uri} is "content://com.example.android.treeviewer.ApkFileProvider/2/res/drawable-nodpi-v4/jellies.jpg"
-     * "/2/res/drawable-nodpi-v4/jellies.jpg" in our case), locate the index of the '/' character
+     * IOException, we set {@code String path} to the decoded path of {@code Uri uri}     *
+     * (Since {@code uri} is "content://com.example.android.treeviewer.apkfileprovider/7/res/raw/chapter8.html"
+     * "/7/res/raw/chapter8.html" in our case), locate the index of the '/' character
      * following the cookie to set {@code off} and if we don't find it where we expect it we throw
      * FileNotFoundException. We extract the cookie substring ("2" in our case) and convert it to
      * {@code int cookie}, and set {@code String assetPath} to the rest of the {@code path} following
@@ -270,7 +271,13 @@ public class ApkFileProvider extends ContentProvider implements PipeDataWriter<I
         // Transfer data from the asset to the pipe the client is reading.
         byte[] buffer = new byte[8192];
         int n;
-        FileOutputStream fout = new FileOutputStream(output.getFileDescriptor());
+        final FileDescriptor fileDescriptor = output.getFileDescriptor();
+        if(!fileDescriptor.valid()) {
+            Log.i(TAG, "Output File Descriptor is not valid!");
+        } else {
+            Log.i(TAG, "Output File Descriptor IS valid?");
+        }
+        FileOutputStream fout = new FileOutputStream(fileDescriptor);
         try {
             while ((n = args.read(buffer)) >= 0) {
                 fout.write(buffer, 0, n);
