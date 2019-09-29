@@ -40,12 +40,7 @@ class ApkFileSendActivity : AppCompatActivity() {
     }
 
     private fun makeIntent(resourceID: Int): Intent {
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-        intent.setClassName(
-            "com.android.chrome",
-            "com.google.android.apps.chrome.Main"
-        )
+
         val b: Uri.Builder = Uri.Builder()
         b.scheme("content")
         b.authority("com.example.android.treeviewer.apkfileprovider")
@@ -54,9 +49,15 @@ class ApkFileSendActivity : AppCompatActivity() {
         b.appendEncodedPath(tv.assetCookie.toString())
         b.appendEncodedPath(tv.string.toString())
         val uri: Uri = b.build()
-        intent.type = "text/html"
-        intent.putExtra(Intent.EXTRA_STREAM, uri)
-        intent.data = uri
+
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.setClassName(
+            "com.android.chrome",
+            "com.google.android.apps.chrome.Main"
+        )
+        intent.setDataAndType(uri, "text/html")
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+        intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION)
         intent.clipData = ClipData.newUri(contentResolver, "html", uri)
 
         return intent
