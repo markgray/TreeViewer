@@ -43,7 +43,7 @@ class ApkFileSendActivity : AppCompatActivity() {
 
         val b: Uri.Builder = Uri.Builder()
         b.scheme("content")
-        b.authority("com.example.android.treeviewer.apkfileprovider")
+        b.authority("com.example.android.treeviewer.ApkFileProvider")
         val tv = TypedValue()
         resources.getValue(resourceID, tv, true)
         b.appendEncodedPath(tv.assetCookie.toString())

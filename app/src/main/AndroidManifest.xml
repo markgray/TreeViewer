@@ -32,7 +32,7 @@
 
         <provider
             android:name=".ApkFileProvider"
-            android:authorities="com.example.android.treeviewer.apkfileprovider"
+            android:authorities="com.example.android.treeviewer.ApkFileProvider"
             android:exported="true"
             android:grantUriPermissions="true"
             tools:ignore="ExportedContentProvider" />
