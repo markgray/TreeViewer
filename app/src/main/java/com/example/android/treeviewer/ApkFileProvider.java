@@ -182,7 +182,27 @@ public class ApkFileProvider extends ContentProvider implements PipeDataWriter<I
     @Override
     public String getType(@NonNull Uri uri) {
         // For this sample, assume all files are html.
+        Log.i(TAG, "getType called for: " + uri);
         return "text/html";
+    }
+
+    /**
+     * Called by a client to determine the types of data streams that this
+     * content provider supports for the given URI.  The default implementation
+     * returns {@code null}, meaning no types.  If your content provider stores data
+     * of a particular type, return that MIME type if it matches the given
+     * mimeTypeFilter.  If it can perform type conversions, return an array
+     * of all supported MIME types that match mimeTypeFilter.
+     *
+     * @param uri The data in the content provider being queried.
+     * @param mimeTypeFilter The type of data the client desires.  May be
+     * a pattern, such as *&#47;* to retrieve all possible data types.
+     * @return Returns {@code null} if there are no possible data streams for the
+     * given mimeTypeFilter.  Otherwise returns an array of all available
+     * concrete MIME types.
+     */
+    public String[] getStreamTypes(Uri uri, String mimeTypeFilter) {
+        return new String[]{"text/html"};
     }
 
     /**
