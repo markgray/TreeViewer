@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         addButton(HtmlFileActivity::class.java, "Html File Display", linearLayout)
         addButton(PdfFileDisplayActivity::class.java, "Pdf File Display", linearLayout)
         addButton(ApkFileSendActivity::class.java, "Chrome File Display", linearLayout)
+        addButton(ChromeFileActivity::class.java, "Chrome FileProvider usage", linearLayout)
     }
 
     /**

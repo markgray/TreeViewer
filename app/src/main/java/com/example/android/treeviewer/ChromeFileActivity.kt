@@ -1,71 +1,69 @@
 package com.example.android.treeviewer
 
-import android.content.ClipData
-import android.content.Context
 import android.content.Intent
 import android.net.Uri
-import android.os.Bundle
-import android.util.TypedValue
-import android.view.ViewGroup
-import android.widget.Button
-import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
+import android.widget.*
 
-class ApkFileSendActivity : AppCompatActivity() {
+class ChromeFileActivity : AppCompatActivity() {
 
     private lateinit var htmlFileButtonHolder: LinearLayout
-    private lateinit var context: Context
+    /**
+     * `TextView` used to display "Waiting for data to load…" message while waiting
+     */
+    internal lateinit var htmlWaiting: TextView
+    /**
+     * `ScrollView` that holds the `LinearLayout htmlChapter`
+     */
+    internal lateinit var htmlChapterScrollView: ScrollView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_apk_file_send)
+        setContentView(R.layout.activity_chrome_file)
 
-        context = this.baseContext
+        htmlWaiting = findViewById(R.id.html_waiting)
+        htmlChapterScrollView = findViewById(R.id.html_file_books_scrollView)
         htmlFileButtonHolder = findViewById(R.id.html_file_buttons)
         for (i in resourceIDS.indices) {
             addButton(resourceIDS[i], titles[i], htmlFileButtonHolder)
         }
     }
 
-    @Suppress("UNUSED_PARAMETER")
     fun addButton(resourceID: Int, description: String, parent: ViewGroup) {
         val button = Button(this)
         button.text = description
         button.setOnClickListener {
             Toast.makeText(it.context, "$description was clicked", Toast.LENGTH_LONG).show()
-            val intent = makeIntent(resourceID)
-            if (intent.resolveActivity(packageManager) != null) {
-                startActivity(intent)
-            }
+            htmlChapterScrollView.visibility = View.GONE
+            htmlWaiting.visibility = View.VISIBLE
+            sendResourceFileToChrome(resourceID)
         }
         parent.addView(button)
     }
 
-    private fun makeIntent(resourceID: Int): Intent {
-
-        val b: Uri.Builder = Uri.Builder()
-        b.scheme("content")
-        b.authority("com.example.android.treeviewer.ApkFileProvider")
-        val tv = TypedValue()
-        resources.getValue(resourceID, tv, true)
-        b.appendEncodedPath(tv.assetCookie.toString())
-        b.appendEncodedPath(tv.string.toString())
-        val uri: Uri = b.build()
-
-        context.grantUriPermission("com.android.chrome", uri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
-
-        val intent = Intent(Intent.ACTION_VIEW)
-        intent.setClassName(
-            "com.android.chrome",
-            "com.google.android.apps.chrome.Main"
-        )
-        intent.setDataAndType(uri, "text/html")
-        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-
-        return intent
+    @Suppress("UNUSED_PARAMETER")
+    fun sendResourceFileToChrome(resourceID: Int) {
+        val mHtmlDataTask = object : ChromeDataTask(applicationContext) {
+            override fun onPostExecute(uri: Uri) {
+                val intent = Intent(Intent.ACTION_VIEW)
+                intent.setClassName(
+                    "com.android.chrome",
+                    "com.google.android.apps.chrome.Main"
+                )
+                intent.setDataAndType(uri, "text/html")
+                intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                if (intent.resolveActivity(packageManager) != null) {
+                    startActivity(intent)
+                }
+                htmlChapterScrollView.visibility = View.VISIBLE
+                htmlWaiting.visibility = View.GONE
+            }
+        }
+        mHtmlDataTask.execute(resourceID)
     }
-
 
     companion object {
         val resourceIDS = intArrayOf(
