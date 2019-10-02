@@ -8,13 +8,13 @@
     tools:ignore="MergeRootFrame">
 
     <ScrollView
-        android:id="@+id/html_file_books_scrollView"
+        android:id="@+id/chrome_file_scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:ignore="UselessParent">
 
         <LinearLayout
-            android:id="@+id/html_file_buttons"
+            android:id="@+id/chrome_file_buttons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -23,7 +23,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/html_waiting"
+        android:id="@+id/chrome_waiting"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:textSize="60sp"

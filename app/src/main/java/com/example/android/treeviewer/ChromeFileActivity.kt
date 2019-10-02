@@ -3,12 +3,15 @@ package com.example.android.treeviewer
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * This activity allows the user to choose a html file and have it displayed by Chrome.
+ */
 class ChromeFileActivity : AppCompatActivity() {
 
     private lateinit var htmlFileButtonHolder: LinearLayout
@@ -25,9 +28,9 @@ class ChromeFileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chrome_file)
 
-        htmlWaiting = findViewById(R.id.html_waiting)
-        htmlChapterScrollView = findViewById(R.id.html_file_books_scrollView)
-        htmlFileButtonHolder = findViewById(R.id.html_file_buttons)
+        htmlWaiting = findViewById(R.id.chrome_waiting)
+        htmlChapterScrollView = findViewById(R.id.chrome_file_scrollView)
+        htmlFileButtonHolder = findViewById(R.id.chrome_file_buttons)
         for (i in resourceIDS.indices) {
             addButton(resourceIDS[i], titles[i], htmlFileButtonHolder)
         }
@@ -67,6 +70,7 @@ class ChromeFileActivity : AppCompatActivity() {
     }
 
     companion object {
+
         val resourceIDS = intArrayOf(
             R.raw.graytree,
             R.raw.chapter1,
