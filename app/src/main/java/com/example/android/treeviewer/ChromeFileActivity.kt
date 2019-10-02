@@ -1,5 +1,6 @@
 package com.example.android.treeviewer
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -32,7 +33,7 @@ class ChromeFileActivity : AppCompatActivity() {
         }
     }
 
-    fun addButton(resourceID: Int, description: String, parent: ViewGroup) {
+    private fun addButton(resourceID: Int, description: String, parent: ViewGroup) {
         val button = Button(this)
         button.text = description
         button.setOnClickListener {
@@ -44,7 +45,7 @@ class ChromeFileActivity : AppCompatActivity() {
         parent.addView(button)
     }
 
-    @Suppress("UNUSED_PARAMETER")
+    @SuppressLint("StaticFieldLeak")
     fun sendResourceFileToChrome(resourceID: Int) {
         val mHtmlDataTask = object : ChromeDataTask(applicationContext) {
             override fun onPostExecute(uri: Uri) {
@@ -67,6 +68,7 @@ class ChromeFileActivity : AppCompatActivity() {
 
     companion object {
         val resourceIDS = intArrayOf(
+            R.raw.graytree,
             R.raw.chapter1,
             R.raw.chapter2,
             R.raw.chapter3,
@@ -84,6 +86,7 @@ class ChromeFileActivity : AppCompatActivity() {
             R.raw.chapter15
         )
         val titles = arrayOf(
+            "Gray family tree",
             "Chapter 1: What is Man?",
             "Chapter 2: The Death of Jean",
             "Chapter 3: The Turning-Point of My Life",
