@@ -14,16 +14,34 @@ import androidx.appcompat.app.AppCompatActivity
  */
 class ChromeFileActivity : AppCompatActivity() {
 
-    private lateinit var htmlFileButtonHolder: LinearLayout
     /**
      * `TextView` used to display "Waiting for data to load…" message while waiting
      */
     internal lateinit var htmlWaiting: TextView
     /**
-     * `ScrollView` that holds the `LinearLayout htmlChapter`
+     * This is the [LinearLayout] we place our [Button]'s in.
+     */
+    private lateinit var htmlFileButtonHolder: LinearLayout
+    /**
+     * `ScrollView` that holds the `LinearLayout` [htmlFileButtonHolder]
      */
     internal lateinit var htmlChapterScrollView: ScrollView
 
+    /**
+     * Called when the activity is starting. First we call our super's implementation of `onCreate`,
+     * then we set our content view to our layout file R.layout.activity_chrome_file. We initialize
+     * our field [htmlWaiting] by finding the [TextView] with the ID R.id.chrome_waiting,
+     * initialize our field [htmlChapterScrollView] by finding the [ScrollView] with the ID
+     * R.id.chrome_file_scrollView, and initialize our field [htmlFileButtonHolder] by finding the
+     * [LinearLayout] with the ID R.id.chrome_file_buttons. Then we loop over `i` for all of the
+     * resource ID's in our array [resourceIDS] calling our method [addButton] to construct, configure,
+     * and add a [Button] to [htmlFileButtonHolder] which will use the `i`'th entry in our [titles]
+     * array as the label, and when clicked will call our method [sendResourceFileToChrome] to start
+     * an instance of [ChromeDataTask] to send the html resource file whose ID is the `i`'th entry in
+     * our [resourceIDS] array to Chrome to display.
+     *
+     * @param savedInstanceState we do not override `onSaveInstanceState` so do not use.
+     */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chrome_file)
@@ -36,6 +54,22 @@ class ChromeFileActivity : AppCompatActivity() {
         }
     }
 
+    /**
+     * This method constructs, configures, and adds a [Button] to the [ViewGroup] parameter [parent].
+     * If uses [description] as the label of the [Button], and adds a lambda `OnClickListener` to the
+     * [Button] which calls our method [sendResourceFileToChrome] with [resourceID] as the parameter.
+     * First we initalize our `val button` to a new instance of [Button]. We set the text of `button`
+     * to our parameter [description] then set the `OnClickListener` of `button` to a lambda which
+     * toasts the label of the button clicked as a debugging aid, sets the visibility of the
+     * [ScrollView] field [htmlChapterScrollView] to GONE, sets the visibility of the [TextView]
+     * field [htmlWaiting] to VISIBLE, and then calls our [sendResourceFileToChrome] method with our
+     * parameter [resourceID] to have it launch Chrome with the file with that resource ID. Having
+     * configured `button` we add it to our [ViewGroup] parameter [parent].
+     *
+     * @param resourceID the resource ID of the html file that is to be sent to Chrome for display.
+     * @param description the label for the [Button]
+     * @param parent the [ViewGroup] we are to add the [Button] to.
+     */
     private fun addButton(resourceID: Int, description: String, parent: ViewGroup) {
         val button = Button(this)
         button.text = description
@@ -48,6 +82,15 @@ class ChromeFileActivity : AppCompatActivity() {
         parent.addView(button)
     }
 
+    /**
+     * This method constructs a new instance of [ChromeDataTask] whose `onPostExecute` override uses
+     * the content URI returned from its `doInBackground` method as the data of an [Intent] that
+     * launches the Chrome browser to view that URI. Having constructed the [ChromeDataTask] it then
+     * calls its `execute` method to have it create a content URI for the file with resource ID
+     * [resourceID].
+     *
+     * @param resourceID the resource ID of the file we want Chrome to display.
+     */
     @SuppressLint("StaticFieldLeak")
     fun sendResourceFileToChrome(resourceID: Int) {
         val mHtmlDataTask = object : ChromeDataTask(applicationContext) {
@@ -69,8 +112,14 @@ class ChromeFileActivity : AppCompatActivity() {
         mHtmlDataTask.execute(resourceID)
     }
 
+    /**
+     * Our static constants.
+     */
     companion object {
 
+        /**
+         * The resource ID's of the html files we can send to Chrome.
+         */
         val resourceIDS = intArrayOf(
             R.raw.graytree,
             R.raw.chapter1,
@@ -89,6 +138,9 @@ class ChromeFileActivity : AppCompatActivity() {
             R.raw.chapter14,
             R.raw.chapter15
         )
+        /**
+         * The titles to display in our button labels for the html files we can send to Chrome.
+         */
         val titles = arrayOf(
             "Gray family tree",
             "Chapter 1: What is Man?",

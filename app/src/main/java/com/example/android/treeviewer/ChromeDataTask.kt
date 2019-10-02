@@ -25,16 +25,11 @@ internal constructor(
 ) : AsyncTask<Int, String, Uri>() {
     /**
      * Override this method to perform a computation on a background thread. The
-     * specified parameters are the parameters passed to [.execute]
+     * specified parameters are the parameters passed to [AsyncTask.execute]
      * by the caller of this task.
      *
      * @param resourceId The parameters of the task.
      * @return The [Uri] that our `FileProvider` creates to use to share the resource file.
-     *
-     * @see .onPreExecute
-     * @see .onPostExecute
-     *
-     * @see .publishProgress
      */
     override fun doInBackground(vararg resourceId: Int?): Uri {
         @Suppress("UNUSED_VARIABLE")
@@ -58,15 +53,20 @@ internal constructor(
         }
         inputStream.close()
         fout.close()
-        val contentUri : Uri = getUriForFile(
+        return getUriForFile(
             mContext,
             "com.example.android.treeviewer.fileprovider",
-            File(mContext.getFilesDir(), fileName)
+            File(mContext.filesDir, fileName)
         )
-        return contentUri
     }
 
+    /**
+     * Our static constants.
+     */
     companion object {
+        /**
+         * TAG used for logging.
+         */
         const val TAG :String = "ChromeDataTask"
     }
 
