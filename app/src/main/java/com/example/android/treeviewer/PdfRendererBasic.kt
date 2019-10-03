@@ -29,18 +29,19 @@ class PdfRendererBasic : AppCompatActivity() {
 
     /**
      * Called when the activity is starting. First we call our super's implementation of `onCreate`,
-     * then we set our content view to our layout file R.layout.activity_main_real. If our parameter
-     * `Bundle savedInstanceState` is null this is the first time we were called, so we fetch
-     * the FragmentManager for interacting with fragments associated with this activity and use it to
-     * begin a `FragmentTransaction` to which we chain an `add` command to add a new instance
-     * of `PdfRendererBasicFragment` to the view in our layout with ID R.id.container using
+     * then we set our content view to our layout file R.layout.activity_pdf_file. We initialize
+     * `val fileName` to the string stored as an extra in the `Intent` that launched us under the
+     * key "com.example.android.treeviewer.FILE". If our parameter `Bundle savedInstanceState` is
+     * null this is the first time we were called, so we fetch the FragmentManager for interacting
+     * with fragments associated with this activity and use it to begin a `FragmentTransaction` to
+     * which we chain an `add` command to add a new instance of `PdfRendererBasicFragment` constructed
+     * to display `fileName` to the view in our layout with ID R.id.container using
      * FRAGMENT_PDF_RENDERER_BASIC ("pdf_renderer_basic") as its fragment tag, and to this command we
      * chain a command to commit the `FragmentTransaction`.
      *
-     * @param savedInstanceState if this is null, this is the first time we were called so we need to
-     * construct and add our fragment `PdfRendererBasicFragment`. If
-     * it is not null we are being called after a configuration change so
-     * the system will take care of restoring the old fragment.
+     * @param savedInstanceState if this is null, this is the first time we were called so we need
+     * to construct and add our fragment `PdfRendererBasicFragment`. If it is not null we are being
+     * called after a configuration change so the system will take care of restoring the old fragment.
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

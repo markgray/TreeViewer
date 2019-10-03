@@ -23,7 +23,7 @@ internal constructor(
     /**
      * `Context` to use to access resources from our application (in our case this is the
      * "context of the single, global Application object of the current process" obtained from the
-     * `getApplicationContext` method of the `TextFileDisplayActivity` activity and then passed to
+     * `getApplicationContext` method of the `HtmlFileActivity` activity and then passed to
      * our constructor).
      */
     @field:SuppressLint("StaticFieldLeak")

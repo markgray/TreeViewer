@@ -39,11 +39,8 @@ import java.io.IOException
 /*
  * This fragment has a big `ImageView` that shows PDF pages, and 2
  * [android.widget.Button]s to move between pages. We use a
- * [android.graphics.pdf.PdfRenderer] to render PDF pages as
- * [android.graphics.Bitmap]s.
- */
-/**
- * Our required empty constructor.
+ * `android.graphics.pdf.PdfRenderer` to render PDF pages as
+ * `android.graphics.Bitmap`s. Our empty constructor is required.
  */
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
 class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
@@ -117,16 +114,15 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
     }
 
     /**
-     * Called immediately after [.onCreateView]
-     * has returned, but before any saved state has been restored in to the view. First we call our
-     * super's implementation of `onViewCreated` then we initialize our field `ImageView mImageView`
-     * by finding the view with id R.id.image, our field `Button mButtonPrevious` by finding the
-     * view with id R.id.previous, and our field `Button mButtonNext` by finding the view with
-     * id R.id.next. We then set the `OnClickListener` of both `mButtonPrevious` and
-     * `mButtonNext` to this. We initialize our field `int mPageIndex` to 0, then if our
-     * parameter `Bundle savedInstanceState` is not null we set `mPageIndex` to the int
-     * stored under the key STATE_CURRENT_PAGE_INDEX ("current_page_index") in `savedInstanceState`
-     * defaulting to 0.
+     * Called immediately after [onCreateView] has returned, but before any saved state has been
+     * restored in to the view. First we call our super's implementation of `onViewCreated` then
+     * we initialize our field `ImageView mImageView` by finding the view with id R.id.image, our
+     * field `Button mButtonPrevious` by finding the view with id R.id.previous, and our field
+     * `Button mButtonNext` by finding the view with id R.id.next. We then set the `OnClickListener`
+     * of both `mButtonPrevious` and `mButtonNext` to this. We initialize our field `int mPageIndex`
+     * to 0, then if our parameter `Bundle savedInstanceState` is not null we set `mPageIndex` to
+     * the int stored under the key STATE_CURRENT_PAGE_INDEX ("current_page_index") in
+     * `savedInstanceState` defaulting to 0.
      *
      * @param view The View returned by [.onCreateView].
      * @param savedInstanceState If non-null, this fragment is being re-constructed
@@ -190,10 +186,7 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
      * can later be reconstructed in a new instance of its process is
      * restarted.  If a new instance of the fragment later needs to be
      * created, the data you place in the Bundle here will be available
-     * in the Bundle given to [.onCreate],
-     * [.onCreateView], and
-     * [.onActivityCreated].
-     *
+     * in the Bundle given to [onCreate], [onCreateView], and [onActivityCreated].
      *
      * First we call our super's implementation of `onSaveInstanceState`, then if our field
      * `Page mCurrentPage` is not null we add the page index of `mCurrentPage` to our
@@ -211,15 +204,14 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
     /**
      * Sets up a [android.graphics.pdf.PdfRenderer] and related resources. First we initialize
      * `File file` using the absolute path to the application specific cache directory on the
-     * filesystem for the parent path, and [mFileName] ("sample.pdf") as the child pathname. If this
-     * file does not exist (we have not been run before) we initialize `InputStream asset` by using
-     * an AssetManager instance for the application's package to open the asset file named [mFileName],
-     * initialize `FileOutputStream output` with a new instance to write to the file represented
+     * filesystem for the parent path, and [mFileName] as the child pathname. If this file does
+     * not exist (we have not been run before) we initialize `InputStream asset` by using an
+     * AssetManager instance for the application's package to open the asset file named [mFileName],
+     * and initialize `FileOutputStream output` with a new instance to write to the file represented
      * by `File file`. We allocate 1024 bytes for `byte[] buffer`, and declare `int size`.
      * We then loop, setting `size` to the number of bytes that the `read` method of `asset`
      * reads into `buffer` and writing `size` bytes from `buffer` to `output`
      * until `size` is equal to -1 (end of file). Then we close both `asset` and `output`.
-     *
      *
      * Now that we know that `File file` exists we initialize our field `ParcelFileDescriptor mFileDescriptor`
      * with a new instance to access `File file` in MODE_READ_ONLY mode. If `mFileDescriptor`
@@ -338,16 +330,10 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
 
     /**
      * Called when a view has been clicked. We switch on the id of our parameter `View view`:
-     *
-     *  *
-     * R.id.previous: we call our `showPage` method to display the page that is 1 page
+     *   - R.id.previous: we call our `showPage` method to display the page that is 1 page
      * before the current page index of our field `Page mCurrentPage` then break.
-     *
-     *  *
-     * R.id.next: we call our `showPage` method to display the page that is 1 page
+     *   - R.id.next: we call our `showPage` method to display the page that is 1 page
      * after the current page index of our field `Page mCurrentPage` then break.
-     *
-     *
      *
      * @param view The view that was clicked.
      */

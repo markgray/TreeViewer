@@ -12,6 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlin.math.abs
 
+/**
+ * This is the [RecyclerView.Adapter] which is used by `TextFileDisplayActivity` to load the
+ * [RecyclerView] it uses to display its text.
+ */
 class StringListAdapter
 /**
  * Our constructor, just saves its parameters in their respective fields, and calls our super's
@@ -41,9 +45,7 @@ class StringListAdapter
     }
 
     /**
-     * Called when RecyclerView needs a new [ViewHolder] of the given type to represent
-     * an item.
-     *
+     * Called when RecyclerView needs a new [ViewHolder] of the given type to represent an item.
      * This new [ViewHolder] should be constructed with a new [View] that can represent the items
      * of the given type. You can either create a new [View] manually or inflate it from an XML
      * layout file.
@@ -101,7 +103,7 @@ class StringListAdapter
     }
 
     /**
-     * Returns the total number of items in the data set hold by the adapter. We just return the
+     * Returns the total number of items in the data set held by the adapter. We just return the
      * size of our dataset `String[] mDataSet`.
      *
      * @return The total number of items in this adapter.

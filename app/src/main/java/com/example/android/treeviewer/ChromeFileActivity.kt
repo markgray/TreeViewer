@@ -25,13 +25,13 @@ class ChromeFileActivity : AppCompatActivity() {
     /**
      * `ScrollView` that holds the `LinearLayout` [htmlFileButtonHolder]
      */
-    internal lateinit var htmlChapterScrollView: ScrollView
+    internal lateinit var htmlButtonsScrollView: ScrollView
 
     /**
      * Called when the activity is starting. First we call our super's implementation of `onCreate`,
      * then we set our content view to our layout file R.layout.activity_chrome_file. We initialize
      * our field [htmlWaiting] by finding the [TextView] with the ID R.id.chrome_waiting,
-     * initialize our field [htmlChapterScrollView] by finding the [ScrollView] with the ID
+     * initialize our field [htmlButtonsScrollView] by finding the [ScrollView] with the ID
      * R.id.chrome_file_scrollView, and initialize our field [htmlFileButtonHolder] by finding the
      * [LinearLayout] with the ID R.id.chrome_file_buttons. Then we loop over `i` for all of the
      * resource ID's in our array [resourceIDS] calling our method [addButton] to construct, configure,
@@ -47,7 +47,7 @@ class ChromeFileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_chrome_file)
 
         htmlWaiting = findViewById(R.id.chrome_waiting)
-        htmlChapterScrollView = findViewById(R.id.chrome_file_scrollView)
+        htmlButtonsScrollView = findViewById(R.id.chrome_file_scrollView)
         htmlFileButtonHolder = findViewById(R.id.chrome_file_buttons)
         for (i in resourceIDS.indices) {
             addButton(resourceIDS[i], titles[i], htmlFileButtonHolder)
@@ -61,7 +61,7 @@ class ChromeFileActivity : AppCompatActivity() {
      * First we initalize our `val button` to a new instance of [Button]. We set the text of `button`
      * to our parameter [description] then set the `OnClickListener` of `button` to a lambda which
      * toasts the label of the button clicked as a debugging aid, sets the visibility of the
-     * [ScrollView] field [htmlChapterScrollView] to GONE, sets the visibility of the [TextView]
+     * [ScrollView] field [htmlButtonsScrollView] to GONE, sets the visibility of the [TextView]
      * field [htmlWaiting] to VISIBLE, and then calls our [sendResourceFileToChrome] method with our
      * parameter [resourceID] to have it launch Chrome with the file with that resource ID. Having
      * configured `button` we add it to our [ViewGroup] parameter [parent].
@@ -75,7 +75,7 @@ class ChromeFileActivity : AppCompatActivity() {
         button.text = description
         button.setOnClickListener {
             Toast.makeText(it.context, "$description was clicked", Toast.LENGTH_LONG).show()
-            htmlChapterScrollView.visibility = View.GONE
+            htmlButtonsScrollView.visibility = View.GONE
             htmlWaiting.visibility = View.VISIBLE
             sendResourceFileToChrome(resourceID)
         }
@@ -105,7 +105,7 @@ class ChromeFileActivity : AppCompatActivity() {
                 if (intent.resolveActivity(packageManager) != null) {
                     startActivity(intent)
                 }
-                htmlChapterScrollView.visibility = View.VISIBLE
+                htmlButtonsScrollView.visibility = View.VISIBLE
                 htmlWaiting.visibility = View.GONE
             }
         }
