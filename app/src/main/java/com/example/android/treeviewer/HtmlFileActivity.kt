@@ -150,10 +150,10 @@ class HtmlFileActivity : AppCompatActivity() {
              * field `TextView htmlWaiting` to GONE, then set the visibility of `htmlTestView`
              * to VISIBLE.
              *
-             * @param s The result of the operation computed by [.doInBackground].
+             * @param result The result of the operation computed by [doInBackground].
              */
-            override fun onPostExecute(s: Spanned) {
-                htmlTestView.text = s
+            override fun onPostExecute(result: Spanned?) {
+                htmlTestView.text = result!!
                 htmlWaiting.visibility = View.GONE
                 htmlTestView.visibility = View.VISIBLE
             }

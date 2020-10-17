@@ -6,7 +6,11 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
-import android.widget.*
+import android.widget.Button
+import android.widget.LinearLayout
+import android.widget.ScrollView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 /**
@@ -91,17 +95,17 @@ class ChromeFileActivity : AppCompatActivity() {
      *
      * @param resourceID the resource ID of the file we want Chrome to display.
      */
-    @SuppressLint("StaticFieldLeak")
-    fun sendResourceFileToChrome(resourceID: Int) {
+    private fun sendResourceFileToChrome(resourceID: Int) {
         val mHtmlDataTask = object : ChromeDataTask(applicationContext) {
-            override fun onPostExecute(uri: Uri) {
+            override fun onPostExecute(result: Uri?) {
                 val intent = Intent(Intent.ACTION_VIEW)
                 intent.setClassName(
                     "com.android.chrome",
                     "com.google.android.apps.chrome.Main"
                 )
-                intent.setDataAndType(uri, "text/html")
+                intent.setDataAndType(result, "text/html")
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+                @SuppressLint("QueryPermissionsNeeded")
                 if (intent.resolveActivity(packageManager) != null) {
                     startActivity(intent)
                 }

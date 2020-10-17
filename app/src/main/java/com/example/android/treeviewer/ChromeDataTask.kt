@@ -1,15 +1,13 @@
 package com.example.android.treeviewer
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.net.Uri
-import android.os.AsyncTask
 import android.util.Log
 import android.util.TypedValue
 import androidx.core.content.FileProvider.getUriForFile
+import com.example.android.treeviewer.util.CoroutinesAsyncTask
 import java.io.File
 
-@SuppressLint("StaticFieldLeak")
 open class ChromeDataTask
 /**
  * Our constructor, we just save our parameter `Context context` in our field `mContext`.
@@ -22,12 +20,12 @@ internal constructor(
      * our constructor).
      */
     private var mContext: Context
-) : AsyncTask<Int, String, Uri>() {
+) : CoroutinesAsyncTask<Int, String, Uri>() {
     /**
-     * We override this method to perform a computation on a background thread. The [resourceId]
-     * parameter is the parameter passed to [AsyncTask.execute] by the caller of this task. First
+     * We override this method to perform a computation on a background thread. The [params]
+     * parameter is the parameter passed to [CoroutinesAsyncTask.execute] by the caller of this task. First
      * we initialize our `val inputStream` with an `InputStream` opened to read the raw resource
-     * with the resource ID of the zeroth entry in our parameter [resourceId]. Then we initialize
+     * with the resource ID of the zeroth entry in our parameter [params]. Then we initialize
      * our `val tv` with a new instance of [TypedValue] and then load it with the the raw data
      * associated with that resource ID. We initialize `val stringOfResourse` to the string held
      * in `tv` that is associated with the resource file of our parameter (the "path" to the file),
@@ -46,20 +44,21 @@ internal constructor(
      * which is located in the directory on the filesystem where files created with `openFileOutput`
      * are stored and has the name `fileName`.
      *
-     * @param resourceId The resource ID of the html file we are to send to Chrome for display.
+     * @param params The resource ID of the html file we are to send to Chrome for display.
      * @return The [Uri] that our `FileProvider` creates to use to share the resource file.
      */
-    override fun doInBackground(vararg resourceId: Int?): Uri {
+    override fun doInBackground(vararg params: Int?): Uri {
+        val resourceID = params[0]!!
         val inputStream = mContext
             .resources
-            .openRawResource(resourceId[0]!!)
+            .openRawResource(resourceID)
         val tv = TypedValue()
-        mContext.resources.getValue(resourceId[0]!!, tv, true)
+        mContext.resources.getValue(resourceID, tv, true)
 
         val stringOfResourse : String = tv.string.toString()
         val startOfFileName : Int = stringOfResourse.lastIndexOf('/') + 1
         val fileName = stringOfResourse.substring(startOfFileName)
-        Log.i(TAG, "File name of ${resourceId[0]} is $fileName")
+        Log.i(TAG, "File name of ${params[0]} is $fileName")
 
         val fout = mContext.openFileOutput(fileName, Context.MODE_PRIVATE)
         val buffer = ByteArray(16384)

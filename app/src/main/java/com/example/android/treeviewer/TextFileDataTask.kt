@@ -1,8 +1,7 @@
 package com.example.android.treeviewer
 
-import android.annotation.SuppressLint
 import android.content.Context
-import android.os.AsyncTask
+import com.example.android.treeviewer.util.CoroutinesAsyncTask
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -26,9 +25,8 @@ internal constructor(
      * `getApplicationContext` method of the `TextFileDisplayActivity` activity and then passed
      * to our constructor).
      */
-    @field:SuppressLint("StaticFieldLeak")
-    internal var mContext: Context
-) : AsyncTask<Int, String, List<String>>() {
+    private var mContext: Context
+) : CoroutinesAsyncTask<Int, String, List<String>>() {
 
     /**
      * We override this method to perform a computation on a background thread. The specified
@@ -56,16 +54,17 @@ internal constructor(
      * and return `results` so that the [onPostExecute] override will be called with it
      * as its parameter.
      *
-     * @param resourceId Resource ID of the utf8 text file we are to read in
+     * @param params Resource ID of the utf8 text file we are to read in
      * @return a `List<String>` of the file read with each paragraph in a seperate string.
      */
-    override fun doInBackground(vararg resourceId: Int?): List<String>? {
+    override fun doInBackground(vararg params: Int?): List<String> {
         val builder = StringBuilder()
         var line: String?
         val results = ArrayList<String>()
+        val resourceID = params[0]!!
         val inputStream = mContext
             .resources
-            .openRawResource(resourceId[0]!!)
+            .openRawResource(resourceID)
 
         val reader = BufferedReader(InputStreamReader(inputStream))
         try {

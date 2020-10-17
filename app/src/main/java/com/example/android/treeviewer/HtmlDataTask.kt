@@ -1,11 +1,10 @@
 package com.example.android.treeviewer
 
-import android.annotation.SuppressLint
 import android.content.Context
-import android.os.AsyncTask
 import android.text.Html
 import android.text.Spanned
 import android.util.Log
+import com.example.android.treeviewer.util.CoroutinesAsyncTask
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -26,9 +25,8 @@ internal constructor(
      * `getApplicationContext` method of the `HtmlFileActivity` activity and then passed to
      * our constructor).
      */
-    @field:SuppressLint("StaticFieldLeak")
-    internal var mContext: Context
-) : AsyncTask<Int, String, Spanned>() {
+    private var mContext: Context
+) : CoroutinesAsyncTask<Int, String, Spanned>() {
 
     /**
      * Loads a Html file from our resources on a background thread and returns a `Spanned` string
@@ -53,16 +51,17 @@ internal constructor(
      * Upon exiting from the try block we return the `Spanned` string created by the `fromHtml`
      * method of `Html` from the string value of `builder`.
      *
-     * @param resourceId the resource ID of the Html file we are to load.
+     * @param params the resource ID of the Html file we are to load.
      * @return A `Spanned` string created from the contents of the file we load.
      */
-    override fun doInBackground(vararg resourceId: Int?): Spanned? {
+    override fun doInBackground(vararg params: Int?): Spanned {
+        val resourceId = params[0]!!
         var builder: StringBuilder? = null
         var line: String?
         var sizeOfInputStream = 0
         val inputStream = mContext
             .resources
-            .openRawResource(resourceId[0]!!)
+            .openRawResource(resourceId)
 
         val reader = BufferedReader(InputStreamReader(inputStream))
         try {
@@ -78,7 +77,9 @@ internal constructor(
             e.printStackTrace()
         }
 
-        assert(builder != null)
+        if (BuildConfig.DEBUG && builder == null) {
+            error("Assertion failed")
+        }
         Log.i(
             TAG,
             "sizeOfInputStream: " + sizeOfInputStream + " Size of builder: " + builder!!.capacity()

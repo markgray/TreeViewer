@@ -1,6 +1,5 @@
 package com.example.android.treeviewer
 
-import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.Bundle
 import android.view.View
@@ -9,7 +8,6 @@ import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
-
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -17,7 +15,6 @@ import androidx.recyclerview.widget.RecyclerView
  * This `Activity` loads text files from the raw resources of the app in the background, and
  * displays them in a `RecyclerView`.
  */
-@Suppress("MemberVisibilityCanBePrivate")
 class TextFileDisplayActivity : Activity() {
     /**
      * `RecyclerView` used to display our text files
@@ -38,11 +35,11 @@ class TextFileDisplayActivity : Activity() {
     /**
      * `LinearLayout` that we add our text file selection `Button`s to.
      */
-    internal lateinit var textFileBooks: LinearLayout
+    private lateinit var textFileBooks: LinearLayout
     /**
      * `ScrollView` that holds the `LinearLayout textFileBooks`
      */
-    internal lateinit var textFileBooksScrollView: ScrollView
+    private lateinit var textFileBooksScrollView: ScrollView
 
     /**
      * Called when the activity is starting. First we call our super's implementation of `onCreate`,
@@ -88,7 +85,7 @@ class TextFileDisplayActivity : Activity() {
      * @param description Label for our `Button`
      * @param parent      `ViewGroup` we should add our `Button` to.
      */
-    fun addButton(resourceID: Int, description: String, parent: ViewGroup) {
+    private fun addButton(resourceID: Int, description: String, parent: ViewGroup) {
         val button = Button(this)
         button.text = description
         button.setOnClickListener {
@@ -109,24 +106,23 @@ class TextFileDisplayActivity : Activity() {
      * in `RecyclerView textFileRecylerView` once the background task is done.
      */
     private fun loadResourceTextFile(resourceID: Int) {
-        @SuppressLint("StaticFieldLeak")
         val mTextFileDataTask = object : TextFileDataTask(applicationContext) {
             /**
-             * Runs on the UI thread after [doInBackground]. The parameter `List<String>` [results]
+             * Runs on the UI thread after [doInBackground]. The parameter `List<String>` [result]
              * is the value returned by [doInBackground].
              *
              * We initialize our field `StringListAdapter` [textFileAdapter] with a new instance
-             * which will use our parameter `List<String>` [results] as its data set, and our field
+             * which will use our parameter `List<String>` [result] as its data set, and our field
              * `RecyclerView.LayoutManager` [mLayoutManager] as its `LayoutManager`, set the
              * adapter of `RecyclerView` [textFileRecylerView] to [textFileAdapter] and set
              * the `LayoutManager` that [textFileRecylerView] will use to be our field
              * [mLayoutManager]. Finally we set the visibility of our field `TextView` [textFileWaiting]
              * to GONE, and set the visibility of [textFileRecylerView] to VISIBLE.
              *
-             * @param results The result of the operation computed by [.doInBackground].
+             * @param result The result of the operation computed by [.doInBackground].
              */
-            override fun onPostExecute(results: List<String>) {
-                textFileAdapter = StringListAdapter(results, mLayoutManager)
+            override fun onPostExecute(result: List<String>?) {
+                textFileAdapter = StringListAdapter(result!!, mLayoutManager)
                 textFileRecylerView.adapter = textFileAdapter
                 textFileRecylerView.layoutManager = mLayoutManager
                 textFileWaiting.visibility = View.GONE
