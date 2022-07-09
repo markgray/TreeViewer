@@ -20,22 +20,27 @@ class TextFileDisplayActivity : Activity() {
      * `RecyclerView` used to display our text files
      */
     internal lateinit var textFileRecylerView: RecyclerView
+
     /**
      * `StringListAdapter` we use for our `RecyclerView textFileRecylerView`
      */
     internal lateinit var textFileAdapter: StringListAdapter
+
     /**
      * `LayoutManager` for our `RecyclerView` (a `LinearLayout` instance)
      */
     internal lateinit var mLayoutManager: RecyclerView.LayoutManager
+
     /**
      * `TextView` used to display "Waiting for data to load…" message while waiting
      */
     internal lateinit var textFileWaiting: TextView
+
     /**
      * `LinearLayout` that we add our text file selection `Button`s to.
      */
     private lateinit var textFileBooks: LinearLayout
+
     /**
      * `ScrollView` that holds the `LinearLayout textFileBooks`
      */
@@ -122,7 +127,7 @@ class TextFileDisplayActivity : Activity() {
              * @param result The result of the operation computed by [.doInBackground].
              */
             override fun onPostExecute(result: List<String>?) {
-                textFileAdapter = StringListAdapter(result!!, mLayoutManager)
+                textFileAdapter = StringListAdapter(result ?: return, mLayoutManager)
                 textFileRecylerView.adapter = textFileAdapter
                 textFileRecylerView.layoutManager = mLayoutManager
                 textFileWaiting.visibility = View.GONE
@@ -140,7 +145,7 @@ class TextFileDisplayActivity : Activity() {
         /**
          * List of the resource ids for the text files we can display.
          */
-        val resourceIDS = intArrayOf(
+        val resourceIDS: IntArray = intArrayOf(
             R.raw.all_relatives,
             R.raw.emerson_conduct_of_life,
             R.raw.emerson_essays_second_series,
@@ -154,7 +159,7 @@ class TextFileDisplayActivity : Activity() {
         /**
          * List of the titles for the text files we can display (used to label the selection buttons)
          */
-        val titles = arrayOf(
+        val titles: Array<String> = arrayOf(
             "List of all relatives",
             "Emerson The Conduct of Life",
             "Emerson Essays, Second Series",

@@ -1,6 +1,7 @@
 package com.example.android.treeviewer.util
 
 import android.util.Log
+import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -10,11 +11,26 @@ import kotlinx.coroutines.withContext
  * A coroutine version of `AsyncTask`
  * TODO: make methods and comments more closely resemble AsyncTask
  */
+@OptIn(DelicateCoroutinesApi::class)
 abstract class CoroutinesAsyncTask<Params, Progress, Result> {
 
+    /**
+     * The [Status] of the async task
+     */
     enum class Status {
+        /**
+         * The task has not yet started.
+         */
         PENDING,
+
+        /**
+         * The task is running
+         */
         RUNNING,
+
+        /**
+         * The task has finished
+         */
         FINISHED
     }
 
@@ -84,12 +100,12 @@ abstract class CoroutinesAsyncTask<Params, Progress, Result> {
         when (status) {
             Status.RUNNING -> throw IllegalStateException(
                 "Cannot execute task:"
-                        + " the task is already running."
+                    + " the task is already running."
             )
             Status.FINISHED -> throw IllegalStateException(
                 "Cannot execute task:"
-                        + " the task has already been executed "
-                        + "(a task can be executed only once)"
+                    + " the task has already been executed "
+                    + "(a task can be executed only once)"
             )
             Status.PENDING -> Unit
         }
@@ -132,7 +148,10 @@ abstract class CoroutinesAsyncTask<Params, Progress, Result> {
      */
     @Suppress("MemberVisibilityCanBePrivate")
     fun cancel(mayInterruptIfRunning: Boolean) {
-        if(!mayInterruptIfRunning) Log.d("cancel", "cancel called with mayInterruptIfRunning false")
+        if (!mayInterruptIfRunning) Log.d(
+            "cancel",
+            "cancel called with mayInterruptIfRunning false"
+        )
         isCancelled = true
         status = Status.FINISHED
         GlobalScope.launch(Dispatchers.Main) {

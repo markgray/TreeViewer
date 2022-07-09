@@ -36,15 +36,16 @@ import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 
-/*
+/**
  * This fragment has a big `ImageView` that shows PDF pages, and 2
  * [android.widget.Button]s to move between pages. We use a
  * `android.graphics.pdf.PdfRenderer` to render PDF pages as
  * `android.graphics.Bitmap`s. Our empty constructor is required.
  */
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
-    : Fragment(), View.OnClickListener {
+class PdfRendererBasicFragment(
+    private val mFileName: String = FILENAME
+) : Fragment(), View.OnClickListener {
 
     /**
      * File descriptor of the PDF, points to [mFileName] in the application cache.
@@ -135,8 +136,8 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
         mButtonPrevious = view.findViewById(R.id.previous)
         mButtonNext = view.findViewById(R.id.next)
         // Bind events.
-        mButtonPrevious!!.setOnClickListener(this)
-        mButtonNext!!.setOnClickListener(this)
+        (mButtonPrevious ?: return).setOnClickListener(this)
+        (mButtonNext ?: return).setOnClickListener(this)
 
         mPageIndex = 0
         // If there is a savedInstanceState (screen orientations, etc.), we restore the page index.
@@ -197,7 +198,7 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
     override fun onSaveInstanceState(@NonNull outState: Bundle) {
         super.onSaveInstanceState(outState)
         if (null != mCurrentPage) {
-            outState.putInt(STATE_CURRENT_PAGE_INDEX, mCurrentPage!!.index)
+            outState.putInt(STATE_CURRENT_PAGE_INDEX, (mCurrentPage ?: return).index)
         }
     }
 
@@ -245,7 +246,7 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
         mFileDescriptor = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY)
         // This is the PdfRenderer we use to render the PDF.
         if (mFileDescriptor != null) {
-            mPdfRenderer = PdfRenderer(mFileDescriptor!!)
+            mPdfRenderer = PdfRenderer(mFileDescriptor ?: return)
         }
     }
 
@@ -262,10 +263,10 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
     @Throws(IOException::class)
     private fun closeRenderer() {
         if (null != mCurrentPage) {
-            mCurrentPage!!.close()
+            (mCurrentPage ?: return).close()
         }
-        mPdfRenderer!!.close()
-        mFileDescriptor!!.close()
+        (mPdfRenderer ?: return).close()
+        (mFileDescriptor ?: return).close()
     }
 
     /**
@@ -284,27 +285,32 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
      * @param index The page index.
      */
     private fun showPage(index: Int) {
-        if (mPdfRenderer!!.pageCount <= index) {
+        if ((mPdfRenderer ?: return).pageCount <= index) {
             return
         }
         // Make sure to close the current page before opening another one.
         if (null != mCurrentPage) {
-            mCurrentPage!!.close()
+            (mCurrentPage ?: return).close()
         }
         // Use `openPage` to open a specific page in PDF.
-        mCurrentPage = mPdfRenderer!!.openPage(index)
+        mCurrentPage = (mPdfRenderer ?: return).openPage(index)
         // Important: the destination bitmap must be ARGB (not RGB).
         val bitmap = Bitmap.createBitmap(
-            mCurrentPage!!.width, mCurrentPage!!.height,
+            (mCurrentPage ?: return).width, (mCurrentPage ?: return).height,
             Bitmap.Config.ARGB_8888
         )
         // Here, we render the page onto the Bitmap.
         // To render a portion of the page, use the second and third parameter. Pass nulls to get
         // the default result.
         // Pass either RENDER_MODE_FOR_DISPLAY or RENDER_MODE_FOR_PRINT for the last parameter.
-        mCurrentPage!!.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY)
+        (mCurrentPage ?: return).render(
+            bitmap,
+            null,
+            null,
+            PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY
+        )
         // We are ready to show the Bitmap to user.
-        mImageView!!.setImageBitmap(bitmap)
+        (mImageView ?: return).setImageBitmap(bitmap)
         updateUi()
     }
 
@@ -320,10 +326,10 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
      * to display the value `index+1` (page number) and `pageCount`.
      */
     private fun updateUi() {
-        val index = mCurrentPage!!.index
-        val pageCount = mPdfRenderer!!.pageCount
-        mButtonPrevious!!.isEnabled = 0 != index
-        mButtonNext!!.isEnabled = index + 1 < pageCount
+        val index = (mCurrentPage ?: return).index
+        val pageCount = (mPdfRenderer ?: return).pageCount
+        (mButtonPrevious ?: return).isEnabled = 0 != index
+        (mButtonNext ?: return).isEnabled = index + 1 < pageCount
 
         activity?.title = getString(R.string.app_name_with_index, index + 1, pageCount)
     }
@@ -341,11 +347,11 @@ class PdfRendererBasicFragment(private val mFileName: String = FILENAME)
         when (view.id) {
             R.id.previous -> {
                 // Move to the previous page
-                showPage(mCurrentPage!!.index - 1)
+                showPage((mCurrentPage ?: return).index - 1)
             }
             R.id.next -> {
                 // Move to the next page
-                showPage(mCurrentPage!!.index + 1)
+                showPage((mCurrentPage ?: return).index + 1)
             }
         }
     }

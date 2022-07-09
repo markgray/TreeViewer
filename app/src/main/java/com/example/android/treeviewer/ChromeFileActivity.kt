@@ -22,10 +22,12 @@ class ChromeFileActivity : AppCompatActivity() {
      * `TextView` used to display "Waiting for data to load…" message while waiting
      */
     internal lateinit var htmlWaiting: TextView
+
     /**
      * This is the [LinearLayout] we place our [Button]'s in.
      */
     private lateinit var htmlFileButtonHolder: LinearLayout
+
     /**
      * `ScrollView` that holds the `LinearLayout` [htmlFileButtonHolder]
      */
@@ -124,7 +126,7 @@ class ChromeFileActivity : AppCompatActivity() {
         /**
          * The resource ID's of the html files we can send to Chrome.
          */
-        val resourceIDS = intArrayOf(
+        val resourceIDS: IntArray = intArrayOf(
             R.raw.graytree,
             R.raw.chapter1,
             R.raw.chapter2,
@@ -142,10 +144,11 @@ class ChromeFileActivity : AppCompatActivity() {
             R.raw.chapter14,
             R.raw.chapter15
         )
+
         /**
          * The titles to display in our button labels for the html files we can send to Chrome.
          */
-        val titles = arrayOf(
+        val titles: Array<String> = arrayOf(
             "Gray family tree",
             "Chapter 1: What is Man?",
             "Chapter 2: The Death of Jean",

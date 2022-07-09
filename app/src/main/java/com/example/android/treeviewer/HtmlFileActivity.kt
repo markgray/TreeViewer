@@ -11,20 +11,27 @@ import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
 
+/**
+ * This activity displays html files using
+ */
 @Suppress("MemberVisibilityCanBePrivate")
 class HtmlFileActivity : AppCompatActivity() {
     /**
      * `TextView` used to display our html files
      */
     internal lateinit var htmlTestView: TextView
+
     /**
      * `TextView` used to display "Waiting for data to load…" message while waiting
      */
     internal lateinit var htmlWaiting: TextView
+
     /**
      * `LinearLayout` that we add our html files selection `Button`s to.
      */
+
     internal lateinit var htmlChapter: LinearLayout
+
     /**
      * `ScrollView` that holds the `LinearLayout htmlChapter`
      */
@@ -33,7 +40,7 @@ class HtmlFileActivity : AppCompatActivity() {
     /**
      * List of the resource ids for the html files in our raw resources
      */
-    val resourceIDS = intArrayOf(
+    val resourceIDS: IntArray = intArrayOf(
         R.raw.chapter1,
         R.raw.chapter2,
         R.raw.chapter3,
@@ -54,7 +61,7 @@ class HtmlFileActivity : AppCompatActivity() {
     /**
      * List of the titles for the html files in our raw resources (used to label the selection buttons)
      */
-    val titles = arrayOf(
+    val titles: Array<String> = arrayOf(
         "Chapter 1: What is Man?",
         "Chapter 2: The Death of Jean",
         "Chapter 3: The Turning-Point of My Life",
@@ -153,7 +160,7 @@ class HtmlFileActivity : AppCompatActivity() {
              * @param result The result of the operation computed by [doInBackground].
              */
             override fun onPostExecute(result: Spanned?) {
-                htmlTestView.text = result!!
+                htmlTestView.text = (result ?: return)
                 htmlWaiting.visibility = View.GONE
                 htmlTestView.visibility = View.VISIBLE
             }

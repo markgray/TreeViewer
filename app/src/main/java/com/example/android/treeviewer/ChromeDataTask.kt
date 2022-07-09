@@ -55,8 +55,8 @@ internal constructor(
         val tv = TypedValue()
         mContext.resources.getValue(resourceID, tv, true)
 
-        val stringOfResourse : String = tv.string.toString()
-        val startOfFileName : Int = stringOfResourse.lastIndexOf('/') + 1
+        val stringOfResourse: String = tv.string.toString()
+        val startOfFileName: Int = stringOfResourse.lastIndexOf('/') + 1
         val fileName = stringOfResourse.substring(startOfFileName)
         Log.i(TAG, "File name of ${params[0]} is $fileName")
 
@@ -83,7 +83,7 @@ internal constructor(
         /**
          * TAG used for logging.
          */
-        const val TAG :String = "ChromeDataTask"
+        const val TAG: String = "ChromeDataTask"
     }
 
 }

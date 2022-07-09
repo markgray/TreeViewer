@@ -51,8 +51,9 @@ class PdfRendererBasic : AppCompatActivity() {
             supportFragmentManager.beginTransaction()
                 .add(
                     R.id.container,
-                    PdfRendererBasicFragment(mFileName = fileName!!),
-                    FRAGMENT_PDF_RENDERER_BASIC)
+                    PdfRendererBasicFragment(mFileName = fileName ?: return),
+                    FRAGMENT_PDF_RENDERER_BASIC
+                )
                 .commit()
         }
     }
@@ -105,6 +106,6 @@ class PdfRendererBasic : AppCompatActivity() {
          * Tag name for our `PdfRendererBasicFragment` fragment, used when we add the fragment and
          * in the testing of `PdfRendererBasicFragment`.
          */
-        const val FRAGMENT_PDF_RENDERER_BASIC = "pdf_renderer_basic"
+        const val FRAGMENT_PDF_RENDERER_BASIC: String = "pdf_renderer_basic"
     }
 }

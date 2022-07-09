@@ -6,6 +6,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
+/**
+ * This is starting activity, it holds buttons which allow you to launch our other activities.
+ */
 class MainActivity : AppCompatActivity() {
 
     /**

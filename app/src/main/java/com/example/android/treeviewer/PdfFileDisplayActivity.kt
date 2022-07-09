@@ -27,8 +27,8 @@ class PdfFileDisplayActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pdf_file_display)
-        val linearLayout : LinearLayout = findViewById(R.id.pdf_choices)
-        for(i in fileNames.indices) {
+        val linearLayout: LinearLayout = findViewById(R.id.pdf_choices)
+        for (i in fileNames.indices) {
             addButton(fileNames[i], titles[i], linearLayout)
         }
     }
@@ -64,7 +64,7 @@ class PdfFileDisplayActivity : AppCompatActivity() {
         /**
          * List of the resource ids for the text files we can display.
          */
-        val fileNames = arrayOf(
+        val fileNames: Array<String> = arrayOf(
             "sample.pdf",
             "everybody.pdf",
             "sample.pdf",
@@ -78,7 +78,7 @@ class PdfFileDisplayActivity : AppCompatActivity() {
         /**
          * List of the titles for the text files we can display (used to label the selection buttons)
          */
-        val titles = arrayOf(
+        val titles: Array<String> = arrayOf(
             "sample.pdf from sample pdf renderer",
             "everybody.pdf",
             "sample.pdf",
