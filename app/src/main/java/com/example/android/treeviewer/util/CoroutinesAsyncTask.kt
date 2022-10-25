@@ -11,6 +11,7 @@ import kotlinx.coroutines.withContext
  * A coroutine version of `AsyncTask`
  * TODO: make methods and comments more closely resemble AsyncTask
  */
+@Suppress("EmptyMethod")
 @OptIn(DelicateCoroutinesApi::class)
 abstract class CoroutinesAsyncTask<Params, Progress, Result> {
 

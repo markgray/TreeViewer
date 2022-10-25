@@ -29,7 +29,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.annotation.NonNull
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import java.io.File
@@ -129,7 +128,7 @@ class PdfRendererBasicFragment(
      * @param savedInstanceState If non-null, this fragment is being re-constructed
      * from a previous saved state as given here.
      */
-    override fun onViewCreated(@NonNull view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         // Retain view references.
         mImageView = view.findViewById(R.id.image)
@@ -195,7 +194,7 @@ class PdfRendererBasicFragment(
      *
      * @param outState Bundle in which to place your saved state.
      */
-    override fun onSaveInstanceState(@NonNull outState: Bundle) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         if (null != mCurrentPage) {
             outState.putInt(STATE_CURRENT_PAGE_INDEX, (mCurrentPage ?: return).index)
