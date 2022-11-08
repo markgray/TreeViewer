@@ -98,6 +98,7 @@ class ChromeFileActivity : AppCompatActivity() {
      * @param resourceID the resource ID of the file we want Chrome to display.
      */
     private fun sendResourceFileToChrome(resourceID: Int) {
+        // TODO: Fix crash that occurs here -- smells like another data privacy change to me.
         val mHtmlDataTask = object : ChromeDataTask(applicationContext) {
             override fun onPostExecute(result: Uri?) {
                 val intent = Intent(Intent.ACTION_VIEW)
@@ -107,7 +108,7 @@ class ChromeFileActivity : AppCompatActivity() {
                 )
                 intent.setDataAndType(result, "text/html")
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-                @SuppressLint("QueryPermissionsNeeded")
+                @SuppressLint("QueryPermissionsNeeded") // It is requested in AndroidManifest.xml
                 if (intent.resolveActivity(packageManager) != null) {
                     startActivity(intent)
                 }

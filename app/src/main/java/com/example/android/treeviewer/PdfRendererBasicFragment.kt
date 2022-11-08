@@ -87,7 +87,7 @@ class PdfRendererBasicFragment(
      *
      * @return The number of pages.
      */
-    @Suppress("unused")
+    @Suppress("unused") // Suggested change would make class less reusable
     val pageCount: Int
         get() = mPdfRenderer!!.pageCount
 

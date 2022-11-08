@@ -101,7 +101,7 @@ internal constructor(
         /**
          * TAG used for logging
          */
-        @Suppress("unused")
+        @Suppress("unused") // Suggested change would make class less reusable
         internal const val TAG = "TextFileDataTask"
     }
 }

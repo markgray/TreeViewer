@@ -11,7 +11,7 @@ import kotlinx.coroutines.withContext
  * A coroutine version of `AsyncTask`
  * TODO: make methods and comments more closely resemble AsyncTask
  */
-@Suppress("EmptyMethod")
+@Suppress("EmptyMethod") // Suggested change would make class less reusable
 @OptIn(DelicateCoroutinesApi::class)
 abstract class CoroutinesAsyncTask<Params, Progress, Result> {
 
@@ -147,7 +147,7 @@ abstract class CoroutinesAsyncTask<Params, Progress, Result> {
      * @param mayInterruptIfRunning `<tt></tt>` if the thread executing this task should be
      * interrupted; otherwise, in-progress tasks are allowed to complete.
      */
-    @Suppress("MemberVisibilityCanBePrivate")
+    @Suppress("MemberVisibilityCanBePrivate") // I like to use kdoc [] references
     fun cancel(mayInterruptIfRunning: Boolean) {
         if (!mayInterruptIfRunning) Log.d(
             "cancel",
@@ -170,7 +170,7 @@ abstract class CoroutinesAsyncTask<Params, Progress, Result> {
      *
      * @param progress The progress values to update the UI with.
      */
-    @Suppress("MemberVisibilityCanBePrivate")
+    @Suppress("MemberVisibilityCanBePrivate") // I like to use kdoc [] references
     fun publishProgress(vararg progress: Progress) {
         //need to update main thread
         GlobalScope.launch(Dispatchers.Main) {

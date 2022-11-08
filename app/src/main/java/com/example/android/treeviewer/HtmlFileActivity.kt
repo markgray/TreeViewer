@@ -14,7 +14,7 @@ import android.widget.TextView
 /**
  * This activity displays html files using
  */
-@Suppress("MemberVisibilityCanBePrivate")
+@Suppress("MemberVisibilityCanBePrivate") // I like to use kdoc [] references
 class HtmlFileActivity : AppCompatActivity() {
     /**
      * `TextView` used to display our html files
@@ -148,7 +148,7 @@ class HtmlFileActivity : AppCompatActivity() {
      * @param resourceID resource ID of Html file located in our raw resources.
      */
     private fun loadResourceHtml(resourceID: Int) {
-        @SuppressLint("StaticFieldLeak")
+        @SuppressLint("StaticFieldLeak") // TODO: Fix static field leak
         val mHtmlDataTask = object : HtmlDataTask(applicationContext) {
             /**
              * Runs on the UI thread after [.doInBackground]. The parameter `Spanned s`

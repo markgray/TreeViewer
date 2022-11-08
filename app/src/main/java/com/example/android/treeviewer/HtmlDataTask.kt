@@ -1,6 +1,7 @@
 package com.example.android.treeviewer
 
 import android.content.Context
+import android.os.Build
 import android.text.Html
 import android.text.Spanned
 import android.util.Log
@@ -84,8 +85,12 @@ internal constructor(
             TAG,
             "sizeOfInputStream: " + sizeOfInputStream + " Size of builder: " + builder!!.capacity()
         )
-        @Suppress("DEPRECATION")
-        return Html.fromHtml(builder.toString())
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+            Html.fromHtml(builder.toString(), 0)
+        } else {
+            @Suppress("DEPRECATION") // Needed for Build.VERSION.SDK_INT < Build.VERSION_CODES.N
+            Html.fromHtml(builder.toString())
+        }
     }
 
     companion object {
