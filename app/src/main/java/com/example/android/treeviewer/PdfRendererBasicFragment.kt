@@ -348,6 +348,7 @@ class PdfRendererBasicFragment(
                 // Move to the previous page
                 showPage((mCurrentPage ?: return).index - 1)
             }
+
             R.id.next -> {
                 // Move to the next page
                 showPage((mCurrentPage ?: return).index + 1)
