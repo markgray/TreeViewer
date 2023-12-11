@@ -25,6 +25,9 @@ android {
         jvmTarget = '17'
     }
     namespace 'com.example.android.treeviewer'
+    buildFeatures {
+        buildConfig true
+    }
 }
 
 dependencies {
