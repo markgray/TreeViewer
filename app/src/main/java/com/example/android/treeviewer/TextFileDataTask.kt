@@ -13,10 +13,10 @@ import java.util.*
  * correspond to each of the paragraphs of the text file to the caller.
  */
 open class TextFileDataTask
-/*
+/**
  * Our constructor, we just save our parameter `Context context` in our field `mContext`.
  *
- * @param context `Context` to use to access resources of this application
+ * @param mContext `Context` to use to access resources of this application
  */
 internal constructor(
     /**
