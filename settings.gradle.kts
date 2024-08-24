@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 include(":app")
-rootProject.name = "Tree Viewer"
+rootProject.name = "TreeViewer"
