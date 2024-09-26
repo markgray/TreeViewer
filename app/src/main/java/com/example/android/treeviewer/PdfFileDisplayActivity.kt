@@ -4,8 +4,13 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.FrameLayout
 import android.widget.LinearLayout
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updateLayoutParams
 
 /**
  * Allows the user to select a pdf file to view, then launches `PdfRendererBasic` to display it.
@@ -25,8 +30,23 @@ class PdfFileDisplayActivity : AppCompatActivity() {
      * @param savedInstanceState we do not override `onSaveInstanceState` so do not use this.
      */
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pdf_file_display)
+        val rootView = findViewById<FrameLayout>(R.id.root_view_pdf)
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+            // Apply the insets as a margin to the view.
+            v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                leftMargin = insets.left
+                rightMargin = insets.right
+                topMargin = insets.top
+                bottomMargin = insets.bottom
+            }
+            // Return CONSUMED if you don't want want the window insets to keep passing
+            // down to descendant views.
+            WindowInsetsCompat.CONSUMED
+        }
         val linearLayout: LinearLayout = findViewById(R.id.pdf_choices)
         for (i in fileNames.indices) {
             addButton(fileNames[i], titles[i], linearLayout)
