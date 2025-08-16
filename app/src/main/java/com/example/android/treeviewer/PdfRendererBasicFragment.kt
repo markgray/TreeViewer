@@ -16,9 +16,7 @@
 
 package com.example.android.treeviewer
 
-import android.annotation.TargetApi
 import android.content.Context
-import android.graphics.Bitmap
 import android.graphics.pdf.PdfRenderer
 import android.os.Build
 import android.os.Bundle
@@ -29,6 +27,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.core.graphics.createBitmap
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import java.io.File
@@ -41,7 +41,7 @@ import java.io.IOException
  * `android.graphics.pdf.PdfRenderer` to render PDF pages as
  * `android.graphics.Bitmap`s. Our empty constructor is required.
  */
-@TargetApi(Build.VERSION_CODES.LOLLIPOP)
+@RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 class PdfRendererBasicFragment(
     private val mFileName: String = FILENAME
 ) : Fragment(), View.OnClickListener {
@@ -294,9 +294,9 @@ class PdfRendererBasicFragment(
         // Use `openPage` to open a specific page in PDF.
         mCurrentPage = (mPdfRenderer ?: return).openPage(index)
         // Important: the destination bitmap must be ARGB (not RGB).
-        val bitmap = Bitmap.createBitmap(
-            (mCurrentPage ?: return).width, (mCurrentPage ?: return).height,
-            Bitmap.Config.ARGB_8888
+        val bitmap = createBitmap(
+            width = (mCurrentPage ?: return).width,
+            height = (mCurrentPage ?: return).height
         )
         // Here, we render the page onto the Bitmap.
         // To render a portion of the page, use the second and third parameter. Pass nulls to get
