@@ -2,12 +2,14 @@ package com.example.android.treeviewer
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
@@ -18,14 +20,31 @@ import androidx.core.view.updateLayoutParams
 class PdfFileDisplayActivity : AppCompatActivity() {
 
     /**
-     * Called when the activity is starting. First we call our super's implementation of `onCreate`,
-     * and then we set our content view to our layout file R.layout.activity_pdf_file_display. We
-     * initialize our `val linearLayout` to the [LinearLayout] with id R.id.pdf_choices, then loop
-     * over `i` for all of the entries in our array [fileNames] calling our [addButton] method to
-     * add a button to `linearLayout` whose label is the `i`'th entry in [titles]. The `i`'th entry
-     * in [fileNames] will be passed to the [PdfRendererBasic] activity as an extra in the [Intent]
-     * that will start that activity when the `i`'th button is clicked ([PdfRendererBasic] will read
-     * and display that file).
+     * Called when the activity is starting. First we call [enableEdgeToEdge] to enable edge to edge
+     * display, then we call our super's implementation of `onCreate`, and set our content view to
+     * our layout file `R.layout.activity_pdf_file_display`.
+     *
+     * We initialize our [FrameLayout] variable `rootView` to the view with ID
+     * `R.id.root_view_pdf` then call [ViewCompat.setOnApplyWindowInsetsListener]
+     * to take over the policy for applying window insets to `rootView`, with the
+     * `listener` argument a lambda that accepts the [View] passed the lambda
+     * in variable `v` and the [WindowInsetsCompat] passed the lambda
+     * in variable `windowInsets`. It initializes its [Insets] variable
+     * `insets` to the [WindowInsetsCompat.getInsets] of `windowInsets` with
+     * [WindowInsetsCompat.Type.systemBars] as the argument, then it updates
+     * the layout parameters of `v` to be a [ViewGroup.MarginLayoutParams]
+     * with the left margin set to `insets.left`, the right margin set to
+     * `insets.right`, the top margin set to `insets.top`, and the bottom margin
+     * set to `insets.bottom`. Finally it returns [WindowInsetsCompat.CONSUMED]
+     * to the caller (so that the window insets will not keep passing down to
+     * descendant views).
+     *
+     * We initialize our variable `val linearLayout` to the [LinearLayout] with id
+     * `R.id.pdf_choices`, then loop over `i` for all of the entries in our array [fileNames]
+     * calling our [addButton] method to add a button to `linearLayout` whose label is the
+     * `i`'th entry in [titles]. The `i`'th entry in [fileNames] will be passed to the
+     * [PdfRendererBasic] activity as an extra in the [Intent] that will start that activity
+     * when the `i`'th button is clicked ([PdfRendererBasic] will read and display that file).
      *
      * @param savedInstanceState we do not override `onSaveInstanceState` so do not use this.
      */
@@ -34,8 +53,8 @@ class PdfFileDisplayActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pdf_file_display)
         val rootView = findViewById<FrameLayout>(R.id.root_view_pdf)
-        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, windowInsets ->
-            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v: View, windowInsets: WindowInsetsCompat ->
+            val insets: Insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
             // Apply the insets as a margin to the view.
             v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 leftMargin = insets.left

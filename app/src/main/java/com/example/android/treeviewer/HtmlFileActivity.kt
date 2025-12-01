@@ -12,6 +12,7 @@ import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
@@ -85,21 +86,40 @@ class HtmlFileActivity : AppCompatActivity() {
     )
 
     /**
-     * Called when the activity is starting. First we call our super's implementation of `onCreate`,
-     * then we set our content view to our layout file R.layout.activity_html_file. We initialize our
-     * field `LinearLayout htmlChapter` by finding the view with id R.id.html_chapter (the chapter
-     * selection buttons are placed here), initialize our field `ScrollView htmlChapterScrollView`
-     * by finding the view with id R.id.html_chapter_scrollView (holds the `LinearLayout htmlChapter`
-     * that holds our chapter selection buttons), initialize our field `TextView htmlTestView` by
-     * finding the view with id R.id.html_textView (the selected chapter will be displayed here), and
-     * initialize our field `TextView htmlWaiting` by finding the view with id R.id.html_waiting
-     * (this will be displayed while our `HtmlDataTask` loads the chapter selected from our resources).
-     * Finally we loop over `int i` for all of the resource ids in `int[] resourceIDS` calling
-     * our method `addButton` to add a `Button` to `htmlChapter` whose title is given by
-     * the `i`th string in `titles` and whose `OnClickListener` sets the visibility of `htmlChapterScrollView`
-     * to GONE, and calls our method `loadResourceHtml` to have a `HtmlDataTask` instance load
-     * the html file with resource id `i` in `resourceIDS` in the background into `htmlTestView`
-     * (its `onPostExecute` override also changes the visibility of `htmlWaiting` to GONE).
+     * Called when the activity is starting. First we call [enableEdgeToEdge] to enable edge to edge
+     * display, then we call our super's implementation of `onCreate`, and set our content view to
+     * our layout file `R.layout.activity_html_file`.
+     *
+     * We initialize our [FrameLayout] variable `rootView` to the view with ID
+     * `R.id.root_view_html` then call [ViewCompat.setOnApplyWindowInsetsListener]
+     * to take over the policy for applying window insets to `rootView`, with the
+     * `listener` argument a lambda that accepts the [View] passed the lambda
+     * in variable `v` and the [WindowInsetsCompat] passed the lambda
+     * in variable `windowInsets`. It initializes its [Insets] variable
+     * `insets` to the [WindowInsetsCompat.getInsets] of `windowInsets` with
+     * [WindowInsetsCompat.Type.systemBars] as the argument, then it updates
+     * the layout parameters of `v` to be a [ViewGroup.MarginLayoutParams]
+     * with the left margin set to `insets.left`, the right margin set to
+     * `insets.right`, the top margin set to `insets.top`, and the bottom margin
+     * set to `insets.bottom`. Finally it returns [WindowInsetsCompat.CONSUMED]
+     * to the caller (so that the window insets will not keep passing down to
+     * descendant views).
+     *
+     * We initialize our [LinearLayout] field [htmlChapter] by finding the view with id
+     * `R.id.html_chapter` (the chapter selection buttons are placed here), initialize our
+     * [ScrollView] field [htmlChapterScrollView] by finding the view with id
+     * `R.id.html_chapter_scrollView` (holds the [LinearLayout] field [htmlChapter]
+     * that holds our chapter selection buttons), initialize our [TextView] field [htmlTestView] by
+     * finding the view with id `R.id.html_textView` (the selected chapter will be displayed here),
+     * and initialize our [TextView] field [htmlWaiting] by finding the view with id
+     * `R.id.html_waiting` (this will be displayed while our [HtmlDataTask] loads the chapter
+     * selected from our resources). Finally we loop over `int i` for all of the resource ids in
+     * [IntArray] field [resourceIDS] calling our method [addButton] to add a [Button] to
+     * [htmlChapter] whose title is given by the `i`th string in `titles` and whose
+     * [View.OnClickListener] sets the visibility of [htmlChapterScrollView] to GONE, and calls
+     * our method [loadResourceHtml] to have a [HtmlDataTask] instance load the html file with
+     * whose resource id is at index `i` in [resourceIDS] in the background into [htmlTestView]
+     * (its `onPostExecute` override also changes the visibility of [htmlWaiting] to GONE).
      *
      * @param savedInstanceState we do not override `onSaveInstanceState` so do not use
      */
@@ -108,8 +128,8 @@ class HtmlFileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_html_file)
         val rootView = findViewById<FrameLayout>(R.id.root_view_html)
-        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, windowInsets ->
-            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v: View, windowInsets: WindowInsetsCompat ->
+            val insets: Insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
             // Apply the insets as a margin to the view.
             v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 leftMargin = insets.left

@@ -14,6 +14,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
@@ -39,17 +40,34 @@ class ChromeFileActivity : AppCompatActivity() {
     internal lateinit var htmlButtonsScrollView: ScrollView
 
     /**
-     * Called when the activity is starting. First we call our super's implementation of `onCreate`,
-     * then we set our content view to our layout file R.layout.activity_chrome_file. We initialize
-     * our field [htmlWaiting] by finding the [TextView] with the ID R.id.chrome_waiting,
-     * initialize our field [htmlButtonsScrollView] by finding the [ScrollView] with the ID
-     * R.id.chrome_file_scrollView, and initialize our field [htmlFileButtonHolder] by finding the
-     * [LinearLayout] with the ID R.id.chrome_file_buttons. Then we loop over `i` for all of the
-     * resource ID's in our array [resourceIDS] calling our method [addButton] to construct, configure,
-     * and add a [Button] to [htmlFileButtonHolder] which will use the `i`'th entry in our [titles]
-     * array as the label, and when clicked will call our method [sendResourceFileToChrome] to start
-     * an instance of [ChromeDataTask] to send the html resource file whose ID is the `i`'th entry in
-     * our [resourceIDS] array to Chrome to display.
+     * Called when the activity is starting. First we call [enableEdgeToEdge] to enable edge to edge
+     * display, then we call our super's implementation of `onCreate`, and set our content view to
+     * our layout file `R.layout.activity_chrome_file`.
+     *
+     * We initialize our [FrameLayout] variable `rootView` to the view with ID
+     * `R.id.root_view_chrome` then call [ViewCompat.setOnApplyWindowInsetsListener]
+     * to take over the policy for applying window insets to `rootView`, with the
+     * `listener` argument a lambda that accepts the [View] passed the lambda in
+     * variable `v` and the [WindowInsetsCompat] passed the lambda in variable
+     * `windowInsets`. It initializes its [Insets] variable `insets` to the
+     * [WindowInsetsCompat.getInsets] of `windowInsets` with [WindowInsetsCompat.Type.systemBars]
+     * as the argument, then it updates the layout parameters of `v` to be a
+     * [ViewGroup.MarginLayoutParams] with the left margin set to `insets.left`,
+     * the right margin set to `insets.right`, the top margin set to `insets.top`,
+     * and the bottom margin set to `insets.bottom`. Finally it returns
+     * [WindowInsetsCompat.CONSUMED] to the caller (so that the window insets
+     * will not keep passing down to descendant views).
+     *
+     * We initialize our field [htmlWaiting] by finding the [TextView] with the ID
+     * `R.id.chrome_waiting`, initialize our field [htmlButtonsScrollView] by finding the
+     * [ScrollView] with the ID `R.id.chrome_file_scrollView`, and initialize our field
+     * [htmlFileButtonHolder] by finding the [LinearLayout] with the ID `R.id.chrome_file_buttons`.
+     * Then we loop over `i` for all of the resource ID's in our array [resourceIDS] calling our
+     * method [addButton] to construct, configure, and add a [Button] to [htmlFileButtonHolder]
+     * which will use the `i`'th entry in our [titles] array as the label, and when clicked will
+     * call our method [sendResourceFileToChrome] to start an instance of [ChromeDataTask] to send
+     * the html resource file whose ID is the `i`'th entry in our [resourceIDS] array to Chrome
+     * to display.
      *
      * @param savedInstanceState we do not override `onSaveInstanceState` so do not use.
      */
@@ -58,8 +76,8 @@ class ChromeFileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chrome_file)
         val rootView = findViewById<FrameLayout>(R.id.root_view_chrome)
-        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, windowInsets ->
-            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v: View, windowInsets: WindowInsetsCompat ->
+            val insets: Insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
             // Apply the insets as a margin to the view.
             v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 leftMargin = insets.left
@@ -84,7 +102,7 @@ class ChromeFileActivity : AppCompatActivity() {
      * This method constructs, configures, and adds a [Button] to the [ViewGroup] parameter [parent].
      * If uses [description] as the label of the [Button], and adds a lambda `OnClickListener` to the
      * [Button] which calls our method [sendResourceFileToChrome] with [resourceID] as the parameter.
-     * First we initalize our `val button` to a new instance of [Button]. We set the text of `button`
+     * First we initialize our `val button` to a new instance of [Button]. We set the text of `button`
      * to our parameter [description] then set the `OnClickListener` of `button` to a lambda which
      * toasts the label of the button clicked as a debugging aid, sets the visibility of the
      * [ScrollView] field [htmlButtonsScrollView] to GONE, sets the visibility of the [TextView]

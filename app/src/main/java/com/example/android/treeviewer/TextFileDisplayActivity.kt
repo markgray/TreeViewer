@@ -10,6 +10,7 @@ import android.widget.ScrollView
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.enableEdgeToEdge
+import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
@@ -52,18 +53,33 @@ class TextFileDisplayActivity : ComponentActivity() {
     private lateinit var textFileBooksScrollView: ScrollView
 
     /**
-     * Called when the activity is starting. First we call our super's implementation of `onCreate`,
-     * then we set our content view to our layout file R.layout.activity_text_file. We initialize our
-     * field `RecyclerView.LayoutManager mLayoutManager` with a new `LinearLayoutManager`
-     * instance, initialize our field `LinearLayout textFileBooks` by finding the view with
-     * id R.id.text_file_books, initialize our field `ScrollView textFileBooksScrollView` by
-     * finding the view with id R.id.text_file_books_scrollView, initialize our field
-     * `RecyclerView textFileRecylerView` by finding the view with id R.id.text_file_recycle_view,
-     * and initialize our field `TextView textFileWaiting` by finding the view with id
-     * R.id.text_file_waiting. Then we loop over `int i` for all the resource id's in the array
-     * `int[] resourceIDS` calling our method `addButton` to add a button to our field
-     * `textFileBooks` with the label `titles[ i ]` which will load and display the raw
-     * text file whose resource id is `resourceIDS[ i ]` when the button is clicked.
+     * Called when the activity is starting. First we call [enableEdgeToEdge] to enable edge to edge
+     * display, then we call our super's implementation of `onCreate`, and set our content view to
+     * our layout file `R.layout.activity_text_file`.
+     *
+     * We initialize our [FrameLayout] variable `rootView` to the view with ID `R.id.root_view_text`
+     * then call [ViewCompat.setOnApplyWindowInsetsListener] to take over the policy for applying
+     * window insets to `rootView`, with the `listener` argument a lambda that accepts the [View]
+     * passed the lambda in variable `v` and the [WindowInsetsCompat] passed the lambda in variable
+     * `windowInsets`. It initializes its [Insets] variable `insets` to the
+     * [WindowInsetsCompat.getInsets] of `windowInsets` with [WindowInsetsCompat.Type.systemBars]
+     * as the argument, then it updates the layout parameters of `v` to be a
+     * [ViewGroup.MarginLayoutParams] with the left margin set to `insets.left`, the right margin
+     * set to `insets.right`, the top margin set to `insets.top`, and the bottom margin set to
+     * `insets.bottom`. Finally it returns [WindowInsetsCompat.CONSUMED] to the caller (so that
+     * the window insets will not keep passing down to descendant views).
+     *
+     * We initialize our [RecyclerView.LayoutManager] field `[mLayoutManager] with a new
+     * [LinearLayoutManager] instance, initialize our [LinearLayout] field [textFileBooks] by
+     * finding the view with id `R.id.text_file_books`, initialize our [ScrollView] field
+     * [textFileBooksScrollView] by finding the view with id `R.id.text_file_books_scrollView`,
+     * initialize our [RecyclerView] field [textFileRecylerView by finding the view with id
+     * `R.id.text_file_recycle_view`, and initialize our [TextView] field [textFileWaiting] by
+     * finding the view with id `R.id.text_file_waiting`. Then we loop over [Int] `i` for all the
+     * resource id's in the [IntArray] field [resourceIDS] calling our method [addButton] to add a
+     * button to our field [textFileBooks] with the label which is the i'th entry in [titles] which
+     * will load and display the raw text file whose resource id is the i`th entry in [resourceIDS]
+     * when the button is clicked.
      *
      * @param savedInstanceState we do not override `onSaveInstanceState` so do not use
      */
@@ -72,8 +88,8 @@ class TextFileDisplayActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_file)
         val rootView = findViewById<FrameLayout>(R.id.root_view_text)
-        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v, windowInsets ->
-            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+        ViewCompat.setOnApplyWindowInsetsListener(rootView) { v: View, windowInsets: WindowInsetsCompat ->
+            val insets: Insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
             // Apply the insets as a margin to the view.
             v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 leftMargin = insets.left
